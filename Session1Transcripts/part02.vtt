@@ -1,0 +1,1534 @@
+WEBVTT
+
+1
+00:00:16.680 --> 00:00:18.000
+Michael Shannon: Alright, welcome back everybody.
+
+2
+00:00:19.980 --> 00:00:20.280
+Michael Shannon: break.
+
+3
+00:00:26.430 --> 00:00:28.800
+Michael Shannon: Just second here question came in okay.
+
+4
+00:00:30.510 --> 00:00:44.040
+Michael Shannon: So also part of our security, governance is being aware of any type of important export issues, yes we're concerned if we're obviously involved with you know manufacturing and natural products.
+
+5
+00:00:45.060 --> 00:00:58.950
+Michael Shannon: there's been mandates that countries have had various countries going back into the 50s as to what types of things can be imported an export ID in the United States it's related not just to.
+
+6
+00:01:01.230 --> 00:01:09.180
+Michael Shannon: Certain let's say laptops or certain computer computing systems that have certain encryption algorithms on them.
+
+7
+00:01:09.720 --> 00:01:32.010
+Michael Shannon: gaming systems can also be such as you really need to know it was part of the supply chain, what the regulations and issues are when you're dealing not just with assets like data and other countries, but also components and devices now something else along these lines.
+
+8
+00:01:34.860 --> 00:01:36.060
+Michael Shannon: of important export.
+
+9
+00:01:37.230 --> 00:01:59.100
+Michael Shannon: is also understanding, for example, data in the cloud or content in the cloud if you're using a cloud provider, you know you have edge locations where you can distribute that content all over the world and metropolitan areas, however, you have to also be sensitive to cultural norms.
+
+10
+00:02:02.370 --> 00:02:17.280
+Michael Shannon: certain types of content may be deemed unacceptable in certain edge locations in certain regions, so you have to consider all of those aspects as well when you're developing content you're creating content.
+
+11
+00:02:21.270 --> 00:02:36.600
+Michael Shannon: Encryption is also a big one, and there's new algorithms coming all the time, so trans border data flow and like I said, this is actually the US and the EU just signed a new.
+
+12
+00:02:37.890 --> 00:02:40.680
+Michael Shannon: I don't care if I don't know if it's you know.
+
+13
+00:02:42.600 --> 00:02:46.140
+Michael Shannon: it's not safe harbor that that's that's no longer.
+
+14
+00:02:47.730 --> 00:02:51.600
+Michael Shannon: Active but it's the whatever whatever it came after safe harbor.
+
+15
+00:02:53.610 --> 00:02:57.360
+Michael Shannon: it's kind of that the next iteration of that okay.
+
+16
+00:03:00.750 --> 00:03:01.410
+Michael Shannon: So.
+
+17
+00:03:02.970 --> 00:03:13.350
+Michael Shannon: Our security, governance is going to drive our policies and we're talking specifically about security policies, policies.
+
+18
+00:03:14.070 --> 00:03:25.290
+Michael Shannon: Driven by governance, you know, is our general framework with a guidance guides us in really how we implement the various categories and types of controls.
+
+19
+00:03:25.710 --> 00:03:38.670
+Michael Shannon: With the goal of reducing risk to an acceptable level and there's no one size fits all kind of umbrella, it could be based on an asset or an asset class.
+
+20
+00:03:39.030 --> 00:03:50.400
+Michael Shannon: A physical location, it could be the type of data, it could be the location of the campus or the building all the different variables are going to drive.
+
+21
+00:03:50.850 --> 00:04:04.980
+Michael Shannon: Our security policies, so what are our guiding principles what behavior do we is acceptable, with our assets Okay, and what it's also what other kind of.
+
+22
+00:04:05.490 --> 00:04:21.690
+Michael Shannon: behavior as well with our you know co workers can fall under Security right often that's combined with HR but it's a it's a roadmap and do, how we're going to reduce risk in the organization.
+
+23
+00:04:23.070 --> 00:04:34.920
+Michael Shannon: So the information security policy which would be this bullet point that's the that's our definition a directive that outlines how our organization or our enterprise.
+
+24
+00:04:35.730 --> 00:04:46.290
+Michael Shannon: is intending on protecting our assets our data or application our systems and, of course, included there are people okay.
+
+25
+00:04:46.950 --> 00:05:02.160
+Michael Shannon: And again, it has to be in line with corporate governance and then underneath that security, governance right all taken in consideration the business proposition, the synergy with business.
+
+26
+00:05:03.270 --> 00:05:09.450
+Michael Shannon: This is a good, this is an excellent slide we're going to spend a couple of minutes on okay.
+
+27
+00:05:10.440 --> 00:05:25.170
+Michael Shannon: On the exam they will expect you to be able to know from a management standpoint, what is a successful information security policy and what are some of the elements of that successful policy so sanctioned.
+
+28
+00:05:26.730 --> 00:05:27.180
+Michael Shannon: Your.
+
+29
+00:05:28.290 --> 00:05:30.780
+Michael Shannon: information to the policy must have.
+
+30
+00:05:32.130 --> 00:05:40.560
+Michael Shannon: Right off or by in the support of executive management, whether you have a C suite or a C team, or whatever.
+
+31
+00:05:41.130 --> 00:05:49.740
+Michael Shannon: But it has to be sanctioned and not only that it's not just a matter of we're signing off, but you really want visible participation.
+
+32
+00:05:50.460 --> 00:06:01.410
+Michael Shannon: You want action right you want ongoing communication, you want to be championed right you want there to be support, because if you're a security practitioner.
+
+33
+00:06:01.920 --> 00:06:16.590
+Michael Shannon: or a security engineer and you're having to now go to end users and say Look, we have modified our enterprise mobility management Okay, so no longer are you allowed to bring your own device.
+
+34
+00:06:17.010 --> 00:06:22.170
+Michael Shannon: Okay, so if you if you're in an organization where they've been using byob D.
+
+35
+00:06:23.070 --> 00:06:36.990
+Michael Shannon: For years, or you know, since mobile devices were introduced, and suddenly you're going to a different model where they cannot even bring their mobile device into the building and you're going to provision them with one.
+
+36
+00:06:37.830 --> 00:06:48.630
+Michael Shannon: there's going to be pushed back who hey there's going to be negative stakeholders, we call them, so if it's not if that if the mobile device management initiative is not sanctioned.
+
+37
+00:06:49.500 --> 00:07:02.220
+Michael Shannon: If you don't have champion, you know from executive manager the C suite and you're left out there kind of like you know don't kill the messenger type of thing well they're going to kill the messenger.
+
+38
+00:07:02.730 --> 00:07:09.180
+Michael Shannon: If you're the only person, they have to kind of hold responsible for this, so it needs to be sanctioned right.
+
+39
+00:07:10.260 --> 00:07:11.400
+Michael Shannon: And you want as much.
+
+40
+00:07:12.660 --> 00:07:26.010
+Michael Shannon: support as possible from executive management and the C suite C team number two applicable, you know if you go to sands of sands.org or some other site, you can download.
+
+41
+00:07:26.910 --> 00:07:38.160
+Michael Shannon: You know templates for security policies in a up However, not all policies, apply to every organization.
+
+42
+00:07:38.670 --> 00:07:45.810
+Michael Shannon: You know you're gonna have a different type of security policy if you're a manufacturing firm then if you're a software as a service provider.
+
+43
+00:07:46.170 --> 00:07:54.540
+Michael Shannon: Right, so it needs to be applicable to your company strategically and tactically you know, does it fit so.
+
+44
+00:07:55.140 --> 00:08:04.770
+Michael Shannon: It needs to be modified and customized for your organization okay applicable pertinent, in other words, in other words, three.
+
+45
+00:08:05.640 --> 00:08:19.830
+Michael Shannon: Is it realistic can this policy be successfully implemented right is it realistic, for example, a mobile device management policy will just go back to that maybe for your organization.
+
+46
+00:08:20.670 --> 00:08:29.670
+Michael Shannon: forcing all of your employees to leave their mobile device in their vehicle and not have a mobile device that may not be realistic.
+
+47
+00:08:30.660 --> 00:08:53.340
+Michael Shannon: And, and things can happen, it can change that might modify that right, for example, you may have a no bring your own device policy, but then suddenly you need contact tracing tools for some pandemic that are best suitable for a personal mobile device okay so.
+
+48
+00:08:55.260 --> 00:09:09.120
+Michael Shannon: The examples aren't test worthy, but the the philosophy behind it is test worthy, is it attainable is it realistic Okay, does it does it align with your budget.
+
+49
+00:09:09.900 --> 00:09:28.440
+Michael Shannon: Okay, does it align with the resources, you have right, you may have a very elaborate security policy, but if you don't have the people and the time and the resources to implement the controls to support that policy how realistic, is it.
+
+50
+00:09:29.700 --> 00:09:39.090
+Michael Shannon: Okay, and flexible, you know, and I kind of already alluded to, that you know, new technologies are going to force you to have.
+
+51
+00:09:39.870 --> 00:09:46.650
+Michael Shannon: make changes to let's say your mobile mobile device policy things can happen like you come to work one day.
+
+52
+00:09:47.130 --> 00:10:09.780
+Michael Shannon: on a Monday and everybody's walking around like zombies doing you know augmented reality and pokemon go right on campus well that's gonna you need to be flexible enough to say we need to be able to respond to that new types of technology right new social media phenomenon right.
+
+53
+00:10:10.830 --> 00:10:23.490
+Michael Shannon: Right, it may, it may not be you know, in your security policy to allow your employees to make a i'm just using the example here but remember the Harlem shake thing.
+
+54
+00:10:24.090 --> 00:10:33.360
+Michael Shannon: Where we're all the companies replay that song, and then they would do the like everybody would stand around and then they started dancing remember the Harlem shake.
+
+55
+00:10:35.010 --> 00:10:44.010
+Michael Shannon: It may not be a minute be part of your policy to be able to do that, and then to put that on YouTube.
+
+56
+00:10:44.460 --> 00:10:53.580
+Michael Shannon: But if it if it if it helps the morale of your company and it creates a better working environment and it makes your employees happy.
+
+57
+00:10:54.240 --> 00:10:59.460
+Michael Shannon: will then be flexible right does it is it really that big of a hit.
+
+58
+00:11:00.270 --> 00:11:08.700
+Michael Shannon: Maybe sometimes you need to be a little bit more flexible, now the pokemon go thing you know, maybe Okay, as long as you're outside, but you get the idea.
+
+59
+00:11:09.210 --> 00:11:25.140
+Michael Shannon: Comprehensive the policy will be broken down into different modular sections right, so you need to be comprehensive, you need to have a section for wireless networking mobile devices, you know.
+
+60
+00:11:25.920 --> 00:11:37.770
+Michael Shannon: Data loss prevention, how you use your know acceptable use policy, it needs to be comprehensive, to cover all of the different departments roles.
+
+61
+00:11:38.370 --> 00:11:55.800
+Michael Shannon: Business units and, by the way you have to consider you know your business partners large vendors large customers, you know they're going to want you to have a comprehensive policy, so they have a higher degree of confidence that their interactions with you.
+
+62
+00:11:57.000 --> 00:12:07.050
+Michael Shannon: are going to be secure and whatever you're doing is going to be protected Okay, and then number six is one of those areas is often.
+
+63
+00:12:08.070 --> 00:12:10.110
+Michael Shannon: The most widely.
+
+64
+00:12:12.120 --> 00:12:20.100
+Michael Shannon: forgotten about, is it enforced well number one is it enforceable, do you have mechanisms in place.
+
+65
+00:12:20.700 --> 00:12:33.720
+Michael Shannon: And usually there needs to be layers or stage of stages of enforceability to breaches now if a certain action rises to the level of a crime.
+
+66
+00:12:34.440 --> 00:12:48.150
+Michael Shannon: and internal cybercrime well if somebody is Expo trading intellectual property and selling it on the dark web and it's a experienced privileged database engineer.
+
+67
+00:12:48.630 --> 00:12:57.240
+Michael Shannon: Well they're not going to get a written, you know you're not going to say we're going to give you a verbal warning warning stop doing that, no, I mean.
+
+68
+00:12:57.900 --> 00:13:04.830
+Michael Shannon: Depending on the severity of the action you may skip the initial here's the verbal.
+
+69
+00:13:05.640 --> 00:13:14.250
+Michael Shannon: You know action, then here's a written action and then maybe you know we're going to you're going to be days off with pay or without pay so.
+
+70
+00:13:14.610 --> 00:13:33.360
+Michael Shannon: For certain activities there'll be different phases, but, of course, certain actions will rise to the criminal level and will need to be enforced immediately with a combination of your security team HR and security guards possibly and legal.
+
+71
+00:13:34.680 --> 00:13:36.720
+Michael Shannon: Alright, so this is this is pretty.
+
+72
+00:13:37.920 --> 00:13:41.010
+Michael Shannon: Pretty practical and also pretty.
+
+73
+00:13:42.480 --> 00:13:51.330
+Michael Shannon: To be expected right so when it comes to you, your policy, these are six really good attributes to be ready for for the exam.
+
+74
+00:13:52.680 --> 00:14:10.680
+Michael Shannon: Now policy is also driven by new technology, and I would say, one of them, one of the newest or most emerging areas will be called the non the N P Okay, so in a zero trust environment and I don't have that on the slide.
+
+75
+00:14:11.700 --> 00:14:18.330
+Michael Shannon: But in a zero trust environment environment and an n P, is a non person entity.
+
+76
+00:14:20.190 --> 00:14:30.720
+Michael Shannon: So the most common NP ease our robotics things that are, and this is not just in a manufacturing environment, I mean this could be in a retail environment.
+
+77
+00:14:31.440 --> 00:14:42.510
+Michael Shannon: It can be in a warehousing whatever introducing a robotic device that is doing the task that a human Houston used to do.
+
+78
+00:14:43.050 --> 00:14:55.260
+Michael Shannon: So how to end users, we respond and interact with NPs the NP itself, which very likely has an IP version for an IP version six address.
+
+79
+00:14:55.980 --> 00:15:12.030
+Michael Shannon: If it's not on a wired network it's on a wireless network right, so you know the securing of the N P, is becoming an emerging new technology right authenticating iot devices right.
+
+80
+00:15:13.050 --> 00:15:13.650
+Michael Shannon: So.
+
+81
+00:15:15.510 --> 00:15:18.690
+Michael Shannon: Several years ago I lived on an island.
+
+82
+00:15:21.090 --> 00:15:28.950
+Michael Shannon: And it was it was called padre island it's it's outside of corpus Christi Texas, so you have to go over a couple of bridges, but it was literally on an island.
+
+83
+00:15:30.330 --> 00:15:42.150
+Michael Shannon: And so I had to make sure that I had you know, a generator takes I was teaching, you know from a remote location The irony is, I never had to use my generator.
+
+84
+00:15:43.260 --> 00:15:52.560
+Michael Shannon: While I lived on the island for three years, I had to I had water outages and water boils but I didn't have power outages till I moved to Houston.
+
+85
+00:15:53.340 --> 00:16:05.100
+Michael Shannon: So I have a I have a generator that everything's on right now, so that if I lose my power, I can at least gracefully you know hey we're gonna take a break or whatever it isn't we can just disappear.
+
+86
+00:16:07.200 --> 00:16:17.790
+Michael Shannon: And I got a new generators a gold zero it's got a lithium battery can be charged with solar panels is pretty cool, but the new and I got is actually an iot.
+
+87
+00:16:18.390 --> 00:16:29.400
+Michael Shannon: Like I can monitor it, I can use my wi fi and my iPhone and I can manage my generator and that's a kind of a novel example of what.
+
+88
+00:16:29.910 --> 00:16:43.290
+Michael Shannon: Where iot is going where every new appliance every new thing you get has an ipv6 address right so that can drive you know your security policy.
+
+89
+00:16:43.860 --> 00:17:04.500
+Michael Shannon: Maybe you're using tools that are advanced endpoint protection which we're going to talk about endpoint protection, but some of the advanced endpoint protection tools that are out there, like, for example, the new Palo Alto next gen tool I forget what it's called a con.
+
+90
+00:17:05.520 --> 00:17:06.450
+Michael Shannon: con something.
+
+91
+00:17:07.620 --> 00:17:12.660
+Michael Shannon: i'm an old man can't remember Palo Alto is new next gen.
+
+92
+00:17:14.310 --> 00:17:36.150
+Michael Shannon: Anyway, maybe somebody knows it well, it introduces user will user behavioral analytics right so analyzing the normal behavior as as the way a user uses their endpoint but then can identify a track anomaly anonymous or anomalous to i'm saying anomalous behavior right.
+
+93
+00:17:38.400 --> 00:17:42.510
+Michael Shannon: And it could be using you know machine learning or deep learning engines.
+
+94
+00:17:43.590 --> 00:17:49.500
+Michael Shannon: The way we interact with the cloud provider right and we'll talk about the different types.
+
+95
+00:17:50.070 --> 00:18:07.200
+Michael Shannon: different ways we interact with the cloud there's a shared responsibility model and it depends on is IT infrastructure as a service as a platform as a service database as a service is it software as a service those things will those cloud relationships will drive our policy.
+
+96
+00:18:09.660 --> 00:18:18.510
+Michael Shannon: And then you know enterprise mobility management is we have new types of technology, you know these these mobile phones.
+
+97
+00:18:19.290 --> 00:18:27.720
+Michael Shannon: These mobile pads these devices that we have that employees are bringing into the enterprise, today there is so incredibly powerful.
+
+98
+00:18:28.620 --> 00:18:45.270
+Michael Shannon: You know they're more powerful and have way more functionality up and then the workstation or the laptops that we're using you know so and, by the way, enterprise mobility management is one of those areas of this exam that they added more questions.
+
+99
+00:18:47.310 --> 00:19:02.010
+Michael Shannon: over previous so we have our policies and we kind of talked about those if you aren't familiar with you know kind of the policy templates you know you can go to sans.org that's just one.
+
+100
+00:19:03.180 --> 00:19:03.810
+Michael Shannon: place.
+
+101
+00:19:04.950 --> 00:19:23.130
+Michael Shannon: And sans.org will have they have a a policy area, and you can see some example templates but remember you know, one of the attributes of a good policy be careful just using just raw templates.
+
+102
+00:19:24.060 --> 00:19:32.400
+Michael Shannon: And thinking that it's it's applicable number two there's going to be some level of customization right to that.
+
+103
+00:19:33.660 --> 00:19:44.760
+Michael Shannon: Standards This is important, are really there to provide consistency to implement implement a systematic initiative or a program.
+
+104
+00:19:45.270 --> 00:20:11.880
+Michael Shannon: Okay, so, for example, this is how we use specific technology so a standard would be we use ospf as our dynamic routing protocol with our vpn service Okay, we use Open Source Linux specifically we use in our data Center we use se Linux so we that that could be considered a standard.
+
+105
+00:20:13.020 --> 00:20:34.560
+Michael Shannon: To provide consistency to make things more secure and more secure and using them uniform okay uniformity standards are usually mandatory right, so we don't we don't use anything proprietary we use all Open Source we use these protocols, we use these services okay.
+
+106
+00:20:36.060 --> 00:20:44.010
+Michael Shannon: That would be what we would call a standard, and often the standards are driven by some type of standards.
+
+107
+00:20:44.640 --> 00:20:54.000
+Michael Shannon: Co but five nist ISO IEC so there could be some larger governance and security, governance that drives the kinds of standards that we use.
+
+108
+00:20:54.870 --> 00:21:11.310
+Michael Shannon: But remember standards are for consistency systematic programs and initiatives mandatory, whereas guidelines are more flexible guidelines are usually best practices suggested.
+
+109
+00:21:12.600 --> 00:21:17.250
+Michael Shannon: tactics right suggestive operational.
+
+110
+00:21:18.300 --> 00:21:27.480
+Michael Shannon: Continual management should be more flexible Okay, so there should be more flexibility built into guidelines they can be mandatory.
+
+111
+00:21:28.140 --> 00:21:37.140
+Michael Shannon: Right, but they can be mandatory, but more flexible, you can think of it that way it's kind of built in, you have options within guidelines.
+
+112
+00:21:37.590 --> 00:21:58.140
+Michael Shannon: Sometimes you'll rely upon like the Center for Internet security, like their top 20 those are the guidelines that we implement for security controls if you're in a cloud based environment your guidelines might be driven by the cloud security alliance.
+
+113
+00:21:59.220 --> 00:22:10.110
+Michael Shannon: The cloud security alliance, they have they have a controls matrix a very elaborate controls matrix that you might use as your guidelines okay and.
+
+114
+00:22:10.710 --> 00:22:31.110
+Michael Shannon: Or you might use the nist security configuration guidelines okay so you've got policies standards guidelines guidelines are typically more flexible and not necessarily mandatory and then all of those things are going to drive the procedures the processes.
+
+115
+00:22:32.280 --> 00:22:51.690
+Michael Shannon: I still would refer to these as practices okay so like I till version four has like 37 these are no configuration management availability management change management incident management problem management, so they call them practices right.
+
+116
+00:22:52.770 --> 00:23:03.270
+Michael Shannon: Within those different practices, you have the way you do things procedures, this is the lowest level of the policy chain and for your organization.
+
+117
+00:23:04.140 --> 00:23:15.210
+Michael Shannon: The more documented these procedures and practices are, the more mature your organization is likely to be the better, the better.
+
+118
+00:23:16.170 --> 00:23:22.680
+Michael Shannon: you're changing configuration management and management database, the more elaborate it is.
+
+119
+00:23:23.220 --> 00:23:31.680
+Michael Shannon: The more mature your organization is going to be and, by the way, the less likely it's going to be for that penetration test to find.
+
+120
+00:23:32.160 --> 00:23:35.460
+Michael Shannon: Real vulnerabilities if i'm doing penetration testing.
+
+121
+00:23:36.360 --> 00:23:47.160
+Michael Shannon: At an organization and in the pre engagement meeting I determined that they have a really up to date and modern configuration management database.
+
+122
+00:23:47.520 --> 00:24:01.320
+Michael Shannon: And system, I already know that i'm going to have a more difficult time, even if it's a white box test, and I know what operating systems and platforms and applications are using I know that they have.
+
+123
+00:24:01.800 --> 00:24:08.310
+Michael Shannon: You know, a cm db and they have tested patch management and all those things i'm gonna have a tougher job.
+
+124
+00:24:08.910 --> 00:24:22.020
+Michael Shannon: i'm gonna have a more difficult job, finding vulnerabilities and penetrating OK, so the more and, by the way when it when it comes to documenting procedures and processes and practices from a disaster recovery standpoint.
+
+125
+00:24:23.340 --> 00:24:46.590
+Michael Shannon: When it comes to things like your disaster recovery plan your incident response team documentation and even configuration it's a good idea to have a combination of digitized information and hard coded information if you're an organization and everything you have is just digital.
+
+126
+00:24:47.610 --> 00:24:54.480
+Michael Shannon: You don't have any written anything you don't have a published copy that there's a.
+
+127
+00:24:57.810 --> 00:25:09.150
+Michael Shannon: there's a commercial there's a insurance commercial in the United States and it's it's the joke is it's these people becoming like their parents.
+
+128
+00:25:09.570 --> 00:25:17.580
+Michael Shannon: And so there's this guy and he's like a consultant that helps these young Homeowners not become their parents so there's this one guy.
+
+129
+00:25:17.940 --> 00:25:34.530
+Michael Shannon: Who he showing him his file cabinet he goes, this is what I printed out of the insurance policy and the guys like we don't need to print, the Internet, and that was the joke, is he he downloaded it from a website and that's funny we don't need to print the Internet.
+
+130
+00:25:35.580 --> 00:25:46.950
+Michael Shannon: But that's not good advice for us because remember when it comes to incident response and disaster recovery, one of the potential threats is an emp.
+
+131
+00:25:47.910 --> 00:25:52.800
+Michael Shannon: A solar flare Carrington event something that's going to fry your electronics.
+
+132
+00:25:53.310 --> 00:26:01.140
+Michael Shannon: And unless you have every unless your entire business is in a faraday cage and everything's put in a faraday bag, at the end of day.
+
+133
+00:26:01.740 --> 00:26:15.240
+Michael Shannon: that's a that's a very real vulnerability, so my point is when we say documentation, we really mean digital and we do want to have as much physical documentation, as we can.
+
+134
+00:26:16.950 --> 00:26:23.100
+Michael Shannon: That sounds kind of you know, old fashioned, but you know.
+
+135
+00:26:24.450 --> 00:26:25.800
+Michael Shannon: it's it does apply.
+
+136
+00:26:27.060 --> 00:26:36.960
+Michael Shannon: Another word for procedures or practices as standard operating procedures okay so processes are often referred to as SAP.
+
+137
+00:26:37.650 --> 00:26:47.520
+Michael Shannon: Step by step instructions printed and digitized configuration guides right, so if you're using aws as a cloud provider.
+
+138
+00:26:48.510 --> 00:27:04.560
+Michael Shannon: You have the ability to download everything and pdfs if you're using you know juniper hardware or Dell or Cisco configuration guides right both digitized and physical, I know that that's not.
+
+139
+00:27:06.810 --> 00:27:08.010
+Michael Shannon: I know that doesn't sound.
+
+140
+00:27:09.510 --> 00:27:20.850
+Michael Shannon: Like environmentally sound, so we don't need to have a bunch of copies Okay, so we want to be environmentally aware right, but you should have one physical copy.
+
+141
+00:27:21.450 --> 00:27:47.220
+Michael Shannon: In a, and this should be stored in fire proof locations i'm not saying every particular person gets a physical copy of all of the configuration guys that's not what i'm saying we rely on the digital, but as a fail over disaster recovery mechanism let's try to have one physical.
+
+142
+00:27:48.360 --> 00:27:49.500
+Michael Shannon: copy if we can.
+
+143
+00:27:50.850 --> 00:27:51.210
+Michael Shannon: Right.
+
+144
+00:27:52.530 --> 00:27:53.160
+Michael Shannon: So.
+
+145
+00:27:55.410 --> 00:28:08.730
+Michael Shannon: The more you can lay out the the steps the better repeatable consistent modular steps everything needed to complete the process right and we've all been there.
+
+146
+00:28:10.230 --> 00:28:11.580
+Michael Shannon: If any of you have a kid.
+
+147
+00:28:12.690 --> 00:28:18.810
+Michael Shannon: And maybe your kid gets a gift for a holiday summer holiday that you that you.
+
+148
+00:28:20.130 --> 00:28:22.530
+Michael Shannon: celebrate and your kids get a present.
+
+149
+00:28:24.120 --> 00:28:31.680
+Michael Shannon: I don't know if all of you have experienced this but there's nothing more frustrating than you're putting together this present.
+
+150
+00:28:32.310 --> 00:28:43.050
+Michael Shannon: Whatever you got your kid and they're sitting there the morning of this holiday waiting for you to put this thing together and the instructions are not complete.
+
+151
+00:28:43.590 --> 00:28:51.360
+Michael Shannon: or those apart left out right it's one thing if it's just me or me and my wife, putting something together and then making you know.
+
+152
+00:28:51.960 --> 00:28:58.470
+Michael Shannon: yell at each other and take it out on each other but and there's a kid involved that's waiting for that thing to be put together that bike.
+
+153
+00:28:59.010 --> 00:29:10.770
+Michael Shannon: Well, you know nothing more frustrating so make sure that when you're when you're putting together processes and steps go through them one time and make sure that they're.
+
+154
+00:29:11.820 --> 00:29:26.280
+Michael Shannon: You know, offer a glossary of terms with the with the guides clarify technology and concepts, you have to also you know if it's a physical thing we're dealing with with with electricity.
+
+155
+00:29:27.450 --> 00:29:31.230
+Michael Shannon: You know, health and safety issues, all those things right.
+
+156
+00:29:36.060 --> 00:29:42.030
+Michael Shannon: The most important to many security practitioners, the most important.
+
+157
+00:29:44.400 --> 00:29:50.610
+Michael Shannon: aspect of the security policy, the written security policy, and when I say written.
+
+158
+00:29:52.350 --> 00:30:06.420
+Michael Shannon: let's have one written least one written but it's published is the a up right and everybody in the organization, regardless of their the receptionist all the way up to the chief executive officer.
+
+159
+00:30:07.470 --> 00:30:17.970
+Michael Shannon: must adhere to the a up there's acceptable usage of everything for everybody, regardless okay.
+
+160
+00:30:19.320 --> 00:30:29.970
+Michael Shannon: So consider to be possibly the most important section, you know how do we get to use the provisioned hardware and software that we have.
+
+161
+00:30:30.420 --> 00:30:47.850
+Michael Shannon: But it can also go beyond that and that's This is where human resources departments often you know come together, because when you hire a new employee, a new employee and they get on boarded or maybe they move from some other division, or some other country they're still being on boarded.
+
+162
+00:30:49.170 --> 00:31:04.470
+Michael Shannon: there's there's an automated aspect of that new employee with HR your directory service and all these things, so you know, this is not something where, as a security practitioner we're dealing with this on an island, but.
+
+163
+00:31:05.550 --> 00:31:20.760
+Michael Shannon: It may be tied into you know other types of policies like harassment, you know, sexual harassment policies and sensitivity training right obviously proper except acceptable language.
+
+164
+00:31:21.960 --> 00:31:31.020
+Michael Shannon: Then the your non disclosure agreements that you signed, so the point i'm making is this is often you know, a synergy.
+
+165
+00:31:31.440 --> 00:31:52.320
+Michael Shannon: between our security policy and human resources and legal and other entities as well Okay, so in the a up that may may be broken down into different sections what's acceptable use of your wireless devices your mobile devices and again like I said the different you know mobility.
+
+166
+00:31:54.090 --> 00:32:01.530
+Michael Shannon: programs and we'll talk about options, you know corporate own personally enabled things like that.
+
+167
+00:32:02.910 --> 00:32:14.610
+Michael Shannon: operating systems and software, so you know part of your a up, you should know if you're able to install a Type two hypervisor or you should be.
+
+168
+00:32:16.140 --> 00:32:28.470
+Michael Shannon: Using some type of of control system, whether it's you know we're we're using virtual desktop environments, or whether we're using strict.
+
+169
+00:32:29.670 --> 00:32:37.320
+Michael Shannon: Control software controls on our endpoints or laptops maybe we're using something like case, whatever you're using.
+
+170
+00:32:38.160 --> 00:32:50.130
+Michael Shannon: You might be preventing the installation or the alerting of installation an employee needs to know, can I download Oracle virtual box a Type two hypervisor.
+
+171
+00:32:50.880 --> 00:32:59.430
+Michael Shannon: Is it or just an I need to get permission, maybe go through a ticket or his service desk right to be given permission to install that.
+
+172
+00:32:59.880 --> 00:33:10.590
+Michael Shannon: Right, because once you allow that environment, you are opening yourself up to other vulnerabilities of things that I could run in that virtual environment.
+
+173
+00:33:11.280 --> 00:33:18.240
+Michael Shannon: Like parrot or cali Linux or some other exploit kit right unlicensed software.
+
+174
+00:33:18.900 --> 00:33:28.590
+Michael Shannon: Things that can lead to ghost or shadow it so that needs to be you know very if not controlled from a technical control standpoint.
+
+175
+00:33:29.220 --> 00:33:42.240
+Michael Shannon: It needs to be part of the a up right personal cloud storage can I run you know group do I use Google drive do I use dropbox.
+
+176
+00:33:42.780 --> 00:33:56.280
+Michael Shannon: If we're you know, maybe that needs to be controlled foo you have a corporate software as a service provider and that's the only cloud storage, you can use and you use single sign on to that SAS provider.
+
+177
+00:33:56.670 --> 00:34:08.280
+Michael Shannon: Any other personal cloud storage is a violation of the a up and something along these lines, when it comes to remember these are administrative controls.
+
+178
+00:34:08.970 --> 00:34:18.270
+Michael Shannon: Or we call managerial right, so we often when it combine controls, we want to protect our end users from themselves.
+
+179
+00:34:18.990 --> 00:34:37.110
+Michael Shannon: We want to protect them from their own nature So yes, we give them a ups that they're going to sign off on but we're also going to introduce technical controls to get visibility into the installation of dropbox and the usage of.
+
+180
+00:34:38.370 --> 00:34:55.170
+Michael Shannon: You know vmware player things like that removable media, not only are you allowed to use that type of media, whether it be USB fobs firewire drives but what about the removing of the media, from the facility.
+
+181
+00:34:56.190 --> 00:35:06.030
+Michael Shannon: or from the area, or vice versa, bringing those into the building right you'll obviously have you know email and.
+
+182
+00:35:06.480 --> 00:35:13.560
+Michael Shannon: Internet browsing policies right and again we're going to help them, not only are we going to have a you know.
+
+183
+00:35:14.190 --> 00:35:16.950
+Michael Shannon: Security awareness, for phishing attacks.
+
+184
+00:35:17.370 --> 00:35:29.850
+Michael Shannon: Right, we want to do security awareness training, but we're also going to introduce next generation intrusion prevention systems next generation email security running on our message transfer agents like exchange.
+
+185
+00:35:30.270 --> 00:35:39.900
+Michael Shannon: we're combining the administrative with the technical right, and then you know what what are your what's your file sharing policy.
+
+186
+00:35:40.590 --> 00:35:51.600
+Michael Shannon: right for using you know for turning your laptop or your workstation into a server on a distributed network or a peer to peer network okay.
+
+187
+00:35:52.230 --> 00:36:01.890
+Michael Shannon: And this will talk more about mobile devices, but when we get to them ability section, this is going to be involving mobile device management and application management.
+
+188
+00:36:02.340 --> 00:36:22.860
+Michael Shannon: Right, are you allowed to use that mobile device as a payment service can you install a coinbase wallet on it all of those things should be very well laid out in your a ups and hopefully enforced, with some type of enterprise mobility management okay.
+
+189
+00:36:24.030 --> 00:36:34.920
+Michael Shannon: So this is an administrative control right I manage your control, and it should be in line with your change management practice changing configuration management.
+
+190
+00:36:35.550 --> 00:36:45.660
+Michael Shannon: You have least privilege policies and then other types of controls mandatory vacations talked about those separation or segregation of duties.
+
+191
+00:36:46.470 --> 00:36:58.800
+Michael Shannon: Maybe part of the policy for individuals, making them aware of the rotation of duties that at any point in time, they can be moved from their department or their area.
+
+192
+00:36:59.220 --> 00:37:12.600
+Michael Shannon: Because we have a rotation of duties policy in our organization a clean desk policy very common if you get to go into work, a lot of us haven't had to worry about a clean desk policy for a while.
+
+193
+00:37:13.320 --> 00:37:26.970
+Michael Shannon: But if you're going back into the office back into the headquarters so often there's a clean desk policy at the end of the day, everything put into a locked drawer, or you have your own cabinet or whatever okay.
+
+194
+00:37:27.930 --> 00:37:50.430
+Michael Shannon: The last one is a big one right social social media usage right some organizations they're so strict and I was involved with one of these companies, years ago, where they actually wanted to like own your social media like they wanted to run my linkedin account and Twitter.
+
+195
+00:37:51.510 --> 00:37:58.290
+Michael Shannon: And the and they wanted to like run that as part of their promotional and advertising.
+
+196
+00:38:00.180 --> 00:38:12.690
+Michael Shannon: Controversial social media usage, you know what are you allowed to talk about or maybe you can't discuss anything involving your company on your social media on your Twitter feeds.
+
+197
+00:38:13.980 --> 00:38:23.910
+Michael Shannon: linkedin things you know, on and on and then, when it comes to enforcement like I said earlier, there may be phases or stages to begin with an initial.
+
+198
+00:38:24.420 --> 00:38:38.970
+Michael Shannon: reprimand or warning you know, just a quick phone call from the boss right and that may be followed up after one or more of those with an official written warning which goes into your permanent your permanent record right.
+
+199
+00:38:40.290 --> 00:38:46.620
+Michael Shannon: Maybe a temporary suspension, with or without pay to termination and don't forget termination.
+
+200
+00:38:47.640 --> 00:39:00.510
+Michael Shannon: In some situations is not the last phase of enforcement, there may be termination and then there may be some type of legal action right criminal or civil okay.
+
+201
+00:39:01.920 --> 00:39:14.400
+Michael Shannon: And like I said it depends, but for certain actions for certain behaviors you know you may skip the first two and go right to suspension or right to termination.
+
+202
+00:39:15.270 --> 00:39:34.860
+Michael Shannon: Okay, and probably in the a up, they need to understand that certain actions at certain levels are going to result in termination, for example, a violation of a nda right or some kind of non compete or something like that.
+
+203
+00:39:36.600 --> 00:39:52.560
+Michael Shannon: Now it's a security practitioner when it comes to employee candidates if it's a small enough organization, they may call upon you, as a security person to actually be involved in some candidates screening.
+
+204
+00:39:53.160 --> 00:40:01.620
+Michael Shannon: Now, for me, my involvement really hasn't been I haven't really got involved in some of the things that HR has done.
+
+205
+00:40:02.010 --> 00:40:14.460
+Michael Shannon: My involvement has always been conducting like technical interviews, so if we're hiring somebody as a new network admin or server admin or security person.
+
+206
+00:40:14.850 --> 00:40:27.060
+Michael Shannon: i'm one of the people that does an hour or hour and a half technical interview, you know i'll go through, and ask them questions you know hey so what's certificate pinning right so those types of things.
+
+207
+00:40:28.290 --> 00:40:37.950
+Michael Shannon: That may be from a security standpoint that may be your involvement, but you may have a deeper involvement, at least from a security manager standpoint.
+
+208
+00:40:38.640 --> 00:40:55.770
+Michael Shannon: making sure that the proper due diligence on new hires is being done right it's not you don't you don't just take the information in the resume at face value right it's a zero trust environment.
+
+209
+00:40:56.370 --> 00:41:07.470
+Michael Shannon: So we are going to do you know background checks we're going to follow through on all the the previous jobs that they put in their resume.
+
+210
+00:41:08.310 --> 00:41:18.000
+Michael Shannon: And by the way, when you apply to get the CIS SP they're going to ask you, just like a job, because one of the students asked the same question.
+
+211
+00:41:18.570 --> 00:41:32.010
+Michael Shannon: it's kind of like a job interview, you have to provide the places that you've worked and what you've done there and and you should expect them to follow up.
+
+212
+00:41:34.380 --> 00:41:49.800
+Michael Shannon: So you need to treat it just like i'm i'm submitting an accurate resume right or i'm providing accurate information in a job interview right when you go through the application process with is C squared okay.
+
+213
+00:41:52.440 --> 00:42:05.730
+Michael Shannon: And again, you know you may be making sure that you know nda are being signed during the interview process and, of course, you know the initial security awareness training, maybe we use step in right.
+
+214
+00:42:08.130 --> 00:42:17.640
+Michael Shannon: You may you may have to you know it depends on the size of your company, these are usually HR activities, but you may have a certain skill set.
+
+215
+00:42:19.020 --> 00:42:31.620
+Michael Shannon: for doing investigation, maybe from a forensics background and maybe the HR department call upon you, as a security professional to assist maybe with maybe with certain high level.
+
+216
+00:42:31.980 --> 00:42:50.460
+Michael Shannon: Employees or hires you know definitely in a mandatory access control model when somebody is trying to be hired at a secret or a top secret level, obviously the security board or committee is going to be involved in that process.
+
+217
+00:42:58.110 --> 00:43:07.500
+Michael Shannon: Investigations like I said in the mandatory access control model we'll talk more about that, but often in a strict MAC model.
+
+218
+00:43:08.100 --> 00:43:22.740
+Michael Shannon: If you are a subject at a secret level if you're deploying let's say bell up a doula in a strict fashion, you cannot read or write up to a higher security level okay.
+
+219
+00:43:23.910 --> 00:43:35.580
+Michael Shannon: it's not like you know the bourne identity, where pamela landy wants to see the tread stone files or the black prior files and the director says okay.
+
+220
+00:43:37.080 --> 00:43:44.850
+Michael Shannon: In a strict model if pamela landy wanted to write or read at the top secret level she had to get promoted.
+
+221
+00:43:46.290 --> 00:43:54.600
+Michael Shannon: She had to get go through a whole new slew of background checks, since she since three years ago, a whole new process.
+
+222
+00:43:55.890 --> 00:44:05.130
+Michael Shannon: and be promoted to the top secret level we'll talk more about that, but that may be, you know part of the process periodic reviews that are done.
+
+223
+00:44:06.930 --> 00:44:11.850
+Michael Shannon: So this is like kind of practical, this is the end bi be.
+
+224
+00:44:13.110 --> 00:44:18.030
+Michael Shannon: This used to be called the opm the office of something whatever and management.
+
+225
+00:44:21.570 --> 00:44:29.940
+Michael Shannon: i'm, to the point now in my life, where I just don't care what every acronym stands for whenever whenever Dave and I teach security plus.
+
+226
+00:44:31.410 --> 00:44:38.550
+Michael Shannon: In our security plus course people always like what does that acronym stands for what does that acronym stands for, and I have to remind them.
+
+227
+00:44:39.540 --> 00:44:54.840
+Michael Shannon: Am I in the security plus that that's the reason why we have acronyms so we don't have to memorize every stinking phrase in the lexicon of security, so I forgot what opm stands for the office of something in management.
+
+228
+00:44:57.810 --> 00:45:15.060
+Michael Shannon: And the older, I get the happier I am that all I need to remember acronyms Thank you office of personnel management that sounds right so that's, this is the US and bi be just an example as a security practitioner, depending upon your access model, or what you're using.
+
+229
+00:45:16.080 --> 00:45:25.800
+Michael Shannon: You may have to be involved investigations and usually it begins with inquiries over the phone through email, maybe even text messages.
+
+230
+00:45:26.580 --> 00:45:48.450
+Michael Shannon: Right and then that may involve deeper fieldwork personal interviews going to previous employers or the university to they really get an MBA from Harvard right do they have a record right and then there's national agencies, you know ins, are they actually a citizen right.
+
+231
+00:45:49.560 --> 00:45:54.690
+Michael Shannon: And then possibly this iterative process of investigation.
+
+232
+00:45:56.550 --> 00:45:58.440
+Michael Shannon: So as a security.
+
+233
+00:45:59.730 --> 00:46:08.160
+Michael Shannon: practitioner part of your security, governance is going to be the process of onboarding and onboarding relates not just to.
+
+234
+00:46:09.030 --> 00:46:19.680
+Michael Shannon: Users or people and remember we're onboarding new hires but we're also onboarding people who are movers right because we've got joiners.
+
+235
+00:46:20.310 --> 00:46:39.690
+Michael Shannon: And we've got leavers right and we're we care as security practitioners be cared about joiners because they're a new security threat and we care about leavers because they're going into our you know our risk ledger because every ex employee is a risk.
+
+236
+00:46:41.370 --> 00:46:47.490
+Michael Shannon: And the more privileged access they had the bigger the risks they are so yes we care about joiners.
+
+237
+00:46:48.090 --> 00:47:12.540
+Michael Shannon: And leavers, but onboarding is also movers somebody who's promoted somebody who comes from a different division or department or you know if it's an umbrella company right some other subsidiary you get the idea right so onboarding is not just that person it's also whatever.
+
+238
+00:47:14.310 --> 00:47:18.930
+Michael Shannon: objects, whatever devices, they use okay so.
+
+239
+00:47:20.040 --> 00:47:24.870
+Michael Shannon: We may be involved in that process, maybe we're a member of the mobile device management team.
+
+240
+00:47:25.290 --> 00:47:41.280
+Michael Shannon: Or the mobile application management team right or we are concerned about wireless security in a hospital right and we're onboarding this specialty Panasonic pad to a newly hired RN, for example, okay.
+
+241
+00:47:42.660 --> 00:47:46.680
+Michael Shannon: We may not be involved with you know this, the.
+
+242
+00:47:48.300 --> 00:47:59.100
+Michael Shannon: However, if we're hiring a new security person, a new security practitioner, a new security administrator will obviously definitely were involved in that.
+
+243
+00:48:00.510 --> 00:48:08.910
+Michael Shannon: We need to make sure that the provisioning and onboarding process, though, has the security controls built into it, regardless.
+
+244
+00:48:09.930 --> 00:48:19.590
+Michael Shannon: Are they signing off on the nda is in a ups are they going through a proper security awareness and training program early on.
+
+245
+00:48:20.700 --> 00:48:21.180
+Michael Shannon: and
+
+246
+00:48:22.200 --> 00:48:38.880
+Michael Shannon: Is it the right modality right if they're if they're a remote employee they're probably going to be using some type of web based or streaming type of training, we have their on premises, maybe you'll have you know, an onsite classroom type training or both.
+
+247
+00:48:42.810 --> 00:48:53.130
+Michael Shannon: So nda is also referred to as non disclosure agreements these these can be introduced with new hires or even people going through the.
+
+248
+00:48:53.760 --> 00:49:02.370
+Michael Shannon: interview process, just to be able to interview with a particular company, I may have to sign off on an nda because they're going to expose.
+
+249
+00:49:03.180 --> 00:49:11.460
+Michael Shannon: What they do and trying to evaluate me but nda may also come into play, for example, if you're a.
+
+250
+00:49:12.240 --> 00:49:22.050
+Michael Shannon: Security practitioner and you're creating an interconnection agreement right or you're you're dealing with a particular vendor or a software as a service provider.
+
+251
+00:49:22.650 --> 00:49:36.990
+Michael Shannon: And before you even get to the you know SLA an agreement phase there's non disclosure agreements and then before we even sign contracts, we may go through several agreements non disclosure agreements.
+
+252
+00:49:37.320 --> 00:49:53.700
+Michael Shannon: Memorandum of Understanding or memorandum of action so then maybe two or three different types of more informal agreements that are signed as we go deeper and deeper into the process with this new vendor or this software as a service provider.
+
+253
+00:49:55.980 --> 00:50:05.070
+Michael Shannon: But an nda is a legally binding agreement or contract Okay, and not only you saying.
+
+254
+00:50:06.120 --> 00:50:19.830
+Michael Shannon: What can we not disclose but you're also laying down the parameters of what will be disclosed okay and restrictions and use in a wide variety of different you know areas.
+
+255
+00:50:21.180 --> 00:50:33.870
+Michael Shannon: When it comes to provisioning and onboarding people and devices, the more automated and the more integrated with HR and inventory systems, the better.
+
+256
+00:50:34.470 --> 00:50:44.190
+Michael Shannon: Okay, for example, you know I mentioned Google beyond corp but there's zero trust when you go you get hired by Google.
+
+257
+00:50:44.700 --> 00:51:02.070
+Michael Shannon: Their onboarding and provisioning is tightly integrated with HR their directory service their inventory system their access control engine all tightly integrated Okay, the more automated that can be obviously.
+
+258
+00:51:03.270 --> 00:51:12.480
+Michael Shannon: The better right you're removing the human factor of configuration errors if you're a small to medium sized business.
+
+259
+00:51:13.500 --> 00:51:22.500
+Michael Shannon: The onboarding of an employee, you may be using a software as a service provider, you know you're a startup company you don't really have.
+
+260
+00:51:22.920 --> 00:51:31.410
+Michael Shannon: The budget for an HR department right you're just a startup company and we write mobile Apps and you know I can really afford.
+
+261
+00:51:32.280 --> 00:51:43.830
+Michael Shannon: to hire you know some developers and that's pretty much it everything else in my startup i'm leasing this office space and everything's running off the cloud.
+
+262
+00:51:44.370 --> 00:52:03.480
+Michael Shannon: we're you know we're using Microsoft azure we don't even have a directory service our directory is in the cloud it's you know, a virtual active directory running an azure integrated with our you know our endpoints that are running Microsoft Office 365.
+
+263
+00:52:05.160 --> 00:52:23.430
+Michael Shannon: And we're doing our payroll and everything it's all software as a service providers, maybe it's a partner of azure of their marketplace so you start to see you know more and more startup companies a lot of this stuff is just automated and it's being handled by SAS providers.
+
+264
+00:52:24.780 --> 00:52:33.870
+Michael Shannon: And by the way, that's going to bring in something we're going to talk about later on, if I were that type of organization so on the exam, for example.
+
+265
+00:52:34.380 --> 00:52:53.010
+Michael Shannon: here's your scenario you're a startup company and you're using primarily infrastructure as a service from a cloud provider and and your business services are through SAS providers various software as a service providers workday The list goes on.
+
+266
+00:52:54.390 --> 00:53:05.880
+Michael Shannon: To to assist you in the single sign on to all those various providers and to help you prevent data loss prevention or to prevent data leakage.
+
+267
+00:53:06.360 --> 00:53:19.500
+Michael Shannon: Who would you rely on and the correct answer would be a cloud access security broker a CA sb that would be kind of a typical CIS SP question that you would see.
+
+268
+00:53:25.380 --> 00:53:26.430
+Michael Shannon: So obviously.
+
+269
+00:53:27.450 --> 00:53:39.030
+Michael Shannon: terminating employees is where you're going to see security much more heavily involved than the hiring employer of employees right when somebody's being hired.
+
+270
+00:53:39.810 --> 00:53:53.250
+Michael Shannon: you're not going to escort them from their vehicle with a security team or security guard or HR whatever to their new desk or cubicle but in the termination of an employee.
+
+271
+00:53:54.690 --> 00:54:06.960
+Michael Shannon: And we're assuming this is not somebody who's being terminated like you know remember the story of the CEO who terminated like 800 employees, through a zoom call when i'm talking about that.
+
+272
+00:54:09.000 --> 00:54:20.340
+Michael Shannon: That kind of disastrous event but you know somebody who's on premises usually there there's a security team or security guard and maybe somebody from hr.
+
+273
+00:54:21.540 --> 00:54:31.470
+Michael Shannon: And you know if you can do exit interviews as a security practitioner, if you if you can do an exit interview you're going to you by possibly.
+
+274
+00:54:32.760 --> 00:54:35.010
+Michael Shannon: do some vulnerability assessment.
+
+275
+00:54:36.300 --> 00:54:41.880
+Michael Shannon: because somebody who's leaving the company, whether they're even on good terms let's say they are on good terms.
+
+276
+00:54:43.260 --> 00:54:56.160
+Michael Shannon: Even if they're retiring they may expose to you vulnerabilities that they weren't comfortable exposing while they were there as an employee now, of course, you have to you have to vet it.
+
+277
+00:54:57.150 --> 00:55:05.760
+Michael Shannon: You know, is it done because they have a vendetta against some employees are done for personal reasons you have to vet it, you have to verify it.
+
+278
+00:55:06.390 --> 00:55:17.820
+Michael Shannon: But you can you can do some really good vulnerability assessment on an outgoing employee if you're able to have the luxury of doing a an outgoing interview.
+
+279
+00:55:19.980 --> 00:55:35.040
+Michael Shannon: But obviously it's it's the process of our you know off boarding and D provisioning it's going to involve any digital certificates that were assigned to that particular user and their devices right so it's going to involve.
+
+280
+00:55:36.420 --> 00:55:42.300
+Michael Shannon: Possibly updating an oC SP database for your pk I, for example.
+
+281
+00:55:44.580 --> 00:55:46.230
+Michael Shannon: If it's a remote employee.
+
+282
+00:55:47.250 --> 00:56:00.900
+Michael Shannon: Often remote employees who are either involuntary terminated or decide to quit they have equipment and so often you're responsible for getting the equipment back.
+
+283
+00:56:01.470 --> 00:56:19.920
+Michael Shannon: And until you do they don't get their last paycheck or whatever Okay, so you know, there may be other issues that she had to be concerned about Sarbanes Oxley requirements for termination in the US, we have what's called the Warren act.
+
+284
+00:56:21.750 --> 00:56:31.950
+Michael Shannon: So if you do a mass layoffs technically you're supposed to give people 60 days warning of a mass layoff okay.
+
+285
+00:56:33.840 --> 00:56:41.130
+Michael Shannon: Usually the accounts, the email accounts, the directory service accounts are disabled.
+
+286
+00:56:42.180 --> 00:56:51.330
+Michael Shannon: Often, you don't delete the accounts for a certain period of time, so you leave this you don't know what's going to happen with that employee.
+
+287
+00:56:51.900 --> 00:57:03.480
+Michael Shannon: So you may be you disable the email account you you disable that user in the directory service but you don't delete them for 12 months or longer that's often part of the policy.
+
+288
+00:57:03.900 --> 00:57:18.660
+Michael Shannon: The revocation of certificates, the effect on digital signatures and digitally signed components property updating social media right that type of thing.
+
+289
+00:57:19.350 --> 00:57:34.080
+Michael Shannon: And, as I mentioned all former employees, regardless of the circumstances, for which they become a former employee, they are a potential threat agent or threat actor in your risk register.
+
+290
+00:57:35.820 --> 00:57:42.240
+Michael Shannon: Okay, and again if you can do a follow up interview and get some information that can help you.
+
+291
+00:57:43.290 --> 00:57:44.040
+Michael Shannon: With your.
+
+292
+00:57:45.120 --> 00:57:46.470
+Michael Shannon: vulnerability assessment.
+
+293
+00:57:49.140 --> 00:57:57.810
+Michael Shannon: remind your exiting employees have agreements nda non competes those types of things.
+
+294
+00:58:02.550 --> 00:58:03.750
+Michael Shannon: Other agreements.
+
+295
+00:58:06.060 --> 00:58:17.550
+Michael Shannon: This is usually between a consumer and a provider a service level agreement that's going to lay out the precise responsibilities of both consumer and the provider.
+
+296
+00:58:18.390 --> 00:58:27.270
+Michael Shannon: it's sets expectations for the customer, for example, you know what are, what kind of what type of bandwidth are we getting.
+
+297
+00:58:28.230 --> 00:58:49.770
+Michael Shannon: In the portfolio that the service provider offers often the SLA is what package, did you choose from the portfolio and, if you think of it like you know if you go get a you know, a broadband provider or a cable company right like i'm getting ready to move.
+
+298
+00:58:51.120 --> 00:59:02.190
+Michael Shannon: And so I i've set up my new broadband provider and, of course, for me, I have to have the most expensive package because I need the highest.
+
+299
+00:59:02.670 --> 00:59:12.660
+Michael Shannon: bandwidth they offer I need the highest speed and I have to get the most cable channels for my wife so so I have to.
+
+300
+00:59:13.110 --> 00:59:23.520
+Michael Shannon: Have that portfolio and that's part of the service level agreement what what package you choose so usually service level agreements are driven by.
+
+301
+00:59:24.090 --> 00:59:37.830
+Michael Shannon: Established modular packages, can there be flexibility built in, yes or no, you know some providers you choose the packages and that's all that's what you get there's no.
+
+302
+00:59:38.250 --> 00:59:55.020
+Michael Shannon: deviations others have flexibility built in, but that must be defined in the service level agreement you're going to clarify tech support or service desk often response times right so, for example, when you go to a cloud provider.
+
+303
+00:59:56.130 --> 01:00:07.080
+Michael Shannon: And you choose the support plan that is part of a service level agreement so for example at Amazon web services their entry level support plan is called.
+
+304
+01:00:07.530 --> 01:00:19.200
+Michael Shannon: developer so it's like $29 a month, plus usage whatever is higher and then the next tier is the business plan that starts at $100 a month.
+
+305
+01:00:19.650 --> 01:00:33.330
+Michael Shannon: Then they have an enterprise on ramp that starts at 50 $500 a month, and then the enterprise is 15,000 and up so as you can imagine, the higher the support plan, the quicker the response time.
+
+306
+01:00:34.320 --> 01:00:49.080
+Michael Shannon: And, for example, certain plans only certain plans get 24 by seven access so you're in this in the SLA you may not get 24 hour support that's an additional.
+
+307
+01:00:49.800 --> 01:01:07.560
+Michael Shannon: plan you have to pay for Okay, and by the, by the way the the SLA may be something that is just a global agreement between my company and another, but it could be individual agreements between different business units or departments right.
+
+308
+01:01:08.760 --> 01:01:24.300
+Michael Shannon: The call Center has a service level agreement with a SAS provider, because we have to convert our physical call Center we had to convert it to a cloud based call Center because everybody got you know quarantined.
+
+309
+01:01:25.590 --> 01:01:30.600
+Michael Shannon: So that involved a special service level agreement with this SAS provider right.
+
+310
+01:01:32.910 --> 01:01:39.060
+Michael Shannon: Now, an organizational level agreement would be let's say you're a large enterprise let's say you have a private cloud.
+
+311
+01:01:39.750 --> 01:01:45.360
+Michael Shannon: So you've deployed, you know, a virtualized hypervisor cloud environment.
+
+312
+01:01:46.080 --> 01:02:08.100
+Michael Shannon: And you're providing those database cloud resources two different business units and departments, so they can do their development on their on your virtual environment or they can use it as a sandbox malware testing threat modeling software testing your call centers using it whatever.
+
+313
+01:02:09.480 --> 01:02:18.510
+Michael Shannon: So you have internal agreements organizational level agreements Okay, so one of the differences between the SLA.
+
+314
+01:02:19.560 --> 01:02:28.920
+Michael Shannon: And the oh la would be with a service level agreement, one of the clauses is going to be, how do we handle disputes.
+
+315
+01:02:29.730 --> 01:02:42.750
+Michael Shannon: Right and most service level agreements say we will arbitrate before we will you know start filing lawsuits but most SL a's have that as as the.
+
+316
+01:02:43.260 --> 01:03:01.050
+Michael Shannon: dispute the dispute resolution clause, we will try to arbitrate now from my experience that clause basically means the company with the most money and the best lawyers wins that but not always not always but.
+
+317
+01:03:02.130 --> 01:03:09.720
+Michael Shannon: You know you'll have the you know dispute resolution and a service level agreement well you're not going to have that in an oh la.
+
+318
+01:03:10.590 --> 01:03:26.820
+Michael Shannon: you're not you know you don't have the R amp D department, you know we're not going to sue the data Center right, so there are differences but remember these are oh laser our internal right.
+
+319
+01:03:28.260 --> 01:03:49.290
+Michael Shannon: organizational another type of document that's usually comes after the nda are signed is a memorandum of agreement or a letter of intent so letter of intent to be an mo a or an mo you and here's why these are signed, from a practical standpoint let's say.
+
+320
+01:03:52.500 --> 01:03:57.000
+Michael Shannon: yeah on the exam that's a good question Dakota.
+
+321
+01:03:58.470 --> 01:04:04.380
+Michael Shannon: Usually, they use acronyms and they expect you to know what those acronyms represent.
+
+322
+01:04:07.320 --> 01:04:22.110
+Michael Shannon: So you know nist has a glossary and maybe a Dave can get the link to that that's probably a pretty you know pretty good glossary to have like I said is C squared pretty misty.
+
+323
+01:04:23.220 --> 01:04:29.580
+Michael Shannon: So Dave can get that link to that miss glossary that'd be great buddy appreciate that so often.
+
+324
+01:04:30.720 --> 01:04:32.940
+Michael Shannon: For example, let's say we're going to use a.
+
+325
+01:04:34.560 --> 01:04:40.680
+Michael Shannon: couple of years ago right so and doing like live boot camps.
+
+326
+01:04:41.970 --> 01:04:51.720
+Michael Shannon: Often on over the years i've used proprietary you know platforms i've used adobe connect.
+
+327
+01:04:52.890 --> 01:05:01.530
+Michael Shannon: And so, a couple of years ago, we got off of adobe connect and we were kind of figure out what we were going to do for this boot camp.
+
+328
+01:05:02.580 --> 01:05:15.720
+Michael Shannon: Okay, this, this is a practical example i'm not i'm not going on a rant so we we did we were determining what we were going to use because we're going to use adobe connect anymore Okay, so it was like are we going to use on.
+
+329
+01:05:17.190 --> 01:05:23.100
+Michael Shannon: Are we going to use webex are we going to use zoom and it was probably one other.
+
+330
+01:05:24.120 --> 01:05:27.180
+Michael Shannon: So you know we go through a you know change.
+
+331
+01:05:28.200 --> 01:05:31.920
+Michael Shannon: process, you know and here's here's The bottom line.
+
+332
+01:05:33.330 --> 01:05:48.900
+Michael Shannon: This is a really big company so zoom at the time was relatively new, let me put it this way, if I if I would have known I would have bought a lot of their stock, this is before their stock when.
+
+333
+01:05:50.280 --> 01:05:54.120
+Michael Shannon: We were when we were probably the biggest company that they'd ever contracted with.
+
+334
+01:05:55.440 --> 01:06:04.860
+Michael Shannon: So there was a lot of back and forth Okay, can you do, can you do this, can you add this and zoom is built like it's a it's a.
+
+335
+01:06:05.400 --> 01:06:16.440
+Michael Shannon: it's built like containers and microservices so they can add functionality, in the form of the container or a micro service they don't have to rewrite the monolithic code.
+
+336
+01:06:16.950 --> 01:06:36.900
+Michael Shannon: So there's a lot of back and forth, can you do this, can you add this well before they started good you know spending the time and the resources to start adding stuff for us, there was a memorandum of understanding there was look we've we've stopped the search.
+
+337
+01:06:38.010 --> 01:06:45.870
+Michael Shannon: We intend on using zoom now let's see if you can add some of these functional parts that we need.
+
+338
+01:06:46.680 --> 01:06:58.950
+Michael Shannon: From the provider standpoint, they needed the mo a or the mo you because they're going to have they're going to have engineers software engineers and developers start working on solutions.
+
+339
+01:06:59.670 --> 01:07:07.710
+Michael Shannon: For this potential customer well they need that agreement to give them some degree of confidence that we're not just jerking their chain.
+
+340
+01:07:09.780 --> 01:07:20.550
+Michael Shannon: So often, you have so you have the nda, then you have the mo user mo a's and those are before the formal final contracts are signed so that makes sense.
+
+341
+01:07:24.900 --> 01:07:34.350
+Michael Shannon: A reciprocal agreement from a from a practical standpoint on this exam let's say when we get to the business continuity planning okay.
+
+342
+01:07:35.070 --> 01:07:47.220
+Michael Shannon: Business continuity planning, one of the things we're going to determine is what types of sites are we going to use cold site warm site hot site mobile site cloud.
+
+343
+01:07:47.850 --> 01:08:01.470
+Michael Shannon: Will often if you decide to say to do a cold or warm site you'll find some other company, maybe that's a similar business sector that's like 40 miles away in a metropolitan area.
+
+344
+01:08:01.920 --> 01:08:21.210
+Michael Shannon: And you'll find a site a cold or warm site that's halfway between so you're far enough away so an isolated event won't affect both of you, but you found a site between you and you have a reciprocal agreement and we're gonna we're going to pay half of the lease.
+
+345
+01:08:22.650 --> 01:08:40.260
+Michael Shannon: On that Warner site and we're cutting our costs in half and we're assuming we're assuming the risk which is from a risk treatment standpoint we're sharing the risk that some event doesn't cover a 50 mile radius.
+
+346
+01:08:41.400 --> 01:08:44.610
+Michael Shannon: So that's an example of a kind of reciprocal agreement.
+
+347
+01:08:48.120 --> 01:08:57.090
+Michael Shannon: and interoperability agreement is usually for collaboration or data exchange, you often see this with strategic partners.
+
+348
+01:08:57.720 --> 01:09:08.040
+Michael Shannon: Okay they'll have a an IPA agreement okay now that's a reciprocal agreement and ra but interoperability means there is some type of.
+
+349
+01:09:08.460 --> 01:09:30.660
+Michael Shannon: Ongoing connection, so let me you all of the cloud providers, they offer a way to do a direct connection So if you have let's say you're running a Cisco aggregate services router at the corporate edge and it supports border gateway protocol and dot one Q tagging.
+
+350
+01:09:31.920 --> 01:09:52.410
+Michael Shannon: All of the cloud providers will allow you to connect through fiber to a partner of theirs and basically you're a part of their Internet it's it you bypass the Internet, all together, direct connect at aws Google interconnect as your direct.
+
+351
+01:09:53.700 --> 01:09:54.810
+Michael Shannon: What is as your.
+
+352
+01:09:57.060 --> 01:10:16.110
+Michael Shannon: Express route express route, so you know if you're in a metropolitan area chances are you can sign an IPA with the big cloud provider and you can bypass the Internet and get one gig 10 gig 50 gig even, in some cases 100 gig connections.
+
+353
+01:10:17.220 --> 01:10:34.590
+Michael Shannon: And you're not on the Internet so that would involve you know signing these types of agreements any type of third party interaction is going to involve risk obviously how reliable is the vendor how reliable is the supplier the supply chain.
+
+354
+01:10:35.760 --> 01:10:50.070
+Michael Shannon: there's cloud terms like vendor lock in and vendor lock out Okay, so if you're working with a software as a service provider, basically, everything is running with that vendor.
+
+355
+01:10:51.300 --> 01:10:56.550
+Michael Shannon: And it may be such a proprietary solution that there is no other vendor.
+
+356
+01:10:58.290 --> 01:11:00.990
+Michael Shannon: And they go bankrupt ouch.
+
+357
+01:11:03.090 --> 01:11:06.120
+Michael Shannon: So there can be factors with dealing with third parties.
+
+358
+01:11:08.070 --> 01:11:22.980
+Michael Shannon: The security of the supply chain right the the security of your business partner or your outsourcing something and the possibility of data leakage and data loss with this outsourced entity.
+
+359
+01:11:25.980 --> 01:11:35.490
+Michael Shannon: products and services becoming end of life or end of service right now the third party risk is your you have a very proprietary solution.
+
+360
+01:11:35.970 --> 01:11:44.100
+Michael Shannon: Now we're wrapping it up here you have a very proprietary software solution, maybe a customized you know, someone has built for you.
+
+361
+01:11:44.490 --> 01:11:52.080
+Michael Shannon: And that company gets bought out and you're like well that's great they got bought out by a bigger company and now we're going to have.
+
+362
+01:11:52.650 --> 01:12:05.370
+Michael Shannon: More it'll be better no it's not because that bigger company bought out the smaller company to get rid of a competitor and they couldn't care less about your software or your component.
+
+363
+01:12:06.330 --> 01:12:26.400
+Michael Shannon: That happens all the time right, you can no longer get device drivers or updates for this proprietary component, because they were bought out or they you know went out of business, or you know the pandemic wiped him out and you don't really have a lot of options.
+
+364
+01:12:29.610 --> 01:12:51.420
+Michael Shannon: Obviously you're going to be involved in security awareness and training that's going to involve you know, do you overdo it, is it under done can you overdo it, yes, you can you can overwhelm new hires don't do that take them, step by step, give them time.
+
+365
+01:12:52.500 --> 01:13:02.040
+Michael Shannon: Give them reminders with posters and coffee cups make sure that the modality you use is the most effective for your budget.
+
+366
+01:13:05.550 --> 01:13:07.080
+Michael Shannon: This modality.
+
+367
+01:13:08.100 --> 01:13:18.570
+Michael Shannon: is very effective, it may be the most effective that your company decided upon, as opposed to flying a bunch of you out and putting up in hotels and brick and mortar.
+
+368
+01:13:20.640 --> 01:13:21.480
+Michael Shannon: Just depends.
+
+369
+01:13:22.500 --> 01:13:37.320
+Michael Shannon: And you have to train, not just the lowest level employees, but don't forget your high your C suite and your C teams your chief financial officer your chief executive officer, they may they may be the most technologically.
+
+370
+01:13:39.810 --> 01:13:42.060
+Michael Shannon: inexperienced of all of your employees.
+
+371
+01:13:44.880 --> 01:13:57.150
+Michael Shannon: And again, you want to make sure that you're doing anti phishing campaigns right ongoing campaigns to not to trick your employees and if they if they fall for a.
+
+372
+01:13:58.080 --> 01:14:14.790
+Michael Shannon: Fish a phishing email that's part of your campaign there's no and you're not going to punish them it's awareness hey you fell for this fishing technique here's what happened here's all you prevent it from happening that should be done in your organization.
+
+373
+01:14:16.410 --> 01:14:32.640
+Michael Shannon: If you're if people are responding to phishing emails and introduce ransomware into your environment and you didn't send in through awareness training and fishing exercises that's not their fault that's your fault.
+
+374
+01:14:33.990 --> 01:14:35.730
+Michael Shannon: The ransom where's your fault.
+
+375
+01:14:38.820 --> 01:14:48.300
+Michael Shannon: They need to be aware of social engineering and hoaxes how do they deal with somebody who's not wearing a badge do they interact with them, or do they make a phone call to someone.
+
+376
+01:14:48.690 --> 01:14:56.310
+Michael Shannon: They need to know what kind of regulations you're under right awareness and there needs to be based on their role.
+
+377
+01:14:57.300 --> 01:15:04.830
+Michael Shannon: The more sensitive, the data that they deal with their systems, the more stringent the training okay.
+
+378
+01:15:05.610 --> 01:15:23.250
+Michael Shannon: here's an example awareness program but it's nothing to memorize it just makes sense right identify the program the scope who's your target audience, what are your goals use the best modality motivate them get buy in right.
+
+379
+01:15:24.780 --> 01:15:27.240
+Michael Shannon: and continual evaluation and improvement.
+
+380
+01:15:31.560 --> 01:15:49.980
+Michael Shannon: yeah Lucy if you're using a content distribution network and especially if i'm using akamai and the source data is like in my data Center on premises i'm definitely going to have an interconnection agreement now if i'm using let's say.
+
+381
+01:15:51.180 --> 01:16:03.390
+Michael Shannon: aws cloud front and i'm storing my data, like in s3 buckets or maybe as your blog or whatever, no not really.
+
+382
+01:16:07.530 --> 01:16:17.760
+Michael Shannon: Alright, so that wraps up our first session of the CIS SP bootcamp we'll see you back here in about 20 hours per session number to.
+
+383
+01:16:18.450 --> 01:16:36.270
+Michael Shannon: Have a great whatever it is, next 20 hours great questions great comments in the chat area thanks Dave for all you're doing behind the scenes really appreciate you and we'll see everybody back here tomorrow per session to take care.
+
