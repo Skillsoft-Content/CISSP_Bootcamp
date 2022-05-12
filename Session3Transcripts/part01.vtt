@@ -1,0 +1,1778 @@
+WEBVTT
+
+1
+00:00:35.820 --> 00:00:43.320
+Michael Shannon: Welcome back everybody it's day three session three of the CIS SP boot camp with Mike and Dave.
+
+2
+00:00:44.550 --> 00:00:45.600
+Michael Shannon: good to have you back.
+
+3
+00:00:46.890 --> 00:00:54.930
+Michael Shannon: we're going to be on in the PDF to answer the question about the slide number.
+
+4
+00:00:56.850 --> 00:00:58.200
+Michael Shannon: we're going to be on.
+
+5
+00:00:59.850 --> 00:01:01.200
+Michael Shannon: 141.
+
+6
+00:01:05.070 --> 00:01:10.980
+Michael Shannon: Of the session two slides so we're still in the session two slides that's okay.
+
+7
+00:01:12.510 --> 00:01:14.850
+Michael Shannon: I may give you a reading assignment today.
+
+8
+00:01:18.120 --> 00:01:26.130
+Michael Shannon: Is 163 slides in session three is a big section on physical security.
+
+9
+00:01:28.140 --> 00:01:36.960
+Michael Shannon: physical security is not a standalone domain used to be way back in the day they used to be a cryptography domain, a physical security domain.
+
+10
+00:01:38.250 --> 00:01:48.660
+Michael Shannon: So there's quite a bit of content on physical security physical security is one of those areas that's probably the going to be the easiest questions because all of us have experience.
+
+11
+00:01:49.980 --> 00:01:57.870
+Michael Shannon: You know, one way or another, with all different types of physical security mechanisms so we'll see we'll see how it goes.
+
+12
+00:02:04.680 --> 00:02:09.510
+Michael Shannon: So some folks are having an issue with audio.
+
+13
+00:02:10.680 --> 00:02:11.490
+Michael Shannon: sounds like.
+
+14
+00:02:13.350 --> 00:02:16.830
+Michael Shannon: Dave you're going to be on that for me thank you all right.
+
+15
+00:02:20.970 --> 00:02:23.100
+Michael Shannon: let's go ahead and we need to dive in.
+
+16
+00:02:24.210 --> 00:02:26.730
+Michael Shannon: and continue our discussion from yesterday.
+
+17
+00:02:27.840 --> 00:02:40.980
+Michael Shannon: We were looking at a mandatory access control system or model, all of them are based on this original mathematical bell lapa doula multi level security model.
+
+18
+00:02:41.550 --> 00:02:55.560
+Michael Shannon: used by military government agencies government contractors high security environments it's a state machine model and state machine basically means you not only understand.
+
+19
+00:02:56.160 --> 00:03:06.570
+Michael Shannon: All the subjects and all of the objects, but all of the States and the transitions of States between this subject and object.
+
+20
+00:03:07.830 --> 00:03:15.720
+Michael Shannon: Talk about let's say a an agency with assets files, for example, whether they're physical or logical.
+
+21
+00:03:16.710 --> 00:03:32.910
+Michael Shannon: You know chain of custody is not just something we see in a parenthetic environment and a mandatory access control environment internally, you need to maintain a strict chain of custody and understanding the state.
+
+22
+00:03:34.140 --> 00:03:43.830
+Michael Shannon: bell up a doula has several rules it stresses confidentiality Okay, we have a different model that stresses integrity.
+
+23
+00:03:44.850 --> 00:03:53.700
+Michael Shannon: And it's based on the security board or the committee as to how this mandatory access control model is.
+
+24
+00:03:55.230 --> 00:03:55.860
+Michael Shannon: implemented.
+
+25
+00:03:56.880 --> 00:04:06.540
+Michael Shannon: Now, if we look at a movie let's say the bourne identity right one of those bourne movies Jason bourne.
+
+26
+00:04:07.800 --> 00:04:10.350
+Michael Shannon: matt damon playing Jason bourne.
+
+27
+00:04:11.730 --> 00:04:12.630
+Michael Shannon: And the.
+
+28
+00:04:13.860 --> 00:04:15.630
+Michael Shannon: agent pamela landy.
+
+29
+00:04:18.810 --> 00:04:40.080
+Michael Shannon: that's not a strict MAC model in the movie pamela landy needs to get access to the tread stone files or the black briar files whatever it's called and the director gives her access or somebody at a higher level assistant director gives her access to those files unreactive.
+
+30
+00:04:41.370 --> 00:04:53.490
+Michael Shannon: that's not very realistic and as trick bell up a doula rule set you've got usually rules that you abide by the simple security rule is pamela landy.
+
+31
+00:04:54.690 --> 00:05:06.300
+Michael Shannon: At a given security level secret will say cannot read data that resides at the top secret or a higher security level no read up.
+
+32
+00:05:08.040 --> 00:05:14.520
+Michael Shannon: Okay that's the simple security rule that most of MAC models are going to use.
+
+33
+00:05:15.660 --> 00:05:17.040
+Michael Shannon: So that right there.
+
+34
+00:05:18.210 --> 00:05:30.330
+Michael Shannon: violates what the movie does in a strict MAC model in the movie pamela landy would have to go through the rigorous process of being promoted.
+
+35
+00:05:32.310 --> 00:05:46.440
+Michael Shannon: To a higher sensitivity level a higher classification level in order to read the files at her level there's also a strong star property and we say star, you know asterisk.
+
+36
+00:05:48.210 --> 00:05:59.430
+Michael Shannon: A subject pamela landy who has read and write capabilities can only perform those at the same security level nothing higher nothing lower even.
+
+37
+00:06:00.240 --> 00:06:10.650
+Michael Shannon: Strong star property, the star property rule basically says pamela landy at the secret level cannot write information to the lower level.
+
+38
+00:06:11.190 --> 00:06:26.160
+Michael Shannon: So there's the star property there's the strong star, the reason why we don't want her to interfere with the lower level, even though she's a higher level is you're interfering with what's happening at that lower level.
+
+39
+00:06:29.340 --> 00:06:42.150
+Michael Shannon: tranquility principle subjects and objects cannot change their security levels once they've been instantiated or created so you just can't on an ad hoc basis.
+
+40
+00:06:43.260 --> 00:06:55.680
+Michael Shannon: Change pamela landis' level from secret to top secret, there is a established promotion process, which includes additional more stringent background checks and so on.
+
+41
+00:06:56.250 --> 00:07:07.320
+Michael Shannon: Now there is an optional discretionary security property and that's what you see in the movie you see this optional discretionary security property.
+
+42
+00:07:07.860 --> 00:07:23.310
+Michael Shannon: Which is not like discretionary access Okay, because pamela landy doesn't own something is something in the owner of the tread stone filed it doesn't get to say hey i'm the owner of this file and i'm going to allow pamela landy to read it.
+
+43
+00:07:24.390 --> 00:07:30.870
+Michael Shannon: The discretionary model if a subject like the director or a committee.
+
+44
+00:07:32.910 --> 00:07:44.430
+Michael Shannon: has a certain type of access, they can grant or transfer certain rights so in the movie they're in they're deploying the discretionary security property by allowing.
+
+45
+00:07:45.090 --> 00:07:56.940
+Michael Shannon: pamela landy to access those particular files now normally they would be not the originals it would be a copy of those files that are redacted in some way, but you get the idea.
+
+46
+00:07:57.390 --> 00:08:07.260
+Michael Shannon: This is a strict model that's used, you know military environments government intelligence agencies contractors and so on.
+
+47
+00:08:08.370 --> 00:08:21.630
+Michael Shannon: bibs is an integrity model and it came after bell up a doula and it also has a lattice of integrity levels, a lattice of integrity levels that's not the way bill up a doula works.
+
+48
+00:08:23.430 --> 00:08:27.840
+Michael Shannon: And if you know what a lattice is it basically you've got some property.
+
+49
+00:08:29.280 --> 00:08:30.210
+Michael Shannon: And it's.
+
+50
+00:08:31.380 --> 00:08:37.020
+Michael Shannon: sharing with the level below it and a level above it and the lattice.
+
+51
+00:08:38.130 --> 00:08:44.430
+Michael Shannon: A matrix so it's got rules, the simple integrity rule you can't read down.
+
+52
+00:08:47.610 --> 00:08:58.320
+Michael Shannon: can't read down can't write up and you can't call upon a subject at a higher integrity level can't even make a request.
+
+53
+00:08:58.950 --> 00:09:13.590
+Michael Shannon: And it's just also a state machine model but it's also an information flow model so mandatory access control models understand the every state every transition of the state, they also.
+
+54
+00:09:14.700 --> 00:09:18.210
+Michael Shannon: have information flow rules.
+
+55
+00:09:19.830 --> 00:09:39.210
+Michael Shannon: And like I said, they also maintain internal chain of custody and information flow model might look something like this okay so let's say this is just a loose analogy, and he would set up some kind of matrix for this, but let's say a was believes my company, for example.
+
+56
+00:09:40.290 --> 00:09:50.670
+Michael Shannon: So let's say a is the Ireland office, so let me, let me get my non vanishing pin So this is the a is the Ireland office.
+
+57
+00:09:53.580 --> 00:09:54.810
+Michael Shannon: i'll be I RD.
+
+58
+00:09:55.920 --> 00:09:59.730
+Michael Shannon: Is the Ireland office see is where.
+
+59
+00:10:01.800 --> 00:10:09.150
+Michael Shannon: David is we'll just put Fred because he's in Frederick in new brunswick Canada.
+
+60
+00:10:10.440 --> 00:10:14.190
+Michael Shannon: Be is me okay so here, I am in Houston.
+
+61
+00:10:15.480 --> 00:10:16.920
+Michael Shannon: In a remote office.
+
+62
+00:10:22.080 --> 00:10:25.410
+Michael Shannon: And then D will say is Boston.
+
+63
+00:10:27.990 --> 00:10:28.920
+Michael Shannon: nashua.
+
+64
+00:10:30.390 --> 00:10:35.490
+Michael Shannon: Boston Massachusetts nashua new Hampshire kind of like sister cities.
+
+65
+00:10:37.590 --> 00:10:53.130
+Michael Shannon: So if I want to you know my boss, and maybe we're structured this way a kind of a functional organization we're not really project ties we have a pretty strict hierarchy and my immediate boss is in Frederick.
+
+66
+00:10:54.150 --> 00:11:12.360
+Michael Shannon: And so I communicate information flow and I would you would probably add another arrow here, you know we have a bi directional information flow between me and frederickson we're not only my bosses, but you know editors project managers and so on and so forth.
+
+67
+00:11:13.380 --> 00:11:15.600
+Michael Shannon: In fact I don't know anybody at Boston.
+
+68
+00:11:17.310 --> 00:11:26.790
+Michael Shannon: There may be somebody there that I have met, but I don't interface so there's no information flow between me and Boston there's no information flow between me and Ireland.
+
+69
+00:11:27.990 --> 00:11:40.050
+Michael Shannon: Where let's say the headquarters are, I have to go through, I have to go it's transitive through see to the main office or through see to nashua.
+
+70
+00:11:41.220 --> 00:11:48.390
+Michael Shannon: Where my HR department is so the mandatory access control model is also you know.
+
+71
+00:11:49.770 --> 00:12:03.060
+Michael Shannon: going to implement flow rules often like an access control list approach state machine flow rules mandatory now, we talked earlier, you know the CIA triad.
+
+72
+00:12:05.580 --> 00:12:20.130
+Michael Shannon: The Ai is integrity and you know, fundamentally, we get that integrity usually with an H MAC a hashed message authentication code and H map right cryptographic hash with a shared secret key.
+
+73
+00:12:21.360 --> 00:12:27.180
+Michael Shannon: But that that level of integrity is not enough in a mandatory control environment.
+
+74
+00:12:28.290 --> 00:12:35.580
+Michael Shannon: So Clark Wilson came after bieber or Bebo and it was it was kind of like if we look at vast.
+
+75
+00:12:37.320 --> 00:12:58.410
+Michael Shannon: Vast was meant to you know fix some of the weaknesses are our fill in some of the gaps are some of the earlier types of methodologies like stride and dread that was that was the the goal of Clark Wilson that's all you really need to know but Clark Wilson has higher integrity goals.
+
+76
+00:12:59.610 --> 00:13:10.980
+Michael Shannon: Number one preventing unauthorized users for making modifications, obviously, but secondly, ensuring a separation or segregation of duties.
+
+77
+00:13:12.540 --> 00:13:30.420
+Michael Shannon: In principle, or initiative, where you're preventing authorized users who may still have the capability, but prevent them from making improper changes or modifications and again that is going to involve a mandatory integrity model.
+
+78
+00:13:31.500 --> 00:13:42.060
+Michael Shannon: Well, formed transitions consistency and it uses things like integrity verification procedures integrity rules.
+
+79
+00:13:43.170 --> 00:13:44.280
+Michael Shannon: Those mechanisms.
+
+80
+00:13:45.600 --> 00:13:52.050
+Michael Shannon: So that's mandatory access control, a lot of us are used to a role based access control model.
+
+81
+00:13:53.280 --> 00:13:58.890
+Michael Shannon: This has been widely used, for example in database administration right you'd have.
+
+82
+00:13:59.340 --> 00:14:12.210
+Michael Shannon: You know you have a directory service or something like that, but you'd also have the database administrators and you would have kind of a separate role based access control on the database or tables or views or whatever.
+
+83
+00:14:13.680 --> 00:14:22.710
+Michael Shannon: We also see a role based access control if you're going to do, identity and access management at let's say Amazon web services or Google.
+
+84
+00:14:23.520 --> 00:14:41.970
+Michael Shannon: Where you're going to use their iam service and you're going to set up groups and those groups are usually you know set up around roles in an account, are you a developer, are you part of the testing team, are you the production team.
+
+85
+00:14:43.380 --> 00:14:53.250
+Michael Shannon: Things like that, or you might see a role based access control in certain types of facilities like let's say a clinic a health care clinic a medical clinic.
+
+86
+00:14:54.060 --> 00:15:16.320
+Michael Shannon: Where you're going to grant permissions and rights based on your role the highest role might be the the md a medical clinic has to have at least one medical doctor on staff at all times at least one that'd be the highest privilege role, but you also have registered nurses.
+
+87
+00:15:17.520 --> 00:15:20.250
+Michael Shannon: technicians and those you know.
+
+88
+00:15:22.470 --> 00:15:25.710
+Michael Shannon: The people that do data processing.
+
+89
+00:15:27.630 --> 00:15:29.820
+Michael Shannon: So those types of roles might be what you're implementing.
+
+90
+00:15:33.060 --> 00:15:41.100
+Michael Shannon: that's going to be determined often it's built into some system but it's often determined by some type of administrator.
+
+91
+00:15:42.210 --> 00:15:44.070
+Michael Shannon: And I mentioned, you know, a medical Center.
+
+92
+00:15:46.500 --> 00:16:04.440
+Michael Shannon: If you have a lot of turnover lot of transients people through a call Center temporary employees contractors, you may opt for the role based approach as opposed, as opposed to a discretionary model if there's a lot of turnover let's say in a call Center.
+
+93
+00:16:06.330 --> 00:16:14.430
+Michael Shannon: easy to implement role based mandatory is not easy to implement so on the exam we want to remember that.
+
+94
+00:16:16.170 --> 00:16:26.730
+Michael Shannon: that's going to be the most difficult stringent to implement role based easy often built into the relational database management system, for example.
+
+95
+00:16:27.840 --> 00:16:48.360
+Michael Shannon: It can align easier to your departments your business units your roles and responsibilities, your job titles, but you can have privileges scope creep over time, you also have to be you know, on top of the movement of subjects.
+
+96
+00:16:50.010 --> 00:16:58.140
+Michael Shannon: As they you know work inner disciplinary or inter departmental or they move from one business unit to another.
+
+97
+00:17:01.290 --> 00:17:12.480
+Michael Shannon: Rule based access control usually involve some type of access control list traditionally like if you have an access control list on a router interface.
+
+98
+00:17:13.110 --> 00:17:33.150
+Michael Shannon: or a firewall interface you're basically setting up a set of rules and you're saying what services and ports are we going to allow to and from an IP version for address or an IP version six address so access control rules.
+
+99
+00:17:34.410 --> 00:17:42.630
+Michael Shannon: Or maybe it's a network ankle at aws which applies to all of your instances in a subnet.
+
+100
+00:17:43.830 --> 00:17:45.990
+Michael Shannon: yeah have it up a set of numbered rules.
+
+101
+00:17:47.640 --> 00:17:50.130
+Michael Shannon: And the rule based model.
+
+102
+00:17:51.390 --> 00:18:05.880
+Michael Shannon: is usually going to be something we would call static or stateless where you're analyzing a frame and you're looking at the frame metadata like a transparent firewall.
+
+103
+00:18:07.050 --> 00:18:18.090
+Michael Shannon: A transparent firewall can be deployed as a layer to firewall so it's basically the only IP address it has is the one you're using to manage it.
+
+104
+00:18:18.810 --> 00:18:27.690
+Michael Shannon: it's like a bump into wire and you can deploy routers this way you can deploy their firewalls and firewall appliances this way.
+
+105
+00:18:28.500 --> 00:18:40.200
+Michael Shannon: The advantage of that is you don't have to re address you just in it, you just introduce the firewall and it's looking at frame, so it can look at the ether type field.
+
+106
+00:18:41.340 --> 00:18:49.860
+Michael Shannon: And it can have rules, so you can have permitted deny rules on values in the ether type field of the frame.
+
+107
+00:18:50.940 --> 00:18:55.140
+Michael Shannon: Like you know layer to keep alive protocols like.
+
+108
+00:18:56.160 --> 00:19:07.170
+Michael Shannon: discovery protocols that are used by devices like Cisco has a discovery protocol Open Source discovery protocols, where the information is in the frame.
+
+109
+00:19:11.460 --> 00:19:25.260
+Michael Shannon: Be PD use the bridge protocol data units that spanning tree uses that's in the frame so that that would be an example of a rule based access control or at layer three.
+
+110
+00:19:26.250 --> 00:19:34.020
+Michael Shannon: like an infrastructure apple and usually in the layer three apple they have numbers and you start with the lower number.
+
+111
+00:19:34.680 --> 00:19:46.110
+Michael Shannon: And you keep you know processing the rules until there's a match, and as soon as there's a match you take the action and then you move on to the next day to grammar packet.
+
+112
+00:19:46.680 --> 00:20:03.150
+Michael Shannon: So we call him stateless because they're really agnostic they don't they don't care if it's part of a tcp handshake or a response to a DNS query or an icmp ECHO reply I don't know I don't care.
+
+113
+00:20:03.780 --> 00:20:14.640
+Michael Shannon: i'm just looking at the headers i've got some rules and as soon as there's a match that the action i'm taking and i'm moving on to the next packet or the next frame.
+
+114
+00:20:16.560 --> 00:20:24.300
+Michael Shannon: And they usually have an implicit or an implied denies statement at the end, so that if nothing matches we're going to drop it.
+
+115
+00:20:26.310 --> 00:20:27.120
+Michael Shannon: Rule based.
+
+116
+00:20:30.330 --> 00:20:44.370
+Michael Shannon: Now it is possible with a rule based type firewall to do other things like, for example, you can have a time based apples that can make permitted denied decisions based on you know the clock.
+
+117
+00:20:46.830 --> 00:21:00.150
+Michael Shannon: Preferably an NTP server, but these firewalls can also be set up as a stateless access control list, and it can communicate back with some centralized.
+
+118
+00:21:01.290 --> 00:21:06.330
+Michael Shannon: authentication authorization service which we're going to talk about in a few minutes.
+
+119
+00:21:08.400 --> 00:21:12.450
+Michael Shannon: This isn't, this is just a screenshot of a network apple.
+
+120
+00:21:13.590 --> 00:21:33.990
+Michael Shannon: At Amazon web services, and you can see we're matching on different protocols in their port numbers and port ranges possibly and the source IP version for or IP version six address and or and you're making a decision to allow her to not.
+
+121
+00:21:35.250 --> 00:21:52.620
+Michael Shannon: Rule based and so mandatory access control, again I probably should have had this slide up there with berba and everything else, but very strict very strict need to know very strict least privilege mentality.
+
+122
+00:21:54.720 --> 00:21:57.300
+Michael Shannon: discretionary is one that a lot of us are.
+
+123
+00:21:59.490 --> 00:22:13.980
+Michael Shannon: Probably maybe more familiar with, especially if you're working let's say in a environment that uses active directory or open l dap or something like that, where you're in an environment where you have the ability to create.
+
+124
+00:22:15.000 --> 00:22:23.490
+Michael Shannon: Things create files, I can create folders in directories, not just locally, but perhaps on servers.
+
+125
+00:22:24.660 --> 00:22:27.720
+Michael Shannon: on file servers, for example, or in sharepoint.
+
+126
+00:22:29.220 --> 00:22:36.240
+Michael Shannon: And I create them and i'm the owner, and I can add my discretion share them even grant permissions.
+
+127
+00:22:37.470 --> 00:22:40.290
+Michael Shannon: it's it's built into the model now some.
+
+128
+00:22:41.370 --> 00:22:45.180
+Michael Shannon: Groups, you may not grant those permissions and rights.
+
+129
+00:22:47.070 --> 00:23:02.310
+Michael Shannon: But it's built into the model that certain users in certain groups can have that discretion so much more flexible model it's a much more popular model, especially in commercial directory access.
+
+130
+00:23:03.420 --> 00:23:12.780
+Michael Shannon: or commercial identity providers easy to implement often just integrated and built in to the network operating system.
+
+131
+00:23:14.910 --> 00:23:23.670
+Michael Shannon: You can align it with the least privilege security principle, but it needs massive visibility and it needs to be well designed.
+
+132
+00:23:25.650 --> 00:23:36.330
+Michael Shannon: There is probably the most propensity for privilege or scope creep would be in a discretionary model, just because of the power that.
+
+133
+00:23:37.350 --> 00:23:40.320
+Michael Shannon: individual users have in creating.
+
+134
+00:23:41.400 --> 00:23:44.190
+Michael Shannon: objects and granting permissions.
+
+135
+00:23:48.960 --> 00:23:58.170
+Michael Shannon: On there in the rule based that we just looked at, we noticed that we're really focusing on that subjects IP address.
+
+136
+00:23:59.460 --> 00:24:05.310
+Michael Shannon: And that subjects ability to use certain network services and ports.
+
+137
+00:24:06.600 --> 00:24:14.340
+Michael Shannon: At the discretionary model we're really focused on you know what can they do in the directory service really what group are they a member of.
+
+138
+00:24:16.080 --> 00:24:18.750
+Michael Shannon: is really what dictates their capabilities.
+
+139
+00:24:20.550 --> 00:24:25.860
+Michael Shannon: But it's only a universal kind of forest mentality.
+
+140
+00:24:28.200 --> 00:24:35.220
+Michael Shannon: Zero trust environments are really going to focus on using more modern.
+
+141
+00:24:36.690 --> 00:24:55.200
+Michael Shannon: And I say that, relatively speaking, these aren't brand new but attribute based access, controls that are controlling and authenticating and authorizing the subjects on a session by session basis, not a persistent membership of a group.
+
+142
+00:24:56.490 --> 00:24:58.890
+Michael Shannon: or a persistent static.
+
+143
+00:24:59.940 --> 00:25:11.190
+Michael Shannon: Access list but based on attributes and characteristics what device, am I using what type of device.
+
+144
+00:25:11.640 --> 00:25:29.640
+Michael Shannon: What channel what what modality, is it wired is it wireless Am I remote, am I, on a vpn am on a software defined network controller, what is the where Am I located geographically what object, am I access to.
+
+145
+00:25:30.780 --> 00:25:32.820
+Michael Shannon: Multiple environmental factors.
+
+146
+00:25:34.080 --> 00:25:35.760
+Michael Shannon: Now you can still enforce.
+
+147
+00:25:36.810 --> 00:25:44.010
+Michael Shannon: discretionary mandatory models, with an attribute based system but it's a very elaborate.
+
+148
+00:25:44.520 --> 00:26:01.560
+Michael Shannon: deployment of an engine and identity engine that also needs to be tied to inventory of your objects and the different States that can change the object the variables of the subject and the multiple variables of the object objects.
+
+149
+00:26:02.850 --> 00:26:17.760
+Michael Shannon: So, like a Cisco identity services engine or there's quite a few solutions that are out there, often the a back system is going to work hand in hand with 802 dot one X teaneck.
+
+150
+00:26:19.830 --> 00:26:21.750
+Michael Shannon: Systems okay.
+
+151
+00:26:33.510 --> 00:26:45.510
+Michael Shannon: Often part of our authentication and authorization is going to be relying upon some type of triple A service we don't really use the word AAA that much anymore.
+
+152
+00:26:45.930 --> 00:27:07.170
+Michael Shannon: it's really identity and access management or identity management or next gen identity things like that, but radius has been around you know, for a long time we call it an IE ETF based solution the the Internet engineering Task Force.
+
+153
+00:27:09.270 --> 00:27:26.520
+Michael Shannon: Do you have to know what that acronym stands for no but I remembered it I etfs so I ETF based means you know it was something that came from the task force is going to have a port number one of those you know one or multiple.
+
+154
+00:27:27.570 --> 00:27:35.370
+Michael Shannon: Set aside ports, you know less than I don't know 1500 or lower maybe.
+
+155
+00:27:36.660 --> 00:27:38.070
+Michael Shannon: we'll maybe beyond that now.
+
+156
+00:27:39.990 --> 00:27:54.060
+Michael Shannon: And so radius has been around a long time, and we still use it and there's many different variants and flavors of this service, and we know that it's been around a long time just by the name.
+
+157
+00:27:54.960 --> 00:28:14.460
+Michael Shannon: So radius goes back to you know we were using dial in or dial up services and, like the slip protocol, and maybe you had a modem 56 K modem or maybe an is dn be channel or something like that right well you actually dialed up to a server.
+
+158
+00:28:16.560 --> 00:28:25.260
+Michael Shannon: You have to be aware of the ports, because it doesn't always use a certain set of ports but radius is a AAA service right authentication.
+
+159
+00:28:26.100 --> 00:28:37.860
+Michael Shannon: Who are you are what are you authorization once you are authenticated what are you authorized to do and remember authorization, technically speaking, is optional.
+
+160
+00:28:39.690 --> 00:28:42.960
+Michael Shannon: I mean, I mean you could you could have a directory service.
+
+161
+00:28:44.190 --> 00:28:52.260
+Michael Shannon: For a startup company and you're a bunch of engineers or a bunch of programmers and you're all you know domain administrators.
+
+162
+00:28:53.370 --> 00:29:03.360
+Michael Shannon: So I guess there's some authorization there, but we generally want to authorize based on different levels and criteria and different access models.
+
+163
+00:29:05.310 --> 00:29:09.030
+Michael Shannon: And then, accounting and radius is well known for its accounting.
+
+164
+00:29:10.440 --> 00:29:13.770
+Michael Shannon: Okay, well known for its accounting now when I say accounting.
+
+165
+00:29:15.540 --> 00:29:29.730
+Michael Shannon: Remember there's two aspects to accounting one is auditing and visibility, I want to know when you started using the service, I want to know when you stop using the service or did this action and then how long did you do it.
+
+166
+00:29:30.750 --> 00:29:44.220
+Michael Shannon: I want visibility, I want to audit you, I want to audit my privilege to users, especially, and then the other aspect of accounting is billing or chargeback I want to know when you started using this.
+
+167
+00:29:45.630 --> 00:29:49.020
+Michael Shannon: Something in our private cloud, and when you stopped.
+
+168
+00:29:50.100 --> 00:29:58.800
+Michael Shannon: This lab environment or this sandbox environment or a private cloud this development, environment, because i'm going to charge it back to you against your budget.
+
+169
+00:29:59.880 --> 00:30:08.040
+Michael Shannon: charge backers show back billing some of us are old enough to remember you know, in the early days of the World Wide Web.
+
+170
+00:30:09.030 --> 00:30:24.120
+Michael Shannon: When you would go and want to get on the Internet or the Web at an airport or a coffee shop or Internet CAFE or whatever you are actually build for the amount of time, you were on the Internet, and they were using radius.
+
+171
+00:30:25.380 --> 00:30:26.220
+Michael Shannon: Most likely.
+
+172
+00:30:27.360 --> 00:30:33.180
+Michael Shannon: Now, another thing about AAA services and identity authentication I want to mention to you.
+
+173
+00:30:35.070 --> 00:30:37.140
+Michael Shannon: there's really kind of two modes.
+
+174
+00:30:38.250 --> 00:30:43.710
+Michael Shannon: that we need to be aware of one of the modes let's say we've got this remote user.
+
+175
+00:30:45.780 --> 00:30:57.300
+Michael Shannon: One of the modes is will be called character mode, in other words, this user regardless whether using a console or some xml rendered whatever.
+
+176
+00:30:57.870 --> 00:31:13.740
+Michael Shannon: they're doing what's called character mode or administrative mode they're connecting to this network access device this perimeter router this wireless access point multi layer switch firewall appliance I don't know.
+
+177
+00:31:14.760 --> 00:31:20.730
+Michael Shannon: But they're connecting to it and they're being authenticated an authorized by some back end.
+
+178
+00:31:22.080 --> 00:31:41.940
+Michael Shannon: centralized authentication services or cluster or elaborate back end whatever maybe active directory on the back end, but the point is its character motor administrative mode this person is connecting because they want to administer they want to configure this device.
+
+179
+00:31:43.050 --> 00:31:57.840
+Michael Shannon: They want to administer commands to this device character mode so they're being authenticated authorized and accounted for for that activity that mode now can you.
+
+180
+00:31:58.350 --> 00:32:10.770
+Michael Shannon: have this device itself provide the authentication authorization services yeah usually not accounting, but you can have a local authentication authorization.
+
+181
+00:32:11.700 --> 00:32:26.790
+Michael Shannon: Even though that's doable maybe in a small business or a small office Home Office or a lab that's not really what we would do in the real world, we would definitely rely upon some centralized.
+
+182
+00:32:30.240 --> 00:32:38.880
+Michael Shannon: authentication service identity management service so that's the first mode, the second most will be called packet or network mode.
+
+183
+00:32:39.300 --> 00:32:54.930
+Michael Shannon: Because I want to go through this network access device will call it or access proxy to some server so a web server in the dmz or ftp server so it's network modes packet mode.
+
+184
+00:32:55.800 --> 00:33:03.210
+Michael Shannon: i'm being authenticated an authorized and accounted for because i'm sending data grams through this device to some servers service.
+
+185
+00:33:04.440 --> 00:33:17.460
+Michael Shannon: So there's kind of two modes need to be aware of your like, why is that important well when you deploy like an identity management service often they have like default authorization profiles.
+
+186
+00:33:18.150 --> 00:33:39.090
+Michael Shannon: For example, like a Cisco identity service engine is by default going to say okay i'm a Cisco IMC and I usually am deployed in a Cisco environment, so if you're going to access this device, and you want to administer it i'm going to by default i'm going to use the attack X plus protocol.
+
+187
+00:33:42.030 --> 00:33:53.220
+Michael Shannon: tak X plus now, if you want to do network or packet mode my off profile is going to use radius or diameter diameter is the next generation of radius.
+
+188
+00:33:54.270 --> 00:33:57.930
+Michael Shannon: Now something else about this authentication proxy.
+
+189
+00:33:59.040 --> 00:34:16.380
+Michael Shannon: And this is what we call you know mediated access something else, but this authentication proxy is they, it can be interactive or transparent, so I can present some type of prompt or some captive portal to this remote user.
+
+190
+00:34:17.430 --> 00:34:28.320
+Michael Shannon: Or the remote user doesn't really know i'm there and I transparently process it and often what i'm doing is i'm rewriting a URL or something and sending it along.
+
+191
+00:34:31.800 --> 00:34:44.220
+Michael Shannon: I mentioned tak X plus developed by Cisco there was a there was a previous Protocol called tak X PAC ACS again don't worry about what it stands for.
+
+192
+00:34:44.940 --> 00:34:53.790
+Michael Shannon: This is really one of those protocols that we're really glad that we just use the acronym there was a tax before that it's not backward compatible.
+
+193
+00:34:54.690 --> 00:35:07.620
+Michael Shannon: Okay, and it's commonly used, especially in homogenous Cisco environments, even though you can find Open Source Linux tak X servers and radius servers of course okay.
+
+194
+00:35:08.670 --> 00:35:13.440
+Michael Shannon: That there are differences between tak X and radius taxes tcp based.
+
+195
+00:35:14.790 --> 00:35:19.950
+Michael Shannon: So there's a three way handshake and a connection setup whereas radius uses UDP.
+
+196
+00:35:21.840 --> 00:35:24.660
+Michael Shannon: With radius when the.
+
+197
+00:35:28.890 --> 00:35:36.870
+Michael Shannon: When the network access device whatever it is, was a wireless access point communicates back with the radius server.
+
+198
+00:35:37.530 --> 00:35:45.630
+Michael Shannon: The radius server is going to send one unified message saying yes you're authenticated or you pass.
+
+199
+00:35:46.290 --> 00:36:01.080
+Michael Shannon: You pass the authentication and in the same communication here's what you're authorized to do and i'm optionally going to account for you, with attack X plus you can separate that it's it's it's two separate.
+
+200
+00:36:02.460 --> 00:36:12.840
+Michael Shannon: communications, in fact, you could have a TAC X authentication service and a different authorization service to separate communications.
+
+201
+00:36:14.130 --> 00:36:20.940
+Michael Shannon: it's also more secure, because everything the entire communication is encrypted so there's differences now.
+
+202
+00:36:21.900 --> 00:36:39.390
+Michael Shannon: One of the things about diameter, if you ask well why did they you know why did they update it, why did they created diameter protocol, a lot of diameter is basically to do some of the things that tech X plus does but diameter was also designed.
+
+203
+00:36:40.650 --> 00:36:54.030
+Michael Shannon: along the lines of thinking about other ways to authenticate and authorize besides, just like password credentials, so it was kind of forward thinking you know with things like biometrics in mind.
+
+204
+00:36:56.010 --> 00:36:58.050
+Michael Shannon: So there are differences okay.
+
+205
+00:36:59.100 --> 00:37:25.980
+Michael Shannon: If it's a Cisco router it can leverage what you set up on the device these per command authorization and privilege levels devices have 16 privilege levels zero through 15 and so with tak X plus if you've already set these up on the device tak X plus can leverage that.
+
+206
+00:37:28.920 --> 00:37:31.530
+Michael Shannon: that's why it's very popular with Cisco environments.
+
+207
+00:37:33.090 --> 00:37:50.040
+Michael Shannon: let's talk about saml because we were I was, I was talking about the IE tf based protocols so we're talking about the 80s and 90s right, so you know elder care of Ross I guess you wouldn't really put in that category, but curb Ross does use port numbers.
+
+208
+00:37:51.210 --> 00:37:59.640
+Michael Shannon: So we had we had you know, a tech X tech has plus radius they were I ETF base port numbers and they were very popular.
+
+209
+00:38:00.570 --> 00:38:17.760
+Michael Shannon: And they were used in enterprises and organizations all over the world, and then in the 90s, you know we got that web browser thing and then we had http, which was a transport mechanism right to transport hypertext markup language.
+
+210
+00:38:19.440 --> 00:38:23.970
+Michael Shannon: Documents http so a lot of people started thinking well.
+
+211
+00:38:25.080 --> 00:38:38.430
+Michael Shannon: Why can't we use http as a transport mechanism for authentication and authorization information, especially when we want to get those kind of services on the Internet.
+
+212
+00:38:39.150 --> 00:38:45.990
+Michael Shannon: And they didn't they didn't use care for us on the Internet because Kevin Ross didn't support forward secrecy and other issues.
+
+213
+00:38:47.310 --> 00:38:59.280
+Michael Shannon: But people were like yeah that's a good idea, because this this worldwide web thing is really doing exploding so we're thinking, the visit the.com boom, so a lot of people started coming up with solutions.
+
+214
+00:39:00.480 --> 00:39:11.550
+Michael Shannon: And the kind of the cream that rose to the top was saml security assertion markup language and in the name says it, it provides security.
+
+215
+00:39:12.720 --> 00:39:15.270
+Michael Shannon: Big black because it's going to offer some assertion.
+
+216
+00:39:16.860 --> 00:39:26.370
+Michael Shannon: Right a token and it's it's xml based markup language so saml 1.1 was the one that really stuck.
+
+217
+00:39:27.480 --> 00:39:41.730
+Michael Shannon: Around the turn of the century feels weird to say that around the turn of the century that one stuck and you know it involves identity provider some type of source of information about the subject.
+
+218
+00:39:43.170 --> 00:39:46.170
+Michael Shannon: A directory service some other database.
+
+219
+00:39:47.190 --> 00:40:02.010
+Michael Shannon: And then, a service provider, something that provides services and again there's a federated trust between the identity provider and the service provider and, by the way, setting up that relationship, especially early on wasn't that easy.
+
+220
+00:40:04.740 --> 00:40:06.840
+Michael Shannon: It was it was an acquired skill.
+
+221
+00:40:08.550 --> 00:40:13.410
+Michael Shannon: involved sharing things and creating tokens and trust tokens and things like that.
+
+222
+00:40:15.990 --> 00:40:21.660
+Michael Shannon: Then of course there's the consumer the consumer of the service.
+
+223
+00:40:23.190 --> 00:40:26.070
+Michael Shannon: Who is relying upon the identity provider.
+
+224
+00:40:27.900 --> 00:40:38.970
+Michael Shannon: And the trust relationship to give them a token, which is a temporary time based maybe a json chunk of code or something a ticket.
+
+225
+00:40:39.930 --> 00:40:56.250
+Michael Shannon: But i'm going to present to the service provider now remember the identity provider let's say it's directory active directory or open elder APP or something like that maybe back then maybe it was Novell you know the directory service has a lot of information about that employee.
+
+226
+00:40:57.390 --> 00:41:07.350
+Michael Shannon: But in the assertion i'm not going to tell the service provider everything I have in my directory the service provider only needs a certain amount of information.
+
+227
+00:41:07.860 --> 00:41:16.890
+Michael Shannon: We have a trust relationship, I need a certain amount of information, so that I can trust that assertion about that user that consumer.
+
+228
+00:41:18.720 --> 00:41:29.610
+Michael Shannon: And there's a diagram put in here to kind of help you with Amazon web services understanding what's going on under the hood is not the important thing it's very.
+
+229
+00:41:30.570 --> 00:41:52.860
+Michael Shannon: Very common to use saml, and this is a single sign on capability, I can sign on once to my identity provider with identity store and then for the lifetime of that session I can access all of these services and service providers that have an established trust.
+
+230
+00:41:54.090 --> 00:42:02.130
+Michael Shannon: With my identity provider and I present a time based token an assertion now.
+
+231
+00:42:03.690 --> 00:42:26.760
+Michael Shannon: what's interesting is saml two point O was kind of the de facto standard in the mid 2000s I don't know what we call that the odds back in the odds, the 2000s that the first you know decade around the middle saml two point O is the de facto standard.
+
+232
+00:42:27.780 --> 00:42:39.060
+Michael Shannon: Universities organizations, it was hot and it made sense, because we could use http and https as our transport mechanism.
+
+233
+00:42:40.140 --> 00:42:51.270
+Michael Shannon: And it was kind of built the way the World Wide Web was traditionally built, you know xml based use protocols like soap.
+
+234
+00:42:54.300 --> 00:42:55.980
+Michael Shannon: Then the iPhone came out.
+
+235
+00:42:57.360 --> 00:43:14.730
+Michael Shannon: And that was an immediate game changer began it because the iPhone and the developers of the of the Apps there was some level of secrecy to that and it kind of, as we know, it was a game changer and the people that develop those mobile Apps.
+
+236
+00:43:15.930 --> 00:43:28.650
+Michael Shannon: Because these were different types of devices, they really didn't want to develop Apps based on the website model, the soap based xml model.
+
+237
+00:43:30.360 --> 00:43:41.490
+Michael Shannon: So the people that had developed saml two point O data decision to make do we rewrite saml 2.0 to make it saml three.
+
+238
+00:43:42.120 --> 00:43:59.100
+Michael Shannon: To make it align with these new developers and what they want to use like api's restful APIs and json and things like that, and make it backward compatible, we want to do that the answer was no.
+
+239
+00:43:59.910 --> 00:44:12.090
+Michael Shannon: No, I mean it's like they had just gotten, to the point where they were getting that kind of saturation and then here comes the iPhone Okay, so those folks.
+
+240
+00:44:14.250 --> 00:44:25.860
+Michael Shannon: went a different route or different route they went with oh off the open authorization framework now when I say oh what it is, you know authorization.
+
+241
+00:44:27.150 --> 00:44:27.570
+Michael Shannon: Okay.
+
+242
+00:44:29.670 --> 00:44:30.180
+Michael Shannon: and
+
+243
+00:44:31.320 --> 00:44:57.240
+Michael Shannon: To implement oauth properly, you should implement oh off with a identity layer or an authentication layer So if you just deploy co op and it does your authentication we call that pseudo authentication because really oh off was designed to work with oh IDC open ID connect.
+
+244
+00:44:58.680 --> 00:45:21.210
+Michael Shannon: The identity layer on top of oauth verifying the end user, using some type of service or server identity provider, but remember it's rest restful APIs and supporting web based mobile javascript you know the things that were on the iPhone and other mobile devices, so there was this divergence.
+
+245
+00:45:22.230 --> 00:45:31.770
+Michael Shannon: You know this this major divergence and but saml kept on going, and we still use it and there's other things like saml that we use.
+
+246
+00:45:32.880 --> 00:45:33.270
+Michael Shannon: Okay.
+
+247
+00:45:34.560 --> 00:45:40.350
+Michael Shannon: I put a slide in here for the process again not important for the exam.
+
+248
+00:45:46.650 --> 00:46:04.620
+Michael Shannon: shibboleth is like saml 2.0 and it's it's popular because it's open source and free so like a lot of colleges and universities and nonprofits used shibboleth, but it still involves the same things Okay, the identity provider.
+
+249
+00:46:06.480 --> 00:46:09.390
+Michael Shannon: The service or service provider than the consumer.
+
+250
+00:46:10.710 --> 00:46:12.210
+Michael Shannon: The one that gets the assertion.
+
+251
+00:46:13.350 --> 00:46:31.650
+Michael Shannon: Now those same concepts, we find in Cuba Ross we often we often think you know Microsoft active directory kubler Ross they go hand in hand and they do, but kubler Ross was it was invented by MIT and it existed.
+
+252
+00:46:32.730 --> 00:46:36.900
+Michael Shannon: before it was implemented into windows servers.
+
+253
+00:46:38.100 --> 00:46:39.930
+Michael Shannon: windows had their own methodology.
+
+254
+00:46:40.980 --> 00:46:41.850
+Michael Shannon: Back in the day.
+
+255
+00:46:43.770 --> 00:46:44.940
+Michael Shannon: And you know.
+
+256
+00:46:47.070 --> 00:46:57.330
+Michael Shannon: But today it's curb Ross now there's a lot of it's a single sign on system and often we have Kevin Ross we're being we're using that in our enterprise.
+
+257
+00:46:57.900 --> 00:47:13.860
+Michael Shannon: On a local area network and then we're also using a saml two point O federation with Google or my aws or work day or salesforce or many of the other SAS providers.
+
+258
+00:47:16.350 --> 00:47:22.500
+Michael Shannon: it's a single sign on it's a secret key crypto system it's assertion is a ticket.
+
+259
+00:47:24.090 --> 00:47:36.690
+Michael Shannon: It does mutual authentication of the care burglarized subject and the server and servers services, it depends on you know if you break down Kevin Ross.
+
+260
+00:47:37.710 --> 00:47:56.190
+Michael Shannon: it's kind of like how I mentioned tak X plus can be kind of broken down Kevin Ross has a key distribution Center which can technically have two different services, the authentication server is the one that's going to grant the initial ticket to the user.
+
+261
+00:47:58.260 --> 00:48:09.120
+Michael Shannon: And you know, an active directory the device and the user are in the directory service so it's a curb arise device.
+
+262
+00:48:10.170 --> 00:48:18.360
+Michael Shannon: So once per they login and they're going to get a ticket or they're going to be authenticated and authorized from the authentication server.
+
+263
+00:48:19.080 --> 00:48:36.510
+Michael Shannon: Then, as they go in, they access, you know, exchange and a file server and sharepoint and that kind of stuff I get a ticket granting server ticket that's based on the service once per service session.
+
+264
+00:48:37.890 --> 00:48:38.310
+Michael Shannon: OK.
+
+265
+00:48:39.690 --> 00:48:50.310
+Michael Shannon: Now the, the main thing that we want to take away from this today is that most cloud providers really want us to use single sign on.
+
+266
+00:48:51.450 --> 00:48:56.370
+Michael Shannon: If you go to Amazon web services you go to Google cloud platform, especially azure.
+
+267
+00:48:57.390 --> 00:49:18.270
+Michael Shannon: They would really prefer that you don't use them as the identity provider, they give you they have an iam service absolutely Google and aws both have the ability to go and create groups and users but you're really setting up a separate siloed.
+
+268
+00:49:20.370 --> 00:49:29.040
+Michael Shannon: Identity provider with them that is separate from what your users are using on site or remote offices or whatever.
+
+269
+00:49:30.450 --> 00:49:37.650
+Michael Shannon: And that was kind of the way it was done, but today i'd say, starting at around you know 2020 the last couple of years.
+
+270
+00:49:38.790 --> 00:49:39.780
+Michael Shannon: They really.
+
+271
+00:49:41.040 --> 00:49:47.400
+Michael Shannon: tried to gravitate you towards using a managed to single sign on service that they have.
+
+272
+00:49:50.190 --> 00:50:04.440
+Michael Shannon: And so, if you're using active directory and kubler Ross, for example, aws you have options like you can use an active directory connector to connect to aws to their aws single sign on service and they'll you have a portal.
+
+273
+00:50:05.550 --> 00:50:13.290
+Michael Shannon: Right, you have the user has a portal it comes up it's a you know, an aws graphical xml rendered thing.
+
+274
+00:50:13.710 --> 00:50:19.950
+Michael Shannon: And it has you know links in it, these are the accounts, I want to access, but it will also they have a ton.
+
+275
+00:50:20.490 --> 00:50:44.370
+Michael Shannon: Of pre cooked federated relationships with many software as a service providers, so you can have icons for office 365 and dropbox and the list goes on and on it's a managed service that from a security management standpoint is kind of the way things are moving they prefer you.
+
+276
+00:50:45.870 --> 00:50:58.680
+Michael Shannon: And, and what some startup companies will do is they won't even have a local directory service there'll be a startup company and they'll run a virtual active directory instance.
+
+277
+00:50:59.310 --> 00:51:10.620
+Michael Shannon: At an azure, for example, so i'm a startup company I don't even have directory servers i'm using azure active directory and office 365 it's all in the cloud.
+
+278
+00:51:14.400 --> 00:51:23.640
+Michael Shannon: And the beauty of that is they're going to make it very easy for me to do single sign on with other partners and vendors.
+
+279
+00:51:24.690 --> 00:51:36.240
+Michael Shannon: don't even worry about it they'll take care of all the saml stuff under the hood or the oh oh IDC stuff under the hood if i'm an APP developer so awesome.
+
+280
+00:51:41.790 --> 00:51:50.130
+Michael Shannon: So you know identity management involves provisioning and D provisioning provisioning and D provisioning subjects.
+
+281
+00:51:50.700 --> 00:52:05.550
+Michael Shannon: And provisioning and D provisioning the devices that they have access to that they're authorized to use and other services, there are you know third party platforms that can assist us in doing this.
+
+282
+00:52:07.380 --> 00:52:16.140
+Michael Shannon: Especially with mobile device management their software service providers that can assist us in this life cycle, but remember when you're.
+
+283
+00:52:16.620 --> 00:52:28.200
+Michael Shannon: When you're provisioning and D provisioning we have what are called joiners we have what are called movers and we have what are called leavers by those are kind of the three elements we have to be.
+
+284
+00:52:29.100 --> 00:52:39.600
+Michael Shannon: concerned about and the joiners and the leavers is kind of obvious the movers maybe more complicated right the ones that are being promoted the ones that are going.
+
+285
+00:52:39.960 --> 00:52:50.070
+Michael Shannon: to another division in our large multinational corporation a different geographic area Okay, we have to accommodate for those movers.
+
+286
+00:52:51.030 --> 00:53:06.750
+Michael Shannon: and identity management will also one of the driving factors behind not only our access control model which by the way, in a large enough organization, you may be using different access control models.
+
+287
+00:53:08.280 --> 00:53:21.630
+Michael Shannon: For example, you might have for your employees of the corporate land, you may be using a discretionary access control model, but for the people that work in the call Center they're in there in a role based model.
+
+288
+00:53:22.770 --> 00:53:28.290
+Michael Shannon: Maybe you've got an R amp D department or your developers there an IMAC model so.
+
+289
+00:53:29.460 --> 00:53:37.380
+Michael Shannon: don't think that you can't use multiple models, maybe within an A back environment attribute based engine.
+
+290
+00:53:38.730 --> 00:53:39.810
+Michael Shannon: And an enterprise.
+
+291
+00:53:41.100 --> 00:53:45.660
+Michael Shannon: But the type of organization, you have will also drive these decisions.
+
+292
+00:53:50.160 --> 00:53:57.600
+Michael Shannon: A functional organization tends to harken back to the kind of post.
+
+293
+00:53:58.890 --> 00:54:17.730
+Michael Shannon: And you know the World War Two days being about the 70s and 80s most a lot of those people that were in management men and women at those at those companies they you know they were veterans or they came from that type of environment, so it was a very top down structure very monolithic.
+
+294
+00:54:19.020 --> 00:54:26.190
+Michael Shannon: Very functional you know very strict departmental vertical.
+
+295
+00:54:27.780 --> 00:54:37.710
+Michael Shannon: Communication chain of command functional departments some organizations still operate that way, the trend, however, in the 90s.
+
+296
+00:54:38.850 --> 00:54:45.540
+Michael Shannon: was to kind of move away from a purely functional organization to either, something that was more project eyes.
+
+297
+00:54:46.710 --> 00:55:04.560
+Michael Shannon: Okay, so some organizations like began as a flat organization and we think about a lot of the.com companies a lot of the you know social media companies they're more project ties flatter.
+
+298
+00:55:05.880 --> 00:55:15.630
+Michael Shannon: Not necessarily that monolithic chain of command and you have people with different skill sets that are working enter departmental on multiple projects simultaneously.
+
+299
+00:55:16.680 --> 00:55:20.520
+Michael Shannon: Teams more team based more project based.
+
+300
+00:55:21.750 --> 00:55:27.990
+Michael Shannon: A flatter organization or some combination thereof, like you know.
+
+301
+00:55:28.800 --> 00:55:40.650
+Michael Shannon: Usually, a organization that was that had been around you know, a while, since the 60s or 70s, or longer they wouldn't just move from in the 90s from a functional organization to.
+
+302
+00:55:41.130 --> 00:55:48.870
+Michael Shannon: we're going to go flat they're set up some type of hybrid some type of matrix organization.
+
+303
+00:55:49.440 --> 00:56:03.090
+Michael Shannon: And there's different types of matrix organizations, this really ties kind of into project manager type stuff those of you who are project managers, this is like oh yeah I know where I know what he's talking about.
+
+304
+00:56:04.140 --> 00:56:13.530
+Michael Shannon: So on the exam the point is our identity management or identity and access management and our access control models.
+
+305
+00:56:14.550 --> 00:56:20.730
+Michael Shannon: are going to be driven and influenced by the way our organization is structured okay.
+
+306
+00:56:22.200 --> 00:56:27.150
+Michael Shannon: Now what however you set up your quote accounts, if you do have accounts.
+
+307
+00:56:28.410 --> 00:56:37.590
+Michael Shannon: it's important that you have massive visibility and reviews and this can be automated in fact.
+
+308
+00:56:38.940 --> 00:56:43.380
+Michael Shannon: At a cloud provider if you're using let's say the iam.
+
+309
+00:56:44.940 --> 00:56:53.940
+Michael Shannon: service at aws they have what's called an access analyzer so if you're using aws is identity management service.
+
+310
+00:56:54.630 --> 00:57:04.620
+Michael Shannon: The permissions and usually you're going to you're going to grant that you're going to give the permissions and when I say permissions What I mean is what API calls, can they make.
+
+311
+00:57:06.180 --> 00:57:10.110
+Michael Shannon: What API request can they make to the cloud services.
+
+312
+00:57:12.090 --> 00:57:14.520
+Michael Shannon: that's in a json document.
+
+313
+00:57:16.260 --> 00:57:19.770
+Michael Shannon: that's what the permissions are typically apply to a group.
+
+314
+00:57:21.120 --> 00:57:32.940
+Michael Shannon: Because usually you create groups, they get the permissions or that what API calls Can I make and then you put as you add users, the users get put into the groups.
+
+315
+00:57:35.220 --> 00:57:47.880
+Michael Shannon: So they haven't they have an access analyzer tool with a with a machine learning engine that will analyze all the json and look for duplicates privilege creep.
+
+316
+00:57:49.110 --> 00:57:50.580
+Michael Shannon: And we give you reporting.
+
+317
+00:57:51.720 --> 00:58:02.880
+Michael Shannon: Now, I mentioned the iam service but like I said from a zero trust standpoint, this is not considered an optimal solution.
+
+318
+00:58:04.650 --> 00:58:23.490
+Michael Shannon: Because if I use their iam service, I can create a group which can make these API calls and I put users in that group that has a persistent ongoing capability to make API calls to services 24 hours a day, seven days a week.
+
+319
+00:58:25.140 --> 00:58:28.530
+Michael Shannon: Now, can I place conditions.
+
+320
+00:58:30.090 --> 00:58:41.400
+Michael Shannon: In the permissions yeah I can but it's very complicated and the more conditions I have, the more things you were to come up in an analyzer.
+
+321
+00:58:44.850 --> 00:59:00.060
+Michael Shannon: So it kind of violates the zero trust initiative, which would like to authenticate and authorize the subject on a session by session basis, which is what you would use if you were doing single sign on.
+
+322
+00:59:01.530 --> 00:59:05.760
+Michael Shannon: you're getting a temporary token that's time based.
+
+323
+00:59:07.110 --> 00:59:19.500
+Michael Shannon: And it's just for that session and in a zero trust environment we prefer that, as opposed to a persistent consistent capability.
+
+324
+00:59:21.720 --> 00:59:23.370
+Michael Shannon: And that's why I said, you know.
+
+325
+00:59:24.450 --> 00:59:41.700
+Michael Shannon: The cloud providers, they really are kind of moving you away from their iam services, which is that persistence type of thing to a single sign on now, obviously with single sign on, there are some pros and cons.
+
+326
+00:59:43.830 --> 00:59:47.310
+Michael Shannon: And i've got a slide here, this is slide number 10 i'm going back.
+
+327
+00:59:48.390 --> 01:00:01.320
+Michael Shannon: With single sign on you have a single point of failure, so the from it from an exam standpoint from a security manager standpoint if we're using single sign on that initial.
+
+328
+01:00:01.920 --> 01:00:12.840
+Michael Shannon: credential is a key to your kingdom so in a single sign on environment at the very least, we want to have multi factor authentication.
+
+329
+01:00:14.610 --> 01:00:17.310
+Michael Shannon: preferably a biometric.
+
+330
+01:00:18.720 --> 01:00:24.510
+Michael Shannon: That is a more accurate identification method as opposed to something you have right.
+
+331
+01:00:26.190 --> 01:00:32.040
+Michael Shannon: something you have can eat can be stolen or borrowed or shared or whatever.
+
+332
+01:00:33.420 --> 01:00:35.910
+Michael Shannon: something you are no.
+
+333
+01:00:40.080 --> 01:00:46.800
+Michael Shannon: And this is not, you know it's something you are biometrics, this is not like that movie minority report.
+
+334
+01:00:47.580 --> 01:01:02.520
+Michael Shannon: Where Tom cruise replaced his eyeballs and had his old eyeball in a refrigerator and went back to the secure headquarters and put his old eyeball up to the sensor and got into the building.
+
+335
+01:01:05.220 --> 01:01:05.970
+Michael Shannon: laughable.
+
+336
+01:01:07.860 --> 01:01:08.430
+Michael Shannon: So.
+
+337
+01:01:09.630 --> 01:01:16.170
+Michael Shannon: That single point of failure really demands stringent multi factor authentication.
+
+338
+01:01:18.570 --> 01:01:33.000
+Michael Shannon: And not just a simple two factor, something you know something you have there's also other types of special of attacks replay attacks sessions can be hijacked if this is not done over a secure channel.
+
+339
+01:01:34.830 --> 01:01:38.250
+Michael Shannon: Right to mls 1.2 or higher.
+
+340
+01:01:39.480 --> 01:01:42.450
+Michael Shannon: Or if it's over IP SEC.
+
+341
+01:01:44.310 --> 01:01:47.910
+Michael Shannon: You know if you're just using vpn technology.
+
+342
+01:01:51.210 --> 01:02:01.350
+Michael Shannon: you're still vulnerable vulnerable with with single sign on environments, which is why companies like Google don't use vpn clients anymore.
+
+343
+01:02:02.790 --> 01:02:08.040
+Michael Shannon: running a vpn client on an endpoint is a.
+
+344
+01:02:10.350 --> 01:02:13.350
+Michael Shannon: false sense of security, let me just put it that way.
+
+345
+01:02:14.910 --> 01:02:26.430
+Michael Shannon: Okay, you can say i'm not worried about my subjects my people because I they're using vpn clients on their remote devices.
+
+346
+01:02:29.370 --> 01:02:30.240
+Michael Shannon: Good luck with that.
+
+347
+01:02:35.550 --> 01:02:36.300
+Michael Shannon: So.
+
+348
+01:02:39.540 --> 01:02:57.540
+Michael Shannon: auditing of the accounts, the more and then we're automating this process and centralized it can be the better right security officers typically let's as a small business or a small organization aren't going to go through a manual account audit but.
+
+349
+01:02:58.890 --> 01:03:09.570
+Michael Shannon: You know i've done that in the past as as as a security consultant, and what am I looking for well i'm looking for shared administrator passwords.
+
+350
+01:03:10.530 --> 01:03:23.190
+Michael Shannon: Right people that are logging on as an administrator to a directory to a system or to a local device and they're just sharing the admin password i'm looking for other guest accounts.
+
+351
+01:03:24.210 --> 01:03:32.610
+Michael Shannon: Have applications and services, been installed into a service account with a weak password that maybe that shared.
+
+352
+01:03:34.170 --> 01:03:34.590
+Michael Shannon: Okay.
+
+353
+01:03:36.930 --> 01:03:39.960
+Michael Shannon: The lack of you know guidance and best practices.
+
+354
+01:03:42.330 --> 01:03:52.380
+Michael Shannon: So to implement identity management there's the initial configuration phase which we would call provisioning right onboarding.
+
+355
+01:03:53.130 --> 01:04:15.540
+Michael Shannon: Providing credentials determining what are they authorized to do, based on our models and then the operational phase where you know you're presenting the badge you're scanning it you're providing the token you're using the biometric sensor whatever it is OK so identity management.
+
+356
+01:04:16.890 --> 01:04:22.680
+Michael Shannon: Usually is relying upon some type of access or identity service engine.
+
+357
+01:04:25.680 --> 01:04:28.950
+Michael Shannon: And it's going to be an attribute based access control model.
+
+358
+01:04:30.510 --> 01:04:47.790
+Michael Shannon: Because you need to have different authorization profiles, depending upon you know who, what, when, where is it wired wireless are you in a vpn are you in a software defined network controller, are you using single sign on to federated partners.
+
+359
+01:04:51.870 --> 01:04:55.110
+Michael Shannon: And then you know here's a nice little table of use cases.
+
+360
+01:04:56.400 --> 01:05:06.300
+Michael Shannon: For why we need identity management this this is helpful from a security management standpoint, you have to secure that guest V land.
+
+361
+01:05:08.850 --> 01:05:17.490
+Michael Shannon: You want visibility and how the assets are being accessed byob policies or other types of mobile policies.
+
+362
+01:05:20.460 --> 01:05:32.850
+Michael Shannon: threat containment compliance The list goes on, so like I mentioned Google really relies heavily on 802 dot one X teaneck and.
+
+363
+01:05:33.870 --> 01:05:34.650
+Michael Shannon: Max SEC.
+
+364
+01:05:37.320 --> 01:05:50.310
+Michael Shannon: But never get mission control technically the exam still once you to know that term, even though it's not really used anymore knack was a Cisco.
+
+365
+01:05:51.870 --> 01:06:07.800
+Michael Shannon: invention, I mean Cisco, then the acronym came from Cisco now other organizations and other platforms would do similar things, but they were they call them something else, like a Microsoft called there's na P, or something.
+
+366
+01:06:08.520 --> 01:06:22.920
+Michael Shannon: But the bottom line of using never admission control with dot one X is the ability to have flexibility and now you can handle that supplicant so let me give you an example.
+
+367
+01:06:24.270 --> 01:06:28.200
+Michael Shannon: let's say Dave and I are going to go to a summit.
+
+368
+01:06:29.400 --> 01:06:33.900
+Michael Shannon: So we're going to go to the corporate headquarters we're going to have a get together.
+
+369
+01:06:35.160 --> 01:06:39.300
+Michael Shannon: Hopefully, hopefully we'll get to have one of those soon, so I haven't seen Dave and.
+
+370
+01:06:40.320 --> 01:06:42.210
+Michael Shannon: I don't know, three years.
+
+371
+01:06:44.670 --> 01:06:59.430
+Michael Shannon: So you know Dave goes to Boston right and he takes his corporate provisioned Dell laptop right, the one that they you know they gave him or I go there and the one I got through fedex.
+
+372
+01:07:00.060 --> 01:07:22.170
+Michael Shannon: Dave also takes an iPhone or a pad and then Dave also has a personal laptop because we're going to be there for three days and Dave wants to you know he wants to do cyber currency trading or play online poker or whatever he wants to do he's not going to do it on the corporate laptop.
+
+373
+01:07:23.310 --> 01:07:40.980
+Michael Shannon: So he has another separate laptop so he brings three devices so Dave shows up, and you know hey everybody high five hugs good to see you Dave go grab a empty desk empty cubicle or go find a conference room right and Dave does.
+
+374
+01:07:42.030 --> 01:08:03.660
+Michael Shannon: So if Dave has his corporate provision laptop let's say for performance reasons he wants to put it on the ethernet right, so he finds a cubicle or a desk and he plugs in and what's going to happen in a dot one X environment well the switch that he's connecting to.
+
+375
+01:08:04.740 --> 01:08:08.490
+Michael Shannon: And usually over some type of you know frames.
+
+376
+01:08:09.630 --> 01:08:11.310
+Michael Shannon: Of the cable runs.
+
+377
+01:08:12.390 --> 01:08:19.440
+Michael Shannon: it's a dot one X enabled switch multi layer switch layer to switch whatever this device.
+
+378
+01:08:20.490 --> 01:08:35.340
+Michael Shannon: will call it, it is going to expect his device which is a supplicant and we call it a supplicant because it's begging to get on the network that's what dot one X calls it it's not a client.
+
+379
+01:08:36.240 --> 01:08:50.250
+Michael Shannon: In a dot one X architecture, the client is this network access device the dot one X enabled multi layer switch or the wireless access point that's the client to radius.
+
+380
+01:08:51.450 --> 01:09:01.230
+Michael Shannon: and other services that's the client in dot one X, this is a supplicant now when Dave connects to the ethernet ports.
+
+381
+01:09:01.890 --> 01:09:22.800
+Michael Shannon: He has a supplicant he has the Cisco any connect mobility client, which is also a dot one X applicant so it's going to send a P O l eXtensible authentication protocol overland a P O l frames, to the switch or the wireless access point if he decides to do wireless.
+
+382
+01:09:25.170 --> 01:09:42.450
+Michael Shannon: Now, if the device doesn't hear from Dave it'll say it'll send AAP request ID frames hey wake up dude I need your credentials now Dave is going to give his active directory login.
+
+383
+01:09:43.770 --> 01:09:54.660
+Michael Shannon: And this device is going to pass those back using the radius protocol and to it back end open l dap or active directory.
+
+384
+01:09:56.100 --> 01:09:59.400
+Michael Shannon: And then he's going to get on to the to the network okay.
+
+385
+01:10:00.810 --> 01:10:07.530
+Michael Shannon: that's the way it should work easy peasy smooth because he's using his provisioned laptop.
+
+386
+01:10:09.000 --> 01:10:18.030
+Michael Shannon: it's on the direct active directory he's on the directory he's got the mobility supplicant AAP client on there.
+
+387
+01:10:20.160 --> 01:10:20.640
+Michael Shannon: But.
+
+388
+01:10:21.960 --> 01:10:25.320
+Michael Shannon: What if Dave takes his other laptop.
+
+389
+01:10:28.020 --> 01:10:37.290
+Michael Shannon: And he connects it to the switch let's say either say he doesn't have a supplicant on there, no, no, you got one X applicant.
+
+390
+01:10:38.040 --> 01:10:58.350
+Michael Shannon: the beauty of this dot one X is part of network admission control is I can I can then give him a captive portal and say you need to go and remediate to remediation servers or next servers where you need to go install a agent.
+
+391
+01:10:59.610 --> 01:11:13.140
+Michael Shannon: A supplicant supplicant oh and, by the way, not just the supplicant but you need to install this anti virus, you need to install the corporate malware Bytes program need to update this or that so.
+
+392
+01:11:14.280 --> 01:11:22.110
+Michael Shannon: This is called change of authorization once he remediate and he puts all that stuff on his personal laptop.
+
+393
+01:11:22.740 --> 01:11:30.420
+Michael Shannon: Then I can say well i'm not going to give you access to the corporate network, because this device is not in the active directory but.
+
+394
+01:11:30.930 --> 01:11:40.980
+Michael Shannon: I will let you go to the wireless access point and go out on the guest V land, so I can put you in a guest feel and or maybe you were in a restricted V land.
+
+395
+01:11:41.610 --> 01:11:49.320
+Michael Shannon: And then you remediated and now i'll see Oh, a change of authorization Now you can be in the guest be land and you can go to the Internet.
+
+396
+01:11:49.740 --> 01:12:02.580
+Michael Shannon: Subject to URL filtering web content filtering data loss prevention engines and other things okay you're not going to connect and go to the Internet, and you know serve porn.
+
+397
+01:12:03.690 --> 01:12:13.740
+Michael Shannon: or play online poker you want to do that do it in your hotel room and there's, and this applies to a wide variety of different types of devices.
+
+398
+01:12:15.900 --> 01:12:19.710
+Michael Shannon: And this is a very important aspect of.
+
+399
+01:12:21.510 --> 01:12:26.370
+Michael Shannon: Zero trust, because there is some type of identity service engine.
+
+400
+01:12:27.900 --> 01:12:34.650
+Michael Shannon: With a inventory engine, and this is usually like if it's Google, this is called an access proxy.
+
+401
+01:12:36.600 --> 01:12:41.910
+Michael Shannon: which may not even be a physical device, it may be running in a hypervisor to access proxy.
+
+402
+01:12:43.350 --> 01:12:43.740
+Michael Shannon: Okay.
+
+403
+01:12:48.180 --> 01:12:50.730
+Michael Shannon: So multi factor authentication critical.
+
+404
+01:12:52.050 --> 01:13:01.920
+Michael Shannon: In a single sign on environment in a where you have highly sensitive assets, intellectual property and, by the way, if you're.
+
+405
+01:13:03.060 --> 01:13:18.540
+Michael Shannon: If you are set up with identity access management at like Google or aws they really recommend multifactor authentication even if it's just something like a one to one card for the account.
+
+406
+01:13:19.560 --> 01:13:24.000
+Michael Shannon: on any type of user that can change or modify.
+
+407
+01:13:25.200 --> 01:13:26.700
+Michael Shannon: Something running in the cloud.
+
+408
+01:13:30.720 --> 01:13:34.830
+Michael Shannon: So I mentioned remember accounting is the third piece of the.
+
+409
+01:13:36.060 --> 01:13:36.480
+Michael Shannon: A.
+
+410
+01:13:37.680 --> 01:13:41.910
+Michael Shannon: radius radius and diameter excel at accounting.
+
+411
+01:13:42.990 --> 01:13:45.870
+Michael Shannon: And there's two main reasons for doing it okay.
+
+412
+01:13:47.580 --> 01:13:48.450
+Michael Shannon: don't forget.
+
+413
+01:13:49.530 --> 01:13:50.160
+Michael Shannon: Part of.
+
+414
+01:13:51.450 --> 01:13:54.480
+Michael Shannon: Our single sign on and our.
+
+415
+01:13:55.650 --> 01:13:59.130
+Michael Shannon: Identity management is also some of the call session management.
+
+416
+01:14:00.780 --> 01:14:19.290
+Michael Shannon: And you could consider what Carol Ross does as I access sharepoint and then exchange and then the file servers and then whatever that is Kevin Ross providing session management, because i'm using session tickets it's also the same thing when i'm.
+
+417
+01:14:20.730 --> 01:14:32.880
+Michael Shannon: Providing a token or to assertion to a service provider another concept, this is the last name we're going to talk about we're going to switch topics here, you know at our break.
+
+418
+01:14:34.050 --> 01:14:45.240
+Michael Shannon: Yes, there's registration provisioning onboarding process there's also proofing so you know proofing involves an additional layer
+
+419
+01:14:45.840 --> 01:14:58.620
+Michael Shannon: When you are hiring somebody it's one thing to take their information usually through HR which is integrated with a directory service and legal and whatever you're taking all their information they provide you.
+
+420
+01:14:59.160 --> 01:15:06.570
+Michael Shannon: Either done through a portal, or you know they've their information they've written out on paper and inputting that.
+
+421
+01:15:07.320 --> 01:15:26.970
+Michael Shannon: But you can't necessarily accept that information at face value, and especially the higher the privilege of that employee there, it may be identity proofing where you have to see two forms of ID right a national identity card a passport a driver license.
+
+422
+01:15:28.200 --> 01:15:42.990
+Michael Shannon: proofing may also involve digital documentation, because often the person you're hiring they're not even coming into the facility, this has to be done with docusign with a remote employee.
+
+423
+01:15:44.670 --> 01:15:49.830
+Michael Shannon: That you know you've hired but they're not going to be in the headquarters because of you know coven.
+
+424
+01:15:51.780 --> 01:15:52.770
+Michael Shannon: So proofing.
+
+425
+01:15:54.420 --> 01:16:06.540
+Michael Shannon: is also kind of the next higher layer the registration process and Bridget registration without proofing is a violation of the zero trust initiative.
+
+426
+01:16:08.940 --> 01:16:09.390
+Michael Shannon: Okay.
+
+427
+01:16:12.120 --> 01:16:34.530
+Michael Shannon: One reason or another, is our proofing let's go back to advanced persistent threats, the more elaborate your proofing and background checks, the better because remember an advanced persistent threat if your assets are valuable enough your competitor some cracker some.
+
+428
+01:16:35.760 --> 01:16:41.850
+Michael Shannon: Crime syndicate some other state will go to the.
+
+429
+01:16:44.040 --> 01:16:52.470
+Michael Shannon: elaborate process of creating fake identities and getting someone hired into your organization.
+
+430
+01:16:56.310 --> 01:17:07.410
+Michael Shannon: And you know that's why proofing is so important because this person may not be who they say they are and they're actually part of it, of a PT campaign.
+
+431
+01:17:09.690 --> 01:17:20.700
+Michael Shannon: Now what was weird was in the objectives when you look at the objectives of the CIS SP I don't know why, but they mentioned.
+
+432
+01:17:21.750 --> 01:17:32.430
+Michael Shannon: Like you know how about have an objective and they'll put in parentheses something else, well, they did that they put Microsoft forefront identity manager.
+
+433
+01:17:34.860 --> 01:17:41.730
+Michael Shannon: I don't know why I guess they wanted you to kind of look at that, as a prototypical solution.
+
+434
+01:17:42.510 --> 01:17:55.140
+Michael Shannon: But it's not even called that anymore, so that that's the problem when people put out an exam every three years and make some weird decision to put something vendor specific in there don't know why they did it.
+
+435
+01:17:56.940 --> 01:18:01.860
+Michael Shannon: So, because the solution is not even called forefront anymore it's Am I am.
+
+436
+01:18:02.970 --> 01:18:12.390
+Michael Shannon: But what i'll tell you is maybe you might want to go and do a little bit of research on microsoft's identity manager.
+
+437
+01:18:13.770 --> 01:18:22.830
+Michael Shannon: The hybrid experience means that you could be also a hybrid cloud environment with azure because when you use Microsoft azure.
+
+438
+01:18:24.360 --> 01:18:31.140
+Michael Shannon: Their model there I am model is basically a virtual instance of active directory.
+
+439
+01:18:33.630 --> 01:18:43.500
+Michael Shannon: If you have an account right now, like a Microsoft account like outlook.com or msn.com some account you already have a virtual.
+
+440
+01:18:44.280 --> 01:19:01.620
+Michael Shannon: Active directory instance just waiting for you in the azure cloud like once you create that account they create an instance of azure active directory for that account waiting to be initialized Okay, so when we get back from our break.
+
+441
+01:19:02.970 --> 01:19:07.830
+Michael Shannon: we're going to get into our next topic and we're going to talk about kind of.
+
+442
+01:19:09.150 --> 01:19:28.200
+Michael Shannon: client server vs distributed and we're going to get deeper into database stuff we we we just kind of danced around some database stuff on Monday, but we're going to go through some data security and we're going to get into hypervisor is in cloud okay.
+
+443
+01:19:29.340 --> 01:19:32.250
+Michael Shannon: So that's what we have coming up in our next.
+
+444
+01:19:33.510 --> 01:19:35.790
+Michael Shannon: Section, so let me stop the recording.
+
