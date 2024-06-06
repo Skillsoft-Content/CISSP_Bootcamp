@@ -1,0 +1,1266 @@
+WEBVTT
+
+1
+00:00:00.269 --> 00:00:01.290
+Michael Shannon: And proprietary.
+
+2
+00:00:02.460 --> 00:00:03.149
+Michael Shannon: Oh shoot.
+
+3
+00:00:05.700 --> 00:00:09.269
+Michael Shannon: That burnet Thank you Dave forgot to start the recording.
+
+4
+00:00:11.340 --> 00:00:21.870
+Michael Shannon: Thank you so much well that's some time on there we get back so sorry about that I apologize, I was too busy focused on the chat to start my recording.
+
+5
+00:00:22.920 --> 00:00:24.510
+Michael Shannon: Even though I thought I started it but.
+
+6
+00:00:27.330 --> 00:00:36.600
+Michael Shannon: OK so i'm running a vmware workstation pro which is licensed and i've also installed.
+
+7
+00:00:37.710 --> 00:00:48.180
+Michael Shannon: Already Oracle virtual bought virtual box, which is open source and free okay so and they they both have their use cases but for a Type two hypervisor.
+
+8
+00:00:48.600 --> 00:00:59.610
+Michael Shannon: This is not going to be really a solution you're going to use in production for consumers, this is something to create a sandbox environment or in my case, a soapbox environment.
+
+9
+00:01:00.900 --> 00:01:16.230
+Michael Shannon: And in that sandbox you're going to do, let you know testing applications testing interoperability between programs and penetration testing detonation chambers all that type of good stuff okay.
+
+10
+00:01:19.200 --> 00:01:27.090
+Michael Shannon: So virtualization issues there's really kind of three main vulnerabilities to be aware of, and I don't have the third one on the.
+
+11
+00:01:27.510 --> 00:01:32.490
+Michael Shannon: slide but it'll be obvious, but first one is just you've just lost control.
+
+12
+00:01:33.090 --> 00:01:41.400
+Michael Shannon: Of the virtual machines either you have employees that are not using the acceptable use policy properly and they're installing.
+
+13
+00:01:41.880 --> 00:01:52.500
+Michael Shannon: These you know Type two hypervisor and within those there you know running pirated software unlicensed software they're running exploit kits or whatever.
+
+14
+00:01:53.070 --> 00:02:13.020
+Michael Shannon: So you just lost control right, you have not not just lost control of people running the hypervisor is but the images as well, so this leads to ghost it or shadow it, it leads to violations of you know licensing issues.
+
+15
+00:02:14.880 --> 00:02:18.630
+Michael Shannon: digital rights management violations all those things.
+
+16
+00:02:19.170 --> 00:02:32.850
+Michael Shannon: come with vm sprawl so have a strict process for deploying vm is like a least privilege only certain people should be able to use this type of software a standard library of images.
+
+17
+00:02:33.240 --> 00:02:39.480
+Michael Shannon: And then, one of the other vulnerabilities, for example, with a standard library of images that they're using.
+
+18
+00:02:40.140 --> 00:02:47.340
+Michael Shannon: Is the fact that if you have a an image in the library and it hasn't been deployed in weeks or months.
+
+19
+00:02:47.880 --> 00:02:58.020
+Michael Shannon: You have to make sure that those images get updated with service packs and security hot fixes and those types of things, so you have to maintain.
+
+20
+00:02:58.350 --> 00:03:07.530
+Michael Shannon: The status of those stale images that might be used, and then they can be introduced into the corporate land, which is not a good thing, so there's.
+
+21
+00:03:07.800 --> 00:03:20.430
+Michael Shannon: Different companies offer you know lifecycle management tools to help you with the vm sprawl issue, and then the other issue is the vm escape issue, which is really bad we don't want a guest.
+
+22
+00:03:21.600 --> 00:03:34.530
+Michael Shannon: To if so configure we don't want guests, to be able to access other partitioned guests with add layer two and we definitely don't want guests to escape into the underlying hypervisor or hardware.
+
+23
+00:03:35.160 --> 00:03:48.840
+Michael Shannon: So this is something that the that the vendors work really hard to prevent so that's why keeping your hypervisor software patched with tested patches up to date is critical.
+
+24
+00:03:50.250 --> 00:04:01.740
+Michael Shannon: And in addition to that, like several vm vmware they'll usually have like a contest with a bug bounty.
+
+25
+00:04:02.760 --> 00:04:11.880
+Michael Shannon: Like every at the at the black hat conferences and so there's been a couple of times over the past I don't know 15 or so years where.
+
+26
+00:04:12.390 --> 00:04:25.710
+Michael Shannon: someone's been able to pull this off a vm vm escape, in fact, I think it happened in 2007 or 2008 there was a Norwegian team that did it going to happen again, like in 2015 the same people did it.
+
+27
+00:04:32.400 --> 00:04:46.470
+Michael Shannon: So uh yeah you know just said he's asking containerization is similar in concept to a virtual machine, but the container itself is you know really purely just the application or the code.
+
+28
+00:04:47.880 --> 00:04:53.850
+Michael Shannon: But they do have similarities and you obviously can run containers in virtual environments.
+
+29
+00:04:56.640 --> 00:05:08.490
+Michael Shannon: So vm escape, and then the other one would be, we would call it hyper jacking and that's kind of makes sense, it just some privileged insider.
+
+30
+00:05:08.940 --> 00:05:18.240
+Michael Shannon: Who has access to the virtual environment or the cluster the hypervisor cluster and is just has just hijacked it and they're doing their own thing.
+
+31
+00:05:18.810 --> 00:05:29.880
+Michael Shannon: They have the privilege, the ability to do it, maybe they're just you know, whatever playing games, or whatever, but they've hijacked some of the hypervisor.
+
+32
+00:05:30.270 --> 00:05:48.450
+Michael Shannon: And they're not being audited, or you don't have visibility into those highly privileged users okay doing a hyper jack at like a data Center of a cloud provider that's highly unlikely but speaking of cloud on the exam they've they've expanded.
+
+33
+00:05:49.470 --> 00:06:10.620
+Michael Shannon: Your your knowledge base okay of cloud computing so need to know first off the three main service types and there's a lot of service types Okay, basically, everything is a service now as a service right, but these are the three that the exam is in expect you to know and.
+
+34
+00:06:12.450 --> 00:06:30.960
+Michael Shannon: infrastructure as a service with with is there's a real clear demarcation okay you're using their infrastructure they're basically their global infrastructure, and you know what let me while i'm here, let me take you and do a little safari.
+
+35
+00:06:33.270 --> 00:06:34.980
+Michael Shannon: Just to kind of give you the big picture.
+
+36
+00:06:36.330 --> 00:06:39.060
+Michael Shannon: All right, you don't mind, so let me see I think I have a.
+
+37
+00:06:40.230 --> 00:06:50.850
+Michael Shannon: i'm not logged in to my account but i'm gonna i'm going to use aws is my prototype there they're the biggest and according to gartner.
+
+38
+00:06:51.330 --> 00:07:03.990
+Michael Shannon: they're kind of neck and neck as leadership goes with azure, so this is break breaking down the different regions of the world into the North America.
+
+39
+00:07:04.830 --> 00:07:17.970
+Michael Shannon: Regions South America, which has one region Okay, and I think sat Sao Paulo Brazil Europe Middle East Africa Okay, and then Asia Pacific okay.
+
+40
+00:07:18.990 --> 00:07:30.750
+Michael Shannon: So let's go back to will set will do Europe here, so the the circle, the brown or orange circle, however, that looks to you the bigger circle that is the region.
+
+41
+00:07:31.200 --> 00:07:46.890
+Michael Shannon: Okay, so what is a region or a region is a logical area but what's in a region okay every region of aws has three availability zones, at least.
+
+42
+00:07:47.700 --> 00:07:56.340
+Michael Shannon: Availability zones Okay, so what the best way to describe what an availability zone is is to explain what it isn't.
+
+43
+00:07:57.180 --> 00:08:10.320
+Michael Shannon: So, like 20 something years ago 911 right there was three buildings that collapsed, a lot of those companies, they were like financial firms brokerage firms financial services things.
+
+44
+00:08:10.830 --> 00:08:27.270
+Michael Shannon: They had their high availability in one of the other buildings, like their backups their high availability, they read their database replicas all that's high availability stuff was in the other building which were you know yards or meters apart.
+
+45
+00:08:28.380 --> 00:08:38.130
+Michael Shannon: Well, in a region of a cloud provider, the availability zones are 10s to 100 miles away.
+
+46
+00:08:39.180 --> 00:08:53.700
+Michael Shannon: These zones are many miles apart now they're able to accomplish that because the data centers are not using traditional V LAN technology okay they're using.
+
+47
+00:08:55.230 --> 00:09:09.120
+Michael Shannon: Virtual eXtensible LAN technology which can accommodate millions and millions of V lands and the fabric can be stretched up to like 800 kilometers.
+
+48
+00:09:09.870 --> 00:09:20.550
+Michael Shannon: Okay over metropolitan area networks are wide area networks, which are also being you know managed with like software defined tools, so the bottom line is those.
+
+49
+00:09:21.180 --> 00:09:33.900
+Michael Shannon: Bigger circles are at least three availability zones and and there are many miles apart and the availability zones have two or more data centers in them and the data centers are like nondescript.
+
+50
+00:09:35.340 --> 00:09:47.070
+Michael Shannon: Now okay so that's what a cloud providers global infrastructure is right they have regions all over the world like I showed you here, and you know this is pretty prototypical.
+
+51
+00:09:47.550 --> 00:09:56.070
+Michael Shannon: Between let's say aws and azure you know they have a lot of the same regions, you know all over the world.
+
+52
+00:09:56.670 --> 00:10:05.070
+Michael Shannon: Now some of these regions may have more than three availability zones, but with aws they all have at least three availability zones okay.
+
+53
+00:10:05.580 --> 00:10:16.560
+Michael Shannon: What are the blue circles, what are the blue circles, the blue circles are the blue dots are edge locations, so if I go back to this map of.
+
+54
+00:10:17.160 --> 00:10:32.070
+Michael Shannon: You know Europe Middle East Africa and I come down here notice, by the way, that every one of these regions has at least three availability zones, as I said, but then these are the edge locations So these are cities.
+
+55
+00:10:33.120 --> 00:10:43.500
+Michael Shannon: Amsterdam Budapest Dusseldorf London Munich, Rome, the list goes on this is for content distribution networking.
+
+56
+00:10:44.580 --> 00:10:57.750
+Michael Shannon: So this is for the customers of aws who want to get their content or their web applications, or whatever they're streaming as close to the customers as possible because it's being cached.
+
+57
+00:10:59.310 --> 00:11:02.610
+Michael Shannon: By provider partners in these cities.
+
+58
+00:11:04.020 --> 00:11:14.100
+Michael Shannon: You know when the 20 years ago you wanted to go, you know if you were in Australia and you were going to go to some company in the United States that sold real estate.
+
+59
+00:11:14.820 --> 00:11:27.060
+Michael Shannon: luxury homes and property and you were in Australia you're going to move to the United States, you had to hop across the Internet go to their web servers and excruciating Lee slowly.
+
+60
+00:11:27.510 --> 00:11:33.690
+Michael Shannon: download the pictures of all their properties and maybe you had a URL server.
+
+61
+00:11:33.990 --> 00:11:45.300
+Michael Shannon: Maybe that would catch that locally, but initially you had to get that content off of the Web servers that they were probably hosting in their own site, or maybe there are service provider.
+
+62
+00:11:46.080 --> 00:12:00.330
+Michael Shannon: Not today today when you want to go watch something or listen to something usually it's being cached very close to you, if not by aws akamai or cloud flare.
+
+63
+00:12:01.740 --> 00:12:19.170
+Michael Shannon: Okay i'm not hopping across the Internet if i'm in Germany i'm probably going to go to an edge location in Munich to get my content to watch my next episode of stranger things right so.
+
+64
+00:12:20.670 --> 00:12:22.890
+Michael Shannon: When we talk about you know the.
+
+65
+00:12:24.630 --> 00:12:27.750
+Michael Shannon: what's managed by the provider, you know we're talking about.
+
+66
+00:12:29.820 --> 00:12:35.040
+Michael Shannon: The providers offering you their infrastructure as a service as that kind of the base.
+
+67
+00:12:36.210 --> 00:12:39.720
+Michael Shannon: Offering and there's a really clear demarcation point.
+
+68
+00:12:40.590 --> 00:12:50.760
+Michael Shannon: With infrastructure as a service right you're using their regions which have at least three availability zones, you have the edge locations and metropolitan areas all over the world.
+
+69
+00:12:51.210 --> 00:12:59.250
+Michael Shannon: they're going to do their own identity management in their data centers they are going to take care of that they have endpoints.
+
+70
+00:12:59.880 --> 00:13:10.440
+Michael Shannon: All of them that allowed you to connect your resources over the cloud bypassing the Internet you don't need a gateway you don't need a public IP address.
+
+71
+00:13:11.040 --> 00:13:24.810
+Michael Shannon: They provide all those services, and then they have foundation services compute which is going to be server based Linux instances windows instances MAC os instances and server lists.
+
+72
+00:13:26.460 --> 00:13:36.330
+Michael Shannon: Things that don't run on servers like just code like a Lambda function, or as your functions just code that just runs when you run it.
+
+73
+00:13:36.870 --> 00:13:52.620
+Michael Shannon: Those server even a container can run without a server that's compute and then they have a storage service talked about that right block storage or volume storage object storage different types of databases networking.
+
+74
+00:13:53.730 --> 00:14:01.890
+Michael Shannon: As a core service usually involves two things as well you're going to use content distribution networking or edge computing.
+
+75
+00:14:02.370 --> 00:14:09.150
+Michael Shannon: To get your content close to your customers, but you're also going to create virtual networks in their data centers.
+
+76
+00:14:09.660 --> 00:14:18.810
+Michael Shannon: For whatever you want to use them for to emulate some local area network or for some new purpose, those are the four main foundation services.
+
+77
+00:14:19.440 --> 00:14:32.940
+Michael Shannon: I would say that today there's maybe a fifth foundation service, and I would say, for most cloud providers machine learning would be a fifth service but with IAS.
+
+78
+00:14:34.410 --> 00:14:38.010
+Michael Shannon: they're going to provide the infrastructure, everything else is up to me.
+
+79
+00:14:39.780 --> 00:14:47.100
+Michael Shannon: How do I encrypt do I do client side, do I let the service do it do I use some do I have some key management service.
+
+80
+00:14:47.460 --> 00:14:57.840
+Michael Shannon: I choose the operating system, I designed the network, I set up the firewalls I choose the platform I install the service packs and the updates definitely data.
+
+81
+00:14:58.260 --> 00:15:16.350
+Michael Shannon: And i'm responsible for identity access management either i'm going to use their I am service, I am or i'm gonna do single sign on and preferably they'd like me to do single sign on okay so that's is very kind of strict demarcation.
+
+82
+00:15:18.930 --> 00:15:30.930
+Michael Shannon: platform as a service there's a lot more Gray area and this really does depend upon how manage the services Okay, so you know they're going to provide more.
+
+83
+00:15:31.680 --> 00:15:45.870
+Michael Shannon: they'll often if it's if you're doing a relational database service a managed service well if it's Microsoft sequel they'll provide the sequel server and they'll even provide the.
+
+84
+00:15:47.160 --> 00:15:51.570
+Michael Shannon: platform and there is some degree of management or it can be fully managed.
+
+85
+00:15:52.500 --> 00:16:07.500
+Michael Shannon: So, usually, when you're talking about platform as a service it's things like database services or Dev OPS environments i'm doing my application development my traditional web Apps are my containers i'm doing them on their.
+
+86
+00:16:08.190 --> 00:16:18.570
+Michael Shannon: cloud platform i'm using their software development kits i'm using their container storage service i'm using their Cooper nettie service.
+
+87
+00:16:19.080 --> 00:16:31.140
+Michael Shannon: i'm using their blockchain development managed service platform as a service much more of a Gray area but definitely when you move from IAS.
+
+88
+00:16:31.440 --> 00:16:39.840
+Michael Shannon: To platform as a service, the provider is going to be offering more in this shared responsibility okay.
+
+89
+00:16:40.440 --> 00:16:54.750
+Michael Shannon: It with a database service, you could just simply be setting up just dealing with the data and the views and they'll handle everything will update your whatever you're using my sequel is, though, is.
+
+90
+00:16:55.470 --> 00:17:13.890
+Michael Shannon: sequel server they'll update that for you right service packs all that and, of course, you pay for that right, but the the the model is in the long run, is going to be less than it would be for you to do all this in your own data Center and your own server farms.
+
+91
+00:17:15.480 --> 00:17:16.980
+Michael Shannon: Software as a service.
+
+92
+00:17:18.480 --> 00:17:32.970
+Michael Shannon: pretty much everything's managed by the provider and you're using some type of customized portal or web APP or browser and you're accessing the applications running in the cloud okay.
+
+93
+00:17:34.590 --> 00:17:57.960
+Michael Shannon: Now I used to use office 365 as a prototypical but you know office 365 you're still going to install a bunch of local files, so you know let's let's look at cloud storage, you know, like a dropbox or Min all the many other software as a service offerings that are out there okay.
+
+94
+00:18:02.610 --> 00:18:08.970
+Michael Shannon: So I put in here for you, when you study the nist definition of IAs.
+
+95
+00:18:09.990 --> 00:18:11.610
+Michael Shannon: i've already showed you that.
+
+96
+00:18:14.160 --> 00:18:34.110
+Michael Shannon: The platform as a service and, hopefully, I gave you some kind of real world explanation of that, and this is what we would see common platform as a service, you know your devops environment is now done in the cloud on their infrastructure, using their kits and their code possibly.
+
+97
+00:18:36.240 --> 00:18:40.290
+Michael Shannon: container services docker is the most common.
+
+98
+00:18:41.340 --> 00:18:52.590
+Michael Shannon: platform for developing containerized applications and a containerized applications, basically, is modular it has everything it needs within that particular module.
+
+99
+00:18:52.860 --> 00:19:08.070
+Michael Shannon: it's easily portable across operating systems and cloud environments it's often immutable so when you do containers you don't necessarily have a bunch of versions of it, you just replace the container with the new container, for example.
+
+100
+00:19:09.060 --> 00:19:19.500
+Michael Shannon: Containers often are part of microservices where they'll communicate with each other, so instead of having like a monolithic application, where one component crashes.
+
+101
+00:19:20.910 --> 00:19:33.360
+Michael Shannon: and brings down the whole APP or it freezes the whole APP applications that are containerized and use micro services if something fails usually the whole application doesn't crash like zoom, for example.
+
+102
+00:19:34.200 --> 00:19:47.700
+Michael Shannon: The people that develop zoom use a containerized approach, so if the chat fails usually the chats not working or you don't hear my audio the whole platform doesn't come crashing down.
+
+103
+00:19:49.050 --> 00:19:50.820
+Michael Shannon: send a monolithic application.
+
+104
+00:19:51.930 --> 00:20:03.360
+Michael Shannon: A Cooper nettie is is just a popular way to orchestrate an orchestration service for all your docker containers or other containers pod man.
+
+105
+00:20:04.710 --> 00:20:12.240
+Michael Shannon: And then cloud providers also offer their own container storage container orchestration services as well.
+
+106
+00:20:14.160 --> 00:20:21.090
+Michael Shannon: I mentioned the database thing you know security threat modeling services like aws has guard duty.
+
+107
+00:20:23.040 --> 00:20:35.760
+Michael Shannon: And then platform as a service for machine learning Ai blockchain The list goes on and on platform as a service now some of those will fall into the category of software as a service.
+
+108
+00:20:37.440 --> 00:20:44.460
+Michael Shannon: And with software as a service pretty much everything is running on the service provider now what's interesting about software as a service.
+
+109
+00:20:44.940 --> 00:20:56.100
+Michael Shannon: Is you may be using a SAS provider for doing your payroll or your billing to your customers, maybe you're using it for hr.
+
+110
+00:20:56.940 --> 00:21:02.820
+Michael Shannon: You know project management, whatever you're using the SAS provider for they're using.
+
+111
+00:21:03.600 --> 00:21:22.290
+Michael Shannon: Some infrastructure as a service so you're you know you're using the SAS provider, but unknowingly to you they're using IBM cloud or they're using azure or Google or aws or something else in your country right.
+
+112
+00:21:23.790 --> 00:21:37.650
+Michael Shannon: You don't know it, you have no visibility into it, but that's very common and, by the way, all the big cloud providers, they have their own kind of marketplace of partners where you can.
+
+113
+00:21:40.320 --> 00:21:58.740
+Michael Shannon: Do the common SAS offering, so this is just kind of a nice little list you know customer relationship management enterprise resource planning er P human resources workplace tools like workday you buy me you see those commercials a lot workday commercials.
+
+114
+00:22:00.240 --> 00:22:06.600
+Michael Shannon: Finance sales marketing collaboration storage virtual help desk virtual service desk.
+
+115
+00:22:07.170 --> 00:22:19.080
+Michael Shannon: So those are the three types infrastructure platform software as a service, then you have deployment models and there's four of these according to nist now when it comes to.
+
+116
+00:22:20.070 --> 00:22:32.280
+Michael Shannon: Being aware of the deployment models here's one thing if you're a large global organization it doesn't mean that you have to use one model only.
+
+117
+00:22:33.540 --> 00:22:45.480
+Michael Shannon: You can use different models for different use cases or business units, or whatever that's one that's one of the takeaways it just depends on really your customers.
+
+118
+00:22:46.980 --> 00:22:47.910
+Michael Shannon: And what you're doing.
+
+119
+00:22:49.380 --> 00:22:58.500
+Michael Shannon: The other thing is, if you go to a cloud provider they're going to have up in their documentation they're going to tell you, their definition of cloud models.
+
+120
+00:22:59.460 --> 00:23:08.070
+Michael Shannon: that's not the day I don't care about what google's definition or azure is definition on this exam I care about this definition from nist.
+
+121
+00:23:09.330 --> 00:23:11.100
+Michael Shannon: Okay, so a private.
+
+122
+00:23:12.480 --> 00:23:25.350
+Michael Shannon: cloud model means you're using the hypervisor technology, the storage area network types of things that you would see at a cloud data Center you you've deployed that.
+
+123
+00:23:26.460 --> 00:23:36.390
+Michael Shannon: In your own facility or site or premises and your customers are your employees or maybe a strategic partners.
+
+124
+00:23:37.560 --> 00:23:47.010
+Michael Shannon: And they're using those resources like your their provider for software development testing for marketing.
+
+125
+00:23:48.210 --> 00:24:00.390
+Michael Shannon: For database for whatever you kind of you've kind of configured your own private cloud maybe it is a sandbox to do testing of malware or threat modeling or whatever, but it's private.
+
+126
+00:24:01.350 --> 00:24:13.320
+Michael Shannon: Now you can have a private cloud on premises where you're delivering the value proposition of a cloud provider to your employees and partners, but you can also have a.
+
+127
+00:24:14.430 --> 00:24:29.010
+Michael Shannon: Private cloud at a public service provider it's just a sandbox environment running up there there's no public access to it nobody's accessing anything to some gateway over the Internet.
+
+128
+00:24:30.390 --> 00:24:50.190
+Michael Shannon: So a private cloud can be on premises, but it can also be at a provider a public cloud is typically what we would say when you have customers and they're using your resources your services your value proposition running in the cloud.
+
+129
+00:24:51.630 --> 00:25:06.480
+Michael Shannon: Public cloud right community with be some consortium, like, for example, a healthcare network that's has multiple participants in this particular cloud solution.
+
+130
+00:25:07.530 --> 00:25:13.230
+Michael Shannon: gaming communities are very common Community cloud like a.
+
+131
+00:25:15.300 --> 00:25:18.330
+Michael Shannon: There was a game that my granddaughter played a lot a.
+
+132
+00:25:20.280 --> 00:25:31.290
+Michael Shannon: stretch with an m mine minecraft like minecraft before Microsoft bought it that was like a Community cloud the metaverse that.
+
+133
+00:25:32.010 --> 00:25:43.560
+Michael Shannon: we're starting to see running on blockchain that's a Community cloud, but you know, from a practical standpoint if you'd be like a healthcare network, a PPO hmo a government cloud.
+
+134
+00:25:44.250 --> 00:26:02.850
+Michael Shannon: Okay, Australia, has a Community government cloud okay now a hybrid cloud, this is important from the exam standpoint and this the NIS T standpoint, a hybrid cloud is when you as an organization are using any combination of those three.
+
+135
+00:26:03.930 --> 00:26:09.690
+Michael Shannon: Okay that's not how a cloud provider, how they would define hybrid.
+
+136
+00:26:10.530 --> 00:26:23.550
+Michael Shannon: Okay aws or azure they would define it more like edge computing and where you're deploying on premises in your data Center the same type of environment they have.
+
+137
+00:26:24.360 --> 00:26:38.370
+Michael Shannon: And there's like the demarcation between you and the provider is almost gone and you have this high speed connection 50 gig 100 gig to the cloud provider.
+
+138
+00:26:39.840 --> 00:26:44.910
+Michael Shannon: Then that's what a hybrid cloud is you're running their hypervisor technology.
+
+139
+00:26:47.760 --> 00:27:05.790
+Michael Shannon: and other tools and so a lot of the the the tools that you would offer like, for example, with an azure hybrid cloud, you would be using like as your Sentinel as a seam and source system that would be a cross local and cloud based resources.
+
+140
+00:27:07.620 --> 00:27:22.200
+Michael Shannon: that's what I that's what a hybrid cloud is to them that's not what nist says it is okay this says it's a combination you're an organization, using a combination of these three in any combination okay.
+
+141
+00:27:29.370 --> 00:27:30.810
+Michael Shannon: A lot of organizations.
+
+142
+00:27:32.310 --> 00:27:38.820
+Michael Shannon: realize the value proposition, not just of using a cloud provider, but of using.
+
+143
+00:27:39.480 --> 00:27:49.590
+Michael Shannon: managed security services, I also I mentioned like guard duty, for example, you know guard duty aws is just something you just turn it on.
+
+144
+00:27:50.400 --> 00:27:59.010
+Michael Shannon: And there's no configuration you just say I want guard duty and they're going to start charging you for how you how much you use the cloud.
+
+145
+00:27:59.490 --> 00:28:13.680
+Michael Shannon: And then they're going to provide this threat management service and it's a consortium of a bunch of different companies and they're looking for you know threats right zero days.
+
+146
+00:28:14.760 --> 00:28:18.750
+Michael Shannon: variance and they're providing security for you.
+
+147
+00:28:19.860 --> 00:28:26.550
+Michael Shannon: But an MSP can also extend to your on premises, so I have.
+
+148
+00:28:29.250 --> 00:28:40.680
+Michael Shannon: worked with a couple of like a unit one of the universities and one of the towns, I used to live in they don't have the budget for a full blown security operations Center they just don't have the budget.
+
+149
+00:28:42.150 --> 00:28:57.660
+Michael Shannon: So they have a handful you know about eight it people, maybe three of them are security specialist but the universe University has exploded, because it went it went from a division two to a division one.
+
+150
+00:29:00.120 --> 00:29:14.520
+Michael Shannon: So they decided to use 14 that for the gate as an MSP to provide managed firewall services and web application firewalls and ips and ideas.
+
+151
+00:29:15.360 --> 00:29:26.730
+Michael Shannon: So you know blurring the local sock with the cloud offering and this kind of concept, though, of of having your firewall or your router or.
+
+152
+00:29:27.390 --> 00:29:35.700
+Michael Shannon: communicate with a cloud based email security service or web security service, this is not a new thing.
+
+153
+00:29:36.630 --> 00:29:54.990
+Michael Shannon: But really if you were looking from a Cisco example, and we were going to you know go to use a cloud service solution, this is a little bit beyond that this is a much more of a established relationship with an organization usually larger companies.
+
+154
+00:29:56.820 --> 00:30:04.380
+Michael Shannon: 24 seven support tech support D DAS response all of those things.
+
+155
+00:30:06.150 --> 00:30:18.960
+Michael Shannon: Now, another term you'll hear is cloud access security broker so from a practical standpoint on the exam Why would an organization decide they want to use a casspi well here's why.
+
+156
+00:30:20.160 --> 00:30:24.300
+Michael Shannon: As we talked about this, this can involve a scenario where.
+
+157
+00:30:25.470 --> 00:30:48.870
+Michael Shannon: we've gone beyond the fact that we're just going to use a single cloud provider i've had students and I don't really call you students but i've had i've had participants that Dave and I who work for organizations who use aws and Google and azure and several software as a service providers.
+
+158
+00:30:50.100 --> 00:31:03.870
+Michael Shannon: So if you're an organization that either is doing that or desires to do that in the future, a cloud access security broker can assist you in that single sign on relationship.
+
+159
+00:31:05.310 --> 00:31:13.560
+Michael Shannon: Not only are they valuable for that kind of as an integrated solution provider when you have multiple services and service providers.
+
+160
+00:31:13.800 --> 00:31:23.940
+Michael Shannon: But they'll also assist you like, with you when you're dealing with a SAS provider with like data loss prevention and data leakage prevention those types of services.
+
+161
+00:31:25.890 --> 00:31:37.230
+Michael Shannon: Like Palo Alto networks has a casspi solution really all of them do but kind of the main use cases are you know i'm using them for.
+
+162
+00:31:38.880 --> 00:31:44.970
+Michael Shannon: assistance and support with different types of more complex scenarios right maybe i'm.
+
+163
+00:31:46.590 --> 00:32:08.310
+Michael Shannon: I need a casspi to help me because we're migrating our single sign on from like traditional usernames and passwords to maybe an ID ramp solution that uses that uses qr codes on our mobile devices and we're using that for a single sign on modality.
+
+164
+00:32:11.460 --> 00:32:18.840
+Michael Shannon: A cloud access security broker can also assist you in with mobile devices and how they interact with the cloud.
+
+165
+00:32:19.980 --> 00:32:35.970
+Michael Shannon: So part of your enterprise mobility management, maybe i'm going to use a access broker to assist me in the way that my end users in or operate with SAS providers and cloud providers.
+
+166
+00:32:40.050 --> 00:32:44.880
+Michael Shannon: casspi does not reach a CSP is not going to replace.
+
+167
+00:32:46.590 --> 00:32:54.990
+Michael Shannon: Identity management often what they're doing is they're going to assist you maybe they'll help you find the right vendor.
+
+168
+00:32:56.010 --> 00:32:58.350
+Michael Shannon: For your particular environment your solution.
+
+169
+00:32:59.580 --> 00:33:17.220
+Michael Shannon: Now they can be can be a solution offered by a large vendor so don't think of a cloud access security broker necessarily always as a standalone entity, think of it as a cloud access security brokerage service.
+
+170
+00:33:18.390 --> 00:33:19.980
+Michael Shannon: which could be you know.
+
+171
+00:33:21.810 --> 00:33:33.060
+Michael Shannon: caspi as a service that is offered by Cisco or 14 that are Palo Alto or you know ID ramp or one of the other.
+
+172
+00:33:34.260 --> 00:33:37.230
+Michael Shannon: things that have been mentioned, I think, somebody put one out earlier.
+
+173
+00:33:39.330 --> 00:33:40.230
+Michael Shannon: My notes.
+
+174
+00:33:41.640 --> 00:33:42.240
+Michael Shannon: aka.
+
+175
+00:33:43.350 --> 00:33:54.690
+Michael Shannon: okta so that think of it, also as a service, not just as a were a standalone casspi I think one of the I think officially.
+
+176
+00:33:55.980 --> 00:34:06.570
+Michael Shannon: You know, there was, like the first cloud access security broker I think mcafee bought them or maybe it was it was a mcafee service.
+
+177
+00:34:07.140 --> 00:34:18.450
+Michael Shannon: But there was like historically, the first casspi but now you know it's really evolved into just another service offering in the portfolio.
+
+178
+00:34:19.410 --> 00:34:31.890
+Michael Shannon: To to assist you, with your your single sign on to multiple service providers and services and other things like data loss prevention and helping you.
+
+179
+00:34:33.210 --> 00:34:39.210
+Michael Shannon: move into newer more robust multifactor authentication mechanisms.
+
+180
+00:34:41.340 --> 00:34:42.840
+Michael Shannon: Hope I hope that makes sense.
+
+181
+00:34:50.580 --> 00:34:52.920
+Michael Shannon: often go into the comment.
+
+182
+00:34:54.510 --> 00:34:55.140
+Michael Shannon: You know.
+
+183
+00:34:57.870 --> 00:35:02.280
+Michael Shannon: The caspi maybe a solution that you're choosing because it's.
+
+184
+00:35:03.750 --> 00:35:18.060
+Michael Shannon: Reducing risk with data loss prevention engines and strengthening your single sign on with either some biometric or some qr code based.
+
+185
+00:35:18.810 --> 00:35:34.350
+Michael Shannon: authentication authorization service, so it can enhance your security and reduce risk, you can look at it that way, but you can also look at it as a way from a risk treatment standpoint sharing risk.
+
+186
+00:35:35.520 --> 00:35:43.770
+Michael Shannon: Because they'll assume some of that in the shared responsibility model so we're all familiar with bring your own device, but even within bring your own device.
+
+187
+00:35:44.280 --> 00:36:07.260
+Michael Shannon: an organization can have different nuanced byob you know just unlimited access with my iPhone or I can only get access to non sensitive systems and data that would that would be enforced by the way, preferably with some type of enterprise mobile device management solution.
+
+188
+00:36:09.330 --> 00:36:11.370
+Michael Shannon: I think I have some listed.
+
+189
+00:36:13.920 --> 00:36:14.580
+Michael Shannon: Or maybe not.
+
+190
+00:36:18.720 --> 00:36:19.980
+Michael Shannon: Access with.
+
+191
+00:36:21.270 --> 00:36:37.470
+Michael Shannon: Allowing the mobile device management team to take my device and install certain agents on it or other things so it's my device i'm bringing it but to some extent i'm kind of giving some control over to.
+
+192
+00:36:39.480 --> 00:36:59.850
+Michael Shannon: The device management team or the company and maybe no local storage of data, but bring your own device now, this is probably what this is kind of moved like this, where Initially it was all bring your own device, and then we started to see organizations go to other models.
+
+193
+00:37:01.410 --> 00:37:10.290
+Michael Shannon: Where they would where they would go and they would have the oem they would have the call plans they would manage all of that they would have.
+
+194
+00:37:10.920 --> 00:37:24.510
+Michael Shannon: Maybe three or four different devices that the employees could choose and they still had some you know local control on it, but it was a device that was provided by the company.
+
+195
+00:37:26.160 --> 00:37:40.200
+Michael Shannon: You had a list of approved devices or smartphones or pads so you saw a lot of organizations to get control moving from a byob to where they were more involved in actually acquiring the devices.
+
+196
+00:37:42.090 --> 00:38:04.500
+Michael Shannon: Even corporately owning the devices and enabling the client side activities, to a certain degree, so, and so, and then we've seen things swinging around now back to incentive vironment is going back to be y O D, but using more robust enterprise mobility management tools and sweets.
+
+197
+00:38:06.210 --> 00:38:13.350
+Michael Shannon: Because the complexity and the cost of the company, you know, an opt in you know just dealing with.
+
+198
+00:38:13.710 --> 00:38:30.180
+Michael Shannon: The fact that you've got these manufacturers of these devices, you have so many employees and then you know the call plans change, you have the well you know the the disconnect between the oem and the carriers sometimes organizations just say forget it.
+
+199
+00:38:31.200 --> 00:38:41.130
+Michael Shannon: we're going to go back to the byob model but we're going to use more robust tools enterprise systems to help manage the byob environment.
+
+200
+00:38:51.150 --> 00:39:03.630
+Michael Shannon: I don't know that's a good question you know the on on the objectives and you may want to do you know, a more of a search on this, these are the three options in the.
+
+201
+00:39:05.820 --> 00:39:23.820
+Michael Shannon: objectives of the is C squared cope be ye O D I don't see a whole lot just in cope and see why O D and, with the exception of with cope we're assuming that there's just one device.
+
+202
+00:39:26.160 --> 00:39:46.350
+Michael Shannon: it's a corporate owned device and the employee doesn't have their own phone they're just using the corporate phone for everything, whereas in a si y O D, this may be a situation where they're choosing from several devices which they're using and they also have their own device.
+
+203
+00:39:48.480 --> 00:40:13.470
+Michael Shannon: These scenarios are so they have so much variation like my daughter works for a optical surgeon, and she has three phones her phone she can't even bring into the building so she has to go out on break or at lunch and use her phone then she has a corporate owned.
+
+204
+00:40:14.910 --> 00:40:28.020
+Michael Shannon: phone that she uses and then she has a third phone that she gets once a month because she's on call one weekend a month, which is a separate phone from the corporate provision phone.
+
+205
+00:40:31.530 --> 00:40:40.800
+Michael Shannon: I think the more important thing yeah and that's erewash citrix they all offer enterprise mobility management tools and you know.
+
+206
+00:40:42.180 --> 00:40:57.840
+Michael Shannon: Enterprise mobility management is kind of a global term right if it's a large enough organization it's possible that you'll combine two separate initiatives but, regardless of the two separate initiatives.
+
+207
+00:40:58.800 --> 00:41:16.080
+Michael Shannon: em em provides three core solutions visibility, you have to have visibility into always what's running on mobile devices and that could include with visibility GEO tagging GEO fencing GEO location.
+
+208
+00:41:16.950 --> 00:41:35.340
+Michael Shannon: Right using GPS to always know where that device is visibility also visibility into the applications that are being installed on that device secure access, you know running agents.
+
+209
+00:41:36.600 --> 00:41:48.360
+Michael Shannon: On that what you're allowed to do with that device, can it be tethered can the device be used as a token can be, can it can it can you have you know, a.
+
+210
+00:41:49.200 --> 00:42:01.950
+Michael Shannon: cloud coinbase wallet on it, can it use apple pay the list goes on Okay, and then protection of data, specifically we're looking at you know not leaking or losing.
+
+211
+00:42:02.670 --> 00:42:14.760
+Michael Shannon: Intellectual Property pii pH I other information so if it's a large large enough organization, you may separate mobile device management from mobile application management.
+
+212
+00:42:15.360 --> 00:42:39.960
+Michael Shannon: OK, so the mdm and be responsible for you know the provisioning and enrolling installing certificates, maybe certain types of chips like a you know sd hsm those types of chips in memory cards monitoring measuring for compliance reasons geotagging GEO fencing GEO location.
+
+213
+00:42:41.190 --> 00:42:46.650
+Michael Shannon: And to some degree data that's kind of where things get a little bit.
+
+214
+00:42:48.630 --> 00:42:59.460
+Michael Shannon: You know Gray between mdm and ma m Okay, if you restrict where the ma ma just deals with Apps, then the.
+
+215
+00:43:00.660 --> 00:43:11.700
+Michael Shannon: partitioning the containerization of personal and corporate data data link prevention would be under the umbrella of mobile device management, if you have a strict.
+
+216
+00:43:12.720 --> 00:43:17.130
+Michael Shannon: ma N, where you just are involved with the mobile Apps.
+
+217
+00:43:17.670 --> 00:43:31.950
+Michael Shannon: The monitoring the configuration the updating the monitoring, making sure that there's not side loading and other things going on not just not just using approved Apps but say from Google or or apple but.
+
+218
+00:43:32.640 --> 00:43:42.690
+Michael Shannon: Corporate Apps that are approved right, and you know, also the the ability in the mobile application management to be flexible.
+
+219
+00:43:43.530 --> 00:44:01.860
+Michael Shannon: When necessary for, for example, you may have to allow personal health Apps to run or contact tracing Apps because there's some global event right some health event that you know you need to be flexible with that.
+
+220
+00:44:04.080 --> 00:44:09.390
+Michael Shannon: So we're concerned with the types of data that are stored locally we're also concerned with.
+
+221
+00:44:10.020 --> 00:44:26.040
+Michael Shannon: A cloud storage icloud, for example, and how that's configured any remnants data remnants removable and non removable storage there any is there any automatic backup or any automatic copies to a cloud.
+
+222
+00:44:27.990 --> 00:44:29.460
+Michael Shannon: And of course data leakage.
+
+223
+00:44:30.690 --> 00:44:34.590
+Michael Shannon: So jailbreaking is a is an ios thing.
+
+224
+00:44:35.670 --> 00:44:43.920
+Michael Shannon: Now this benson's jailbreaking and routing jailbreaking sounds worse, but it's actually not okay.
+
+225
+00:44:45.510 --> 00:44:59.700
+Michael Shannon: jailbreaking is getting much more difficult to accomplish if you have an iPhone you know how often you have to update that ios so apples very vigilant.
+
+226
+00:45:01.350 --> 00:45:06.690
+Michael Shannon: With their updates OK, so the jailbreaking phenomenon.
+
+227
+00:45:08.070 --> 00:45:22.980
+Michael Shannon: Not as common as it used to be five or 10 years ago, the thing about routing is, this is a much higher level of access, this is like you know full access because routing involves the android device.
+
+228
+00:45:23.520 --> 00:45:41.250
+Michael Shannon: androids Linux Open Source So if you can successfully route an android phone then you've got you know basically full access beyond just the aesthetics, but the software and the hardware somebody with good cracking skills.
+
+229
+00:45:42.420 --> 00:45:52.050
+Michael Shannon: Side loading is basically transferring files to a mobile device using some type of often you know over the air.
+
+230
+00:45:53.070 --> 00:46:10.200
+Michael Shannon: methodology Okay, I could also involve writing to the memory card in the device, and so, with with android Apps the side loading could be the employee loading unauthorized applications on their device.
+
+231
+00:46:12.810 --> 00:46:30.750
+Michael Shannon: Other challenges to enterprise mobility management, which we would like to use some type of management suite would be the Managing of X 509 v3 certificates, so if we go back to our discussion of public key infrastructure, remember that discussion.
+
+232
+00:46:32.460 --> 00:46:34.830
+Michael Shannon: When you're using an enterprise pk.
+
+233
+00:46:36.810 --> 00:46:48.030
+Michael Shannon: you're going to be using with dot one X some type of variant of the eXtensible authentication protocol, so the most secure option.
+
+234
+00:46:49.260 --> 00:46:58.020
+Michael Shannon: is to use a P pls AAP transport layer security, which involves installing certificates on all the devices.
+
+235
+00:46:59.580 --> 00:47:06.840
+Michael Shannon: which makes that option, the most complex it's the most secure but it's the most complex.
+
+236
+00:47:08.250 --> 00:47:16.320
+Michael Shannon: And that's one of the challenges of enterprise mobility management, when you have to satisfy an ap pls dot one X environment.
+
+237
+00:47:16.890 --> 00:47:35.190
+Michael Shannon: Now, a lot of organizations that have that are like homogenous Cisco environments where they have Cisco hardware and infrastructure and maybe their wireless are using the arrow net fleet of access points and controllers, then they can use what's called EA P fast.
+
+238
+00:47:36.420 --> 00:47:43.350
+Michael Shannon: Which is not a certificate it's a special pack file that usually it gets it's part of the image.
+
+239
+00:47:44.820 --> 00:47:55.710
+Michael Shannon: Other challenges are just are you allowing tethering of those devices phones in pads you know tethering off another device using that as a wireless access point.
+
+240
+00:47:56.670 --> 00:48:08.130
+Michael Shannon: The token ization is it uses a multi factor authentication factor is a used for making mobile payments with near field communication or whatever.
+
+241
+00:48:09.360 --> 00:48:15.000
+Michael Shannon: there's the, as I mentioned earlier, if you're doing a corporate owned solution where you're.
+
+242
+00:48:15.480 --> 00:48:28.140
+Michael Shannon: Providing a choice or the device or devices you're going to have to deal with the oem the original equipment manufacturer, whoever, that is, who are manufacturers the device.
+
+243
+00:48:28.680 --> 00:48:35.700
+Michael Shannon: And the carrier and the often the changing of carriers and the fragmentation and the problems that can come with that.
+
+244
+00:48:37.590 --> 00:48:55.380
+Michael Shannon: Some of you who had you know iphones and you change your carrier there's icloud complications and you have to get the carrier to unlock it before you can get the new carrier Those are all challenges mobility management.
+
+245
+00:48:57.090 --> 00:49:00.060
+Michael Shannon: unauthorized remote locking and wiping.
+
+246
+00:49:03.840 --> 00:49:23.220
+Michael Shannon: So we have like containerization with mobile devices we're not really talking about containerized applications we're talking about partitioning using software tools to partition different data and applications users from corporate.
+
+247
+00:49:24.570 --> 00:49:25.500
+Michael Shannon: isolation.
+
+248
+00:49:26.520 --> 00:49:33.480
+Michael Shannon: Okay, you can so the user can still use certain functionality, they can still text and tweet and whatever.
+
+249
+00:49:34.020 --> 00:49:45.570
+Michael Shannon: But it's partition from and containerized from other activities even like on an iPhone it has a secure container known as the enclave.
+
+250
+00:49:46.170 --> 00:49:57.150
+Michael Shannon: A whole separate secure operating system and you've heard stories about that you know at the FBI goes to apple and they're like we want to be able to break into the secure enclave.
+
+251
+00:49:57.540 --> 00:50:12.090
+Michael Shannon: And the apple will say no it's for privacy reasons, you know we kept to maintain the integrity of our Sep operating system we're not going to allow you to get access to that okay.
+
+252
+00:50:14.880 --> 00:50:32.730
+Michael Shannon: So there's some you know you're fun you're fun con mentioned some tools and he in earphone mentioned air watch right right on air watch is on this list, right here, and then citrix would be Zen mobile and then there's mobile iron.
+
+253
+00:50:33.900 --> 00:50:45.810
+Michael Shannon: And these are modern tools, you know enterprise tools that we're going to use to help us deliver enterprise mobility management mobile device management mmm.
+
+254
+00:50:48.510 --> 00:50:56.850
+Michael Shannon: Alright, so mobility is an area that has been expanded on the exam so today is really a day day three.
+
+255
+00:50:57.180 --> 00:51:12.360
+Michael Shannon: of looking at areas on the this new newer exam it's not brand new but it's the latest iteration of of CIS SP we're really digging in today to some of the things that have been added to the new exam.
+
+256
+00:51:13.710 --> 00:51:14.820
+Michael Shannon: cloud computing.
+
+257
+00:51:15.990 --> 00:51:30.540
+Michael Shannon: mobility solutions and iot and embedded devices there's an explosion of devices that are basically you know everything's on the Internet.
+
+258
+00:51:31.380 --> 00:51:55.980
+Michael Shannon: which is where the future is heading, you know, the goal, the global goal is into end visibility with IP version six addresses you know the 128 bit ipv6 address allows for you know billions of people to have many, many, many addresses okay.
+
+259
+00:51:58.350 --> 00:51:58.980
+Michael Shannon: So.
+
+260
+00:52:01.920 --> 00:52:13.080
+Michael Shannon: we're talking about specialized sensors that are running in manufacturing equipment or hardware all the many smart devices, you know my smart generator.
+
+261
+00:52:14.130 --> 00:52:27.060
+Michael Shannon: It wasn't smart, but I got a new one in smart everything smart now everything spyware really you know systems to do facility automation.
+
+262
+00:52:28.140 --> 00:52:32.880
+Michael Shannon: In P non-person entities like robotics and robots.
+
+263
+00:52:34.260 --> 00:52:36.990
+Michael Shannon: robotic centuries, you know.
+
+264
+00:52:39.240 --> 00:52:59.610
+Michael Shannon: And we there they're here, you know lead in some of this stuff is like the TV show black mirror I don't Have you ever seen on cable I think it's netflix black mirror is like there was like three seasons of just all these dystopian hour long science fiction things but they.
+
+265
+00:53:00.690 --> 00:53:04.590
+Michael Shannon: Are they're not the not too distant in the future.
+
+266
+00:53:06.210 --> 00:53:10.800
+Michael Shannon: And like one of one of the episodes is about these robotic dog like.
+
+267
+00:53:11.940 --> 00:53:15.060
+Michael Shannon: robot sensors centuries.
+
+268
+00:53:16.800 --> 00:53:29.910
+Michael Shannon: Well, there they exist, they use them and they use the South Koreans use them on the dmz border with North Korea Boston dynamics, yes, thank you.
+
+269
+00:53:31.290 --> 00:53:41.040
+Michael Shannon: All of your commercial plant your smart refrigerators right medical devices, especially you know clothing that smart.
+
+270
+00:53:41.730 --> 00:53:49.710
+Michael Shannon: Athletes use a wide variety of different types of you know iot, whether it be a empty ant.
+
+271
+00:53:50.160 --> 00:54:01.200
+Michael Shannon: ant plus zig be all these types of things that enable your clothing to be smart and your shoes to be smart and, of course, remote medical.
+
+272
+00:54:02.010 --> 00:54:22.500
+Michael Shannon: Where you know somebody in hospice but they're at home, but they're being monitored remotely web md vehicles drones smart meters all those things iot so here's the oh os you know the O is as a web top 10 you should be familiar with, that the Web top 10.
+
+273
+00:54:29.820 --> 00:54:31.800
+Michael Shannon: Oh wow i'm sorry Linda that's a bummer.
+
+274
+00:54:36.480 --> 00:54:40.830
+Michael Shannon: So here's the the top 10 vulnerabilities for iot okay.
+
+275
+00:54:42.810 --> 00:54:53.370
+Michael Shannon: A lot of your software operating systems that are used, I wouldn't say all of it, but a lot of it is Linux based, even though you will, you will see specialty devices.
+
+276
+00:54:53.850 --> 00:55:02.520
+Michael Shannon: And this is, this is a true phenomenon, there are specialty devices and components around the world that are still running like windows 95.
+
+277
+00:55:07.830 --> 00:55:21.690
+Michael Shannon: So here's your top 10 list there I gotta move forward here's here, but here, by the way, is you know, a question that has come up I knew we would get there, eventually right container.
+
+278
+00:55:23.040 --> 00:55:32.430
+Michael Shannon: An isolated abstract of application, so there is similarity to like what hypervisor is provide but containers.
+
+279
+00:55:33.210 --> 00:55:52.830
+Michael Shannon: Yes, they can run in hypervisor environments and they but they often run on a server a red hat enterprise server windows server but containers can also run server lists just run in a data Center cloud environment like aws has a service called far gate.
+
+280
+00:55:54.000 --> 00:56:14.820
+Michael Shannon: Where the container just runs on their infrastructure, there is no Sir underlying servers you have to maintain, but the container has everything in a modular form the Code, the binaries the libraries, the dependencies, and these are portable across platforms across cloud providers.
+
+281
+00:56:16.980 --> 00:56:17.430
+Michael Shannon: Okay.
+
+282
+00:56:19.440 --> 00:56:32.070
+Michael Shannon: Self contained environments this feeds into you know our rapid deployment are agile our our continual or C ci CD or.
+
+283
+00:56:33.630 --> 00:56:49.050
+Michael Shannon: yeah our continual deployment life cycles, where you can also focus on micro services, and then they communicate with you know queuing services and notification services as opposed to being monolithic.
+
+284
+00:56:51.420 --> 00:57:02.040
+Michael Shannon: So this is an example of showing on the left hand side you know virtual machines running in a hypervisor on a infrastructure, like a server.
+
+285
+00:57:02.670 --> 00:57:22.530
+Michael Shannon: Where, on the other side, we see each container which its with its micro service and it's binaries and dependencies and libraries all self contained running on docker or pod man on a host operating system like red hat enterprise windows.
+
+286
+00:57:23.970 --> 00:57:33.420
+Michael Shannon: or whatever, or like I said at a cloud provider, these can run directly on the infrastructure service.
+
+287
+00:57:36.360 --> 00:57:46.410
+Michael Shannon: So docker is a is the most common containerization platform, the one that we use to develop the solutions with.
+
+288
+00:57:49.080 --> 00:58:03.270
+Michael Shannon: it's not the only one okay Cooper nettie is is an orchestrator service so to kind of visualize that so we're going to use docker to package and distribute this application.
+
+289
+00:58:04.170 --> 00:58:15.750
+Michael Shannon: And maybe we're going to do, rapid development so we're going to do this in a week now remember this package may be part of a larger application.
+
+290
+00:58:17.760 --> 00:58:36.960
+Michael Shannon: The container or micro service but we're gonna we're gonna we're gonna pull this together in a week, however, the orchestration the scaling the running the monitoring the lifetime that's going to be oriented over over the next eight years or eight months or whatever.
+
+291
+00:58:38.640 --> 00:58:40.650
+Michael Shannon: automation versus orchestration.
+
+292
+00:58:43.350 --> 00:58:45.120
+Michael Shannon: server list can be running.
+
+293
+00:58:47.310 --> 00:58:49.920
+Michael Shannon: functions as a service very common.
+
+294
+00:58:51.330 --> 00:59:03.900
+Michael Shannon: way to do this at the cloud you go to the cloud provider you write the function, the code it's it's it's part of your account Okay, they store that code.
+
+295
+00:59:04.530 --> 00:59:29.790
+Michael Shannon: And you don't pay until the code gets triggered and it can be triggered by a URL or some alarm or alert or an API call or a security event, you know, a half dozen or more things can trigger the Code and the code can be used with pretty much any service to add functionality.
+
+296
+00:59:32.880 --> 00:59:44.250
+Michael Shannon: Let me give you an example Okay, so if you're an aws and you want to use their platform as a service to create a mobile APP.
+
+297
+00:59:44.910 --> 00:59:52.890
+Michael Shannon: And then you want to offer single sign on for that mobile APP right, so you want to create something for an iPhone or an android.
+
+298
+00:59:53.700 --> 01:00:04.410
+Michael Shannon: And you want to be able to when they sign up for your APP you're going to give them the choice and that you we've all seen this whether it's a web application or a mobile APP.
+
+299
+01:00:05.580 --> 01:00:20.670
+Michael Shannon: they'll give you the option to create a create a account right or a profile so they'll give you a page and they'll ask you for all your information, a little red asterisk means I, you have to give them that information.
+
+300
+01:00:21.750 --> 01:00:25.890
+Michael Shannon: So I can go through that process, but if you want a lot of people to use your APP.
+
+301
+01:00:27.060 --> 01:00:31.170
+Michael Shannon: That really shouldn't be the only way they sign up.
+
+302
+01:00:32.340 --> 01:00:49.920
+Michael Shannon: Often, what you'll offer in addition to that, if they don't want to create an account you give them buttons or the option to sign up with their Facebook account or their apple ID or their Twitter account or their Google gmail account you with me.
+
+303
+01:00:51.240 --> 01:00:58.890
+Michael Shannon: Well aws kind of automates that for you, makes it really easy with platform as a service solution called cog neato.
+
+304
+01:01:00.240 --> 01:01:09.840
+Michael Shannon: Well, when you're going through cog neato they'll actually have like a port for portfolio of functions that you can add.
+
+305
+01:01:10.950 --> 01:01:19.440
+Michael Shannon: And you can say, well, as somebody who's going to sign up with Google, I want to run a function that gives them a captcha.
+
+306
+01:01:21.780 --> 01:01:25.170
+Michael Shannon: And it's only going to run the code when they're signing up through Google.
+
+307
+01:01:27.180 --> 01:01:38.010
+Michael Shannon: Or, I want to do a two factor authentication I want to send them a code a six digit code to whatever email address they're offering.
+
+308
+01:01:39.270 --> 01:01:40.260
+Michael Shannon: You get the idea.
+
+309
+01:01:41.310 --> 01:01:56.310
+Michael Shannon: So these are just functions, you want in the cloud that add additional optional functionality to all these different services or their functions that run because they're assisting incident response from a security standpoint things like that.
+
+310
+01:01:57.570 --> 01:02:19.530
+Michael Shannon: So we have functions as a service, but you can also run like I said containers service service code like as your functions and then service containers eliminating the need to provision and manage servers they just provide the compute platform in their data centers.
+
+311
+01:02:20.910 --> 01:02:21.300
+Michael Shannon: Okay.
+
+312
+01:02:24.150 --> 01:02:34.860
+Michael Shannon: Alright, so I got to stay on this topic i'm not going to give this as a reading assignment so i'm going to stay on this topic, and then we'll take our second break and.
+
+313
+01:02:36.960 --> 01:02:44.940
+Michael Shannon: we'll come back and we'll finish up, hopefully, I can get through this and set will get through some of the.
+
+314
+01:02:45.810 --> 01:02:57.720
+Michael Shannon: physical security stuff but what I don't cover and I may I may go through and selectively choose certain things of physical security, I want to talk about that, I think, maybe the more difficult.
+
+315
+01:02:58.860 --> 01:03:04.350
+Michael Shannon: concepts and then i'm going to leave the rest of that tutor to a reading assignment okay.
+
+316
+01:03:06.000 --> 01:03:14.700
+Michael Shannon: Alright, so i'm going to stop the recording and I will restart the recording I promise when I come back so we'll stop the recording and see you back in 15 minutes.
+

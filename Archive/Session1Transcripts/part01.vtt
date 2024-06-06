@@ -1,0 +1,1398 @@
+WEBVTT
+
+1
+00:00:13.769 --> 00:00:18.480
+Michael Shannon: Alright, welcome back from break everybody it's the ci ssp boot camp.
+
+2
+00:00:19.770 --> 00:00:21.090
+Michael Shannon: With Michael and David.
+
+3
+00:00:23.070 --> 00:00:35.670
+Michael Shannon: So as a security practitioner one who's wearing that management, a hat, we have to align our security functions our controls our initiatives or programs.
+
+4
+00:00:36.210 --> 00:00:52.080
+Michael Shannon: With our business our business strategy, whatever our value proposition is, do we have a mission, a charter objectives you have to always be cognizant of our contribution not only to.
+
+5
+00:00:53.010 --> 00:01:04.590
+Michael Shannon: Meeting the perhaps we're doing it to be accredited or certified right, we have to meet some regulation or mandate, because of the industry we're in.
+
+6
+00:01:05.670 --> 00:01:10.320
+Michael Shannon: But not only that, how do we help add value.
+
+7
+00:01:11.760 --> 00:01:24.330
+Michael Shannon: We may have our own customers, we may be a service provider ourselves okay our partners are relying upon us strategic partners large vendors and customers.
+
+8
+00:01:25.740 --> 00:01:37.290
+Michael Shannon: Right, so a lot of this is going to be driven not by just by corporate governance but corporate governance itself should drive a security, governance.
+
+9
+00:01:38.970 --> 00:01:47.550
+Michael Shannon: We have to be able to react to changes if we're going to go through a merger we're going to our company's being sold to some other company.
+
+10
+00:01:48.000 --> 00:01:57.030
+Michael Shannon: Often there's like will be called a dark period there where we have to be highly concerned about you know, privacy and intellectual property.
+
+11
+00:01:57.630 --> 00:02:14.580
+Michael Shannon: There may be legal ramifications, maybe if we're under an investigation suddenly other legal holds on data or files or assets, what if those assets are being stored in a cloud provider.
+
+12
+00:02:15.810 --> 00:02:26.550
+Michael Shannon: Okay, anything that changes the way our company is structured we go from a privately held company company to a publicly held company David and I have been around.
+
+13
+00:02:27.870 --> 00:02:29.910
+Michael Shannon: This institution long enough.
+
+14
+00:02:31.050 --> 00:02:40.290
+Michael Shannon: To kind of go through that I think I don't know, maybe four times public than private or private and public and private than public.
+
+15
+00:02:42.480 --> 00:02:45.930
+Michael Shannon: And it, you know it introduces complexities.
+
+16
+00:02:47.370 --> 00:03:02.160
+Michael Shannon: Privacy issues data sharing interconnection agreements, who might have with as part of our disaster recovery business continuity options connectivity agreements with service providers.
+
+17
+00:03:04.800 --> 00:03:10.200
+Michael Shannon: there's internal and external influences from a security, governance standpoint.
+
+18
+00:03:11.220 --> 00:03:25.890
+Michael Shannon: Are we, a more traditional type of top down company with a very strict you know vertical chain of command or a very functional were very departmental.
+
+19
+00:03:27.960 --> 00:03:35.760
+Michael Shannon: In a in a more traditional functional environment, you may have more silos or siloed areas.
+
+20
+00:03:37.560 --> 00:03:55.380
+Michael Shannon: If you've been involved in security long enough, you know it used to be and it's kind of like where devops came from, but early on the people that were involved with writing the Code and the people that were involved with the operational aspect were siloed.
+
+21
+00:03:57.360 --> 00:04:14.190
+Michael Shannon: You can you can be involved in security, but you had no access to the database and the database people from a security standpoint, it was basically network security infrastructure, the database people they were doing their database admin stuff.
+
+22
+00:04:15.240 --> 00:04:17.790
+Michael Shannon: Maybe even to some degrees server admins.
+
+23
+00:04:20.220 --> 00:04:32.550
+Michael Shannon: Today, those those relationships are flatter we often see more project ties organizations, where an individual may have a certain job title.
+
+24
+00:04:33.180 --> 00:04:55.740
+Michael Shannon: But they can be working horizontally in different business units and departments, maybe simultaneously or they move from one project to another throughout the organization or the campus obviously executive management our management structure our C suite RC team as a security.
+
+25
+00:04:56.880 --> 00:05:09.270
+Michael Shannon: architect do I answer to another security architect or do I answer to somebody in the C suite the CIO the CIO so do we have a chief privacy officer.
+
+26
+00:05:11.580 --> 00:05:13.230
+Michael Shannon: We have internal auditors.
+
+27
+00:05:14.520 --> 00:05:22.800
+Michael Shannon: And those might be certified public accountants in the accounting department or maybe other types of specialized auditors.
+
+28
+00:05:24.720 --> 00:05:28.500
+Michael Shannon: That have to answer to our insurance company, for example.
+
+29
+00:05:33.600 --> 00:05:37.830
+Michael Shannon: Maybe maybe as an organization, we have a private cloud.
+
+30
+00:05:38.880 --> 00:05:49.770
+Michael Shannon: So we've converted our data Center into a more virtualized hypervisor driven data Center and we provide the same type of services.
+
+31
+00:05:50.430 --> 00:06:05.970
+Michael Shannon: That a cloud provider would offer we offer sandbox environments and development environments, we they have the ability to use their budgets to do research and development or development using our private cloud.
+
+32
+00:06:10.050 --> 00:06:15.480
+Michael Shannon: We have to always again from an internal standpoint know our key value propositions.
+
+33
+00:06:16.620 --> 00:06:21.540
+Michael Shannon: Right service product or both, and then external.
+
+34
+00:06:22.950 --> 00:06:26.700
+Michael Shannon: influences will affect our security, governance.
+
+35
+00:06:28.380 --> 00:06:36.240
+Michael Shannon: If you're a public company, you may have to you have to respond to stockholders and bondholders maybe you're part of a partnership.
+
+36
+00:06:38.160 --> 00:06:41.220
+Michael Shannon: You have to be aware that your customers and your clients.
+
+37
+00:06:42.570 --> 00:06:50.610
+Michael Shannon: have an incredible amount of influence, your lenders Okay, if you have a data breach.
+
+38
+00:06:52.440 --> 00:07:07.800
+Michael Shannon: of credit card information, for example, that's going to affect your customers that's a secondary kind of cascading loss that you're gonna have to deal with, but when you put you know you provide credit, you know protection.
+
+39
+00:07:08.850 --> 00:07:22.620
+Michael Shannon: For your customers, maybe with lenders, if you have a data breach a secondary loss might be something like well you're going to pay higher interest rates for that borrowing next time.
+
+40
+00:07:23.760 --> 00:07:30.660
+Michael Shannon: We can be affected by social, political, socio political, economic factors right.
+
+41
+00:07:32.100 --> 00:07:34.470
+Michael Shannon: pandemics war.
+
+42
+00:07:36.390 --> 00:07:48.030
+Michael Shannon: Okay supply chains can be affected vendors that we used, two years ago, two and a half years ago, may not even be in business anymore.
+
+43
+00:07:48.840 --> 00:08:01.380
+Michael Shannon: A software vendor a hardware vendor or that particular vendors only operating at 75% they're barely keeping their head above water trying to ride out the storm.
+
+44
+00:08:03.120 --> 00:08:08.220
+Michael Shannon: disruptions in the supply chain more regulation okay.
+
+45
+00:08:10.080 --> 00:08:29.190
+Michael Shannon: So, you know as a security practitioner obviously we're heavily involved in access, controls right access to resources and assets, so we need to have our finger on the pulse of our the way organization is designed roles responsibilities processes.
+
+46
+00:08:30.330 --> 00:08:42.330
+Michael Shannon: Okay, and there's no one size fits all you may have a large global company that operates differently at the headquarters, then they do it a regional branch office or a satellite office.
+
+47
+00:08:47.670 --> 00:08:57.750
+Michael Shannon: The responsibilities and roles may drive your access control methodology, if you have a role, based access control.
+
+48
+00:08:58.290 --> 00:09:19.830
+Michael Shannon: or even if it's discretionary often in a discretionary access control model like windows with active directory your groups your global groups are often they can be built on roles like network administrators database administrator, but they can also be departmental.
+
+49
+00:09:22.440 --> 00:09:29.430
+Michael Shannon: Your role based access control, for example, if you're working at a medical Center and use a role based model.
+
+50
+00:09:30.870 --> 00:09:37.110
+Michael Shannon: You need to be aware of the different roles medical doctor nurse practitioner.
+
+51
+00:09:38.250 --> 00:09:40.500
+Michael Shannon: Registered nurse technician.
+
+52
+00:09:43.950 --> 00:09:45.180
+Michael Shannon: we're going to talk more about.
+
+53
+00:09:46.350 --> 00:09:55.560
+Michael Shannon: These access control models, of course, like like today, this is all under the umbrella of understanding the responsibilities of security, governance.
+
+54
+00:09:56.610 --> 00:10:04.170
+Michael Shannon: Okay trust me most of the things we've even brought up we're going to revisit them again, because if you go back to.
+
+55
+00:10:05.820 --> 00:10:06.480
+Michael Shannon: This.
+
+56
+00:10:09.090 --> 00:10:10.740
+Michael Shannon: Waiting of domains.
+
+57
+00:10:12.030 --> 00:10:25.410
+Michael Shannon: Well, it goes without saying that there's a lot of overlap in these domains, I mean part of security operations number seven is securing your assets.
+
+58
+00:10:27.330 --> 00:10:30.330
+Michael Shannon: What how you operate yours, how do you.
+
+59
+00:10:31.710 --> 00:10:39.660
+Michael Shannon: put into practice, your controls in operations will be based on how you handle and treat risk.
+
+60
+00:10:41.820 --> 00:10:44.040
+Michael Shannon: Right now, I can pretty much.
+
+61
+00:10:45.180 --> 00:11:01.740
+Michael Shannon: isolate software development, security as a domain, but that's also going to be driven by your security architecture, so the point i'm making is there's a lot of overlaps in the domains, which by the way, is why to be.
+
+62
+00:11:03.210 --> 00:11:15.840
+Michael Shannon: qualified to take the exam you don't have to have four or five years of real world fully paid experience in all eight domains.
+
+63
+00:11:17.640 --> 00:11:30.840
+Michael Shannon: Because there's so much overlap and so that kind of ties into the fact that many of the things that we talked about today we'll revisit these again when we get into the operational and the practical aspect of them.
+
+64
+00:11:33.630 --> 00:11:48.240
+Michael Shannon: Now owning something ownership ownership of the data ownership of the file you create the data you create we often see that in more discretionary or role based models.
+
+65
+00:11:49.890 --> 00:11:51.270
+Michael Shannon: So an owner.
+
+66
+00:11:52.530 --> 00:11:59.040
+Michael Shannon: Typically, you see those in certain access control models, for example in a mandatory access control model.
+
+67
+00:12:00.270 --> 00:12:03.810
+Michael Shannon: A MAC model it sucks it's rare, if not.
+
+68
+00:12:04.920 --> 00:12:08.700
+Michael Shannon: Just exclusively, there is no ownership.
+
+69
+00:12:10.860 --> 00:12:13.140
+Michael Shannon: And a strict mandatory access control model.
+
+70
+00:12:14.910 --> 00:12:18.300
+Michael Shannon: The ownership is the entity, the Agency.
+
+71
+00:12:19.560 --> 00:12:20.460
+Michael Shannon: owner everything.
+
+72
+00:12:22.260 --> 00:12:31.470
+Michael Shannon: But a discretionary models, you can create directories and folders and when you open, you know when you create a word document or a PowerPoint.
+
+73
+00:12:32.610 --> 00:12:45.000
+Michael Shannon: Presentation or an excel spreadsheet or something else, something maybe in sharepoint you're the owner of that, and you have the discretion to share it and even assign permissions.
+
+74
+00:12:48.180 --> 00:13:00.480
+Michael Shannon: If you're in a corporate environment to use classification levels owners may determine those levels as well owners can determine how things are labeled or tagged.
+
+75
+00:13:02.490 --> 00:13:09.210
+Michael Shannon: there's an existing schema of key value pairs and the owner of the.
+
+76
+00:13:10.470 --> 00:13:25.020
+Michael Shannon: object either locally or in the cloud tags it with key value pairs owners often do that, we have data ownership, we also may have asset ownership okay technically.
+
+77
+00:13:27.030 --> 00:13:29.820
+Michael Shannon: I may not be an owner of my corporate laptop here.
+
+78
+00:13:31.020 --> 00:13:49.230
+Michael Shannon: But I may be a steward or a custodian of it Okay, so you have stewards and notice protect my data but also assets in general data is just one of our assets and probably for many organizations are most important.
+
+79
+00:13:50.550 --> 00:13:57.420
+Michael Shannon: opt in the most mission critical asset that a company has this data, not all companies right.
+
+80
+00:13:59.400 --> 00:14:04.230
+Michael Shannon: Some companies actually consider their employees to be their most valuable assets.
+
+81
+00:14:06.210 --> 00:14:10.110
+Michael Shannon: But not all not all companies operate, not all organizations operate that way.
+
+82
+00:14:11.310 --> 00:14:14.580
+Michael Shannon: Often, and when I talk about stewards versus custodians.
+
+83
+00:14:15.720 --> 00:14:18.960
+Michael Shannon: Which is kind of to differentiation is, you have to have here.
+
+84
+00:14:21.390 --> 00:14:27.030
+Michael Shannon: I mean a hard time driving my slides forward hold on like stewards versus custodians okay.
+
+85
+00:14:29.130 --> 00:14:39.330
+Michael Shannon: I don't like to use a lot of cultural references because i've students from all over the world and we don't watch the same movies, we don't listen to the same music.
+
+86
+00:14:40.110 --> 00:14:50.880
+Michael Shannon: We don't watch the same TV shows, but there is a there's a show it's a reality show it's called below deck and so what it is it's just luxury.
+
+87
+00:14:51.480 --> 00:15:01.260
+Michael Shannon: yachts in the Mediterranean or Greece or whatever and it's just the drama of all the people that are working on the yacht.
+
+88
+00:15:01.890 --> 00:15:06.480
+Michael Shannon: And then you know the rich drunk people and all of that drama right it's the reality show.
+
+89
+00:15:07.170 --> 00:15:24.840
+Michael Shannon: Well, you know, on these luxury yachts you have stewards and you have custodians that the stewards deal with the customers, the people that are paying to come out of the yacht for three days from a business perspective, they deal with internal and external customers.
+
+90
+00:15:26.220 --> 00:15:46.230
+Michael Shannon: Because a steward of data or other assets may be there for quality control, ensuring compliance okay stewart's the ones that do with internal external customers often maybe compliance and regulators auditors a custodian is more of a technical.
+
+91
+00:15:47.790 --> 00:16:00.990
+Michael Shannon: For example, on the on the yacht it would be the first Mate, and the second Mate, and the third mate and they they interface with engineer, and the captain so assets from a technical perspective.
+
+92
+00:16:02.850 --> 00:16:12.690
+Michael Shannon: Okay, they may be dealing with management with vendors they're there to ensure confidentiality integrity availability authenticity.
+
+93
+00:16:14.760 --> 00:16:16.800
+Michael Shannon: Non repudiation okay.
+
+94
+00:16:17.880 --> 00:16:18.450
+Michael Shannon: Technical.
+
+95
+00:16:20.550 --> 00:16:34.020
+Michael Shannon: And then you have officers, where that's where the buck stops usually in an organization when it comes to data and assets, the buck has to stop somewhere right on the yacht it's the captain.
+
+96
+00:16:36.150 --> 00:16:41.910
+Michael Shannon: And organizations, usually some type of executive manager or C suite or cto.
+
+97
+00:16:43.860 --> 00:16:51.960
+Michael Shannon: CIO chief privacy officer CIS oh and, by the way, some of you already.
+
+98
+00:16:53.010 --> 00:17:00.210
+Michael Shannon: Probably are operating I mean if I was it was many people, as I have in this group today almost 300.
+
+99
+00:17:01.800 --> 00:17:12.420
+Michael Shannon: chances are some of you are already functioning in the role you're already on the CSP to the seating and you're getting the CSP certification.
+
+100
+00:17:13.200 --> 00:17:17.490
+Michael Shannon: Because, maybe it's mandated you know you see people get hired.
+
+101
+00:17:18.090 --> 00:17:29.100
+Michael Shannon: In these roles and then there's they're like Okay, but I need you to get a your CIS SP and your CSA auditor I see is m within the next period of time, some of you.
+
+102
+00:17:29.730 --> 00:17:37.440
+Michael Shannon: Already in these roles, some of you it's in your future you'll get to see is SP other certifications and you'll go on to be.
+
+103
+00:17:39.210 --> 00:17:39.900
+Michael Shannon: officers.
+
+104
+00:17:46.680 --> 00:17:55.080
+Michael Shannon: We also have a couple of terms due diligence and do care pay due diligence is the act of performing through research.
+
+105
+00:17:55.590 --> 00:18:07.890
+Michael Shannon: Before you commit to a plan of action okay so remember one of the key differences of due diligence and do care it's kind of similar to change the configuration management.
+
+106
+00:18:08.580 --> 00:18:20.430
+Michael Shannon: Okay, when I describe let's say from an eye till four perspective if i'm explaining changing configuration management well configuration management happens first.
+
+107
+00:18:21.300 --> 00:18:33.120
+Michael Shannon: You have to have an initial baseline configuration without that there's nothing to change now, you can consider that initial configuration, as your first change.
+
+108
+00:18:34.560 --> 00:18:51.900
+Michael Shannon: But you get the point so due diligence is the thing that we do before we do the plan of action, proper information gathering planning reconnaissance workshops Delphi methods planning testing strategy.
+
+109
+00:18:52.920 --> 00:18:53.340
+Michael Shannon: Right.
+
+110
+00:18:54.660 --> 00:19:08.340
+Michael Shannon: due diligence is the proper strategy do care is the tactical right do care is ongoing, the ongoing degree of reasonable attention.
+
+111
+00:19:10.410 --> 00:19:10.800
+Michael Shannon: Okay.
+
+112
+00:19:12.600 --> 00:19:15.030
+Michael Shannon: due diligence to care.
+
+113
+00:19:16.800 --> 00:19:18.180
+Michael Shannon: Do care activities.
+
+114
+00:19:19.560 --> 00:19:30.900
+Michael Shannon: patch management classic right but from a security manager standpoint, yes, we would, we would like to know that patch management is an aspect of do care.
+
+115
+00:19:32.070 --> 00:19:40.290
+Michael Shannon: And that's true, however, when we get into looking at threat models and security testing.
+
+116
+00:19:41.400 --> 00:19:51.600
+Michael Shannon: As advanced security practitioners we're going to understand at a higher level, just the do care of patch management is not enough.
+
+117
+00:19:53.790 --> 00:20:00.300
+Michael Shannon: Because if we're not testing the updates in the patches before we deploy them.
+
+118
+00:20:01.530 --> 00:20:03.030
+Michael Shannon: Is that really do care.
+
+119
+00:20:04.290 --> 00:20:25.200
+Michael Shannon: Just just installing the patch probably doesn't qualify as do care installing a tested patch in a hypervisor environment or a sandbox environment would for most zero trust environments be what do care is.
+
+120
+00:20:26.610 --> 00:20:35.010
+Michael Shannon: Some of you remember, a few months back it was last year, but when the solar winds malware happened.
+
+121
+00:20:36.840 --> 00:20:46.650
+Michael Shannon: There were people that were security operators and security practitioners that were doing do care because they were installing the patch right away.
+
+122
+00:20:47.130 --> 00:21:00.510
+Michael Shannon: They were up to date on their patch management yay but they didn't test those patches first in a prototypical environment, maybe in a hypervisor environment first and they got burned.
+
+123
+00:21:01.530 --> 00:21:03.390
+Michael Shannon: To get the malware was in the patch.
+
+124
+00:21:04.620 --> 00:21:07.050
+Michael Shannon: Now, obviously, solar winds didn't do their.
+
+125
+00:21:08.280 --> 00:21:09.120
+Michael Shannon: due care.
+
+126
+00:21:15.450 --> 00:21:16.650
+Michael Shannon: I feel confident.
+
+127
+00:21:17.700 --> 00:21:32.250
+Michael Shannon: That, if you if you approach this exam if you if you truly do have the four to five years of full time experience I feel very confident that after you go through this five days and you find some gaps.
+
+128
+00:21:34.890 --> 00:21:51.720
+Michael Shannon: you're gonna be able to find the right answer it's just gonna it's just going to make sense to you, and some of the questions where it's just not obvious since there's no trick questions that that there should be too obvious distractors.
+
+129
+00:21:55.080 --> 00:21:58.320
+Michael Shannon: too obvious distractors I just took the.
+
+130
+00:21:59.730 --> 00:22:22.230
+Michael Shannon: This last summer I took the certified cloud security professional, which is isc squares cloud security and the beauty of being a CIS SP is you don't have to you there's no other requirements if you're a CIS SP you can just go take that exam.
+
+131
+00:22:25.530 --> 00:22:26.280
+Michael Shannon: In fact.
+
+132
+00:22:30.930 --> 00:22:32.490
+Michael Shannon: I think i'm teaching that again.
+
+133
+00:22:33.930 --> 00:22:34.830
+Michael Shannon: In July.
+
+134
+00:22:38.190 --> 00:22:41.010
+Michael Shannon: So i'm teaching that CCA SP.
+
+135
+00:22:42.990 --> 00:22:47.970
+Michael Shannon: The 26th of July it's a three day course I would love for you to go.
+
+136
+00:22:49.170 --> 00:23:07.980
+Michael Shannon: Past this exam get your ci ssp and then in July come take my three day cloud security boot camp and get that second cloud security because you don't have to have five years of experience working at a cloud provider.
+
+137
+00:23:10.260 --> 00:23:11.730
+Michael Shannon: and get that on your resume.
+
+138
+00:23:13.230 --> 00:23:24.030
+Michael Shannon: So this summer, when I took that exam and, by the way, that exam is not like CIS SP it's like 125 questions and you're gonna get all the questions.
+
+139
+00:23:28.230 --> 00:23:39.060
+Michael Shannon: And I can tell you, most of those questions were just read purpose CIS SP questions they just changed it to be in a cloud environment or a data Center.
+
+140
+00:23:41.370 --> 00:23:49.050
+Michael Shannon: There were no trick questions and I got I got two questions that I didn't obviously know the answer, but I definitely could get it to a coin flip.
+
+141
+00:23:51.600 --> 00:23:53.040
+Michael Shannon: I knew it's one of these two.
+
+142
+00:23:55.320 --> 00:23:55.830
+Michael Shannon: So.
+
+143
+00:23:57.330 --> 00:23:57.840
+Michael Shannon: You know.
+
+144
+00:23:58.890 --> 00:24:05.310
+Michael Shannon: For some of you that this is going to be coin flip questions that's Okay, you should be fine.
+
+145
+00:24:06.720 --> 00:24:18.720
+Michael Shannon: So governance is a much more general corporate organizational what drives the ship right it's what steers the Titanic hopefully.
+
+146
+00:24:20.490 --> 00:24:29.460
+Michael Shannon: Getting it to its destination, but the three main attributes or characteristics of governance are some authority.
+
+147
+00:24:29.880 --> 00:24:54.840
+Michael Shannon: Right, the buck has to stop somewhere and governance has the authority to say, this is the direction we're going in or we're going to no longer be a privately held company with venture capitalists owning us but we're going to go public we make those big decisions but we're also accountable.
+
+148
+00:24:56.010 --> 00:25:07.740
+Michael Shannon: accountable to the venture capitalist accountable to the to the shareholders in the bondholders Okay, but we're concerned with security, governance, our role.
+
+149
+00:25:08.760 --> 00:25:09.240
+Michael Shannon: In.
+
+150
+00:25:10.260 --> 00:25:11.130
+Michael Shannon: Protecting.
+
+151
+00:25:12.180 --> 00:25:22.200
+Michael Shannon: The assets and being involved in risk assessment and risk management to lower risk to acceptable levels.
+
+152
+00:25:23.340 --> 00:25:30.450
+Michael Shannon: Based on governance and our value proposition, but it's look again it's wearing the security hat.
+
+153
+00:25:31.590 --> 00:25:34.950
+Michael Shannon: Now if you're if you're if you're a small to medium sized organization.
+
+154
+00:25:37.650 --> 00:25:51.870
+Michael Shannon: Then, that there may not be a real big separation between corporate governance, I mean I mean, I have a board of directors that are working with the C suite small to medium sized business, you know.
+
+155
+00:25:53.370 --> 00:25:55.920
+Michael Shannon: you've been at have that type of structure.
+
+156
+00:25:57.300 --> 00:26:11.850
+Michael Shannon: But we're the activities of security, governance, we need to be aware of those there needs to be some type of documented risk register or risk ledger and we're going to talk about what populates that.
+
+157
+00:26:13.230 --> 00:26:18.180
+Michael Shannon: But what's going to populate that initially is any existing.
+
+158
+00:26:21.330 --> 00:26:23.160
+Michael Shannon: scenarios that we've gone through.
+
+159
+00:26:26.190 --> 00:26:33.060
+Michael Shannon: If you're a startup company that risk ledger risk ledger is going to be based on best practices.
+
+160
+00:26:33.480 --> 00:26:41.670
+Michael Shannon: And are we using co bit five are we using this are we using ISO IEC the risk register is going to be kind of driven by.
+
+161
+00:26:42.210 --> 00:26:59.940
+Michael Shannon: how you are going to implement your your guidelines and your standards, but as you become a more mature organization that risk register starts to get populated with these are actual events and incidents we've gone through, and this is the after action reporting and lessons learned.
+
+162
+00:27:02.730 --> 00:27:14.130
+Michael Shannon: So it it gets continually populated with whatever the results of your risk assessment vulnerability assessment penetration tests all those things will populate that.
+
+163
+00:27:14.550 --> 00:27:25.260
+Michael Shannon: could be spreadsheet driven could be database driven another major activity of security, governance is making sure you're aligned.
+
+164
+00:27:26.610 --> 00:27:36.180
+Michael Shannon: Is alignment with your business or whatever your organization is could be it could be a nonprofit it could be an agency, whatever.
+
+165
+00:27:38.250 --> 00:27:53.940
+Michael Shannon: Making sure that everybody all stakeholders are aware of any compliance or regulatory requirements and that the policies that they must adhere to like acceptable use policies are in line with those requirements.
+
+166
+00:27:55.170 --> 00:28:00.960
+Michael Shannon: Security government's governance plays a vital role in risk assessment and risk management.
+
+167
+00:28:02.820 --> 00:28:03.900
+Michael Shannon: Now, usually.
+
+168
+00:28:05.220 --> 00:28:11.910
+Michael Shannon: Your security practitioners or engineers or architects they aren't the sole.
+
+169
+00:28:13.410 --> 00:28:24.660
+Michael Shannon: Entities doing risk assessment and management to small business as possible, but that usually involves you know accountants auditors HR legal.
+
+170
+00:28:25.800 --> 00:28:29.520
+Michael Shannon: So there's different roles responsibilities that are you know part of that.
+
+171
+00:28:31.470 --> 00:28:38.160
+Michael Shannon: Your insurance company, you know before you get your business policy and your cyber.
+
+172
+00:28:39.720 --> 00:28:55.890
+Michael Shannon: Your cyber attack writer or additional policy it's you know it's very likely that you're working with the teams, they send in to assess your organization before they determine you know what are your premium is going to be.
+
+173
+00:28:57.960 --> 00:29:06.030
+Michael Shannon: tracking and recording documentation all of those things finding out what you can automate is a.
+
+174
+00:29:07.080 --> 00:29:11.460
+Michael Shannon: Pretty big security, governance activity what things can we automate.
+
+175
+00:29:19.560 --> 00:29:20.100
+Michael Shannon: Okay.
+
+176
+00:29:22.230 --> 00:29:27.210
+Michael Shannon: So I already mentioned this security, governance, often responsible for publishing.
+
+177
+00:29:28.350 --> 00:29:38.010
+Michael Shannon: and making your stakeholders aware of compliance and regulatory requirements often that's going to drive their acceptable use policies.
+
+178
+00:29:41.160 --> 00:29:43.110
+Michael Shannon: Privacy policy requirements.
+
+179
+00:29:44.370 --> 00:29:51.780
+Michael Shannon: Now I don't know if these this example from the gdpr I don't know if it's still valid, that may have changed just an example.
+
+180
+00:29:53.430 --> 00:30:08.250
+Michael Shannon: If you're implementing privacy policies which is kind of a subset of confidentiality you're protecting intellectual property personal information health information you're involved in data loss prevention dlp.
+
+181
+00:30:09.570 --> 00:30:18.600
+Michael Shannon: Maybe assuring adherence to different acts regulations and I put an example there of penalties from the gdpr.
+
+182
+00:30:20.430 --> 00:30:27.480
+Michael Shannon: And what happened with gdpr was the same thing that happened with hipaa now if you ask me.
+
+183
+00:30:30.000 --> 00:30:41.190
+Michael Shannon: And you didn't but do I believe that these huge you know compliance initiatives are they really all about protecting privacy.
+
+184
+00:30:42.330 --> 00:30:46.740
+Michael Shannon: Well, you know what I don't really think, so I think it's more of just a way to.
+
+185
+00:30:47.910 --> 00:30:58.920
+Michael Shannon: it's just a taxation vehicle right hipaa had all these penalties and in the early years they didn't enforce any of them, they gave people time.
+
+186
+00:31:00.720 --> 00:31:05.130
+Michael Shannon: But then they started to enforce them and there were some pretty hefty.
+
+187
+00:31:06.450 --> 00:31:07.230
+Michael Shannon: penalties.
+
+188
+00:31:08.340 --> 00:31:10.620
+Michael Shannon: So here, you can see example of gdpr.
+
+189
+00:31:17.130 --> 00:31:22.500
+Michael Shannon: So your data privacy often due to a mandate that common sense.
+
+190
+00:31:24.240 --> 00:31:33.000
+Michael Shannon: because so many global organizations have become service oriented right kind of the.
+
+191
+00:31:35.010 --> 00:31:41.340
+Michael Shannon: opposite of the Industrial Revolution it's the digital revolution it's the information age.
+
+192
+00:31:42.660 --> 00:31:45.180
+Michael Shannon: Right our intellectual property.
+
+193
+00:31:46.230 --> 00:31:48.510
+Michael Shannon: is more and more difficult to protect.
+
+194
+00:31:50.460 --> 00:31:50.970
+Michael Shannon: Now.
+
+195
+00:31:52.620 --> 00:31:59.880
+Michael Shannon: In a way, we'll talk about this, but in a way, part of the solution of protecting data.
+
+196
+00:32:00.900 --> 00:32:02.220
+Michael Shannon: will be blockchain.
+
+197
+00:32:03.420 --> 00:32:08.550
+Michael Shannon: will be one of the parts of the solution of that but part of our responsibility is going to be.
+
+198
+00:32:10.320 --> 00:32:13.800
+Michael Shannon: yeah Sebastian Sebastian you're really good question.
+
+199
+00:32:15.930 --> 00:32:19.740
+Michael Shannon: I don't expect to get a lot of specific.
+
+200
+00:32:22.410 --> 00:32:41.370
+Michael Shannon: Questions about different regulations and mandates like specific hipaa questions or fish or because, like Sebastian saying the CIS SP is a global certification now, am I going to tell you that it's not us centric No, it is.
+
+201
+00:32:43.140 --> 00:32:54.480
+Michael Shannon: it's kind of like I it's kind of like IP version for addressing versus IP version six addressing IP version six address thing is global.
+
+202
+00:32:55.530 --> 00:33:02.100
+Michael Shannon: But IP version for addresses are still the majority of them are kind of owned by us entities.
+
+203
+00:33:04.470 --> 00:33:22.140
+Michael Shannon: IP version six removes that so the CIS SP exam is not ipv6 yet it's the men, the the mentality and the thinking is us centric but don't expect to see a lot of you know.
+
+204
+00:33:23.700 --> 00:33:38.460
+Michael Shannon: Understand that intellectual property are things like copyrights trademarks, patents formulas trade secrets digital rights information rights licensing cryptographic keys and passwords credit card information so on.
+
+205
+00:33:39.510 --> 00:33:48.300
+Michael Shannon: knots and you know consequences primary and secondary loss, but not so much you know this was an example.
+
+206
+00:33:50.040 --> 00:34:00.900
+Michael Shannon: This was an example not for you to say Oh, I need to memorize this but understanding that governance and regulations do have penalties.
+
+207
+00:34:02.130 --> 00:34:23.130
+Michael Shannon: that's one of the driving factors behind security and privacy policy is avoiding or evading those types of penalties not you know, the fact that up to the first 10 million euros or whatever that's not The important thing it's conceptually the why.
+
+208
+00:34:24.240 --> 00:34:29.070
+Michael Shannon: of privacy policy and security, governance, avoiding penalties.
+
+209
+00:34:30.360 --> 00:34:30.720
+Michael Shannon: Right.
+
+210
+00:34:33.540 --> 00:34:41.370
+Michael Shannon: Always approach it from a security managers point of view so there's you know, the primary inside this is kind of a.
+
+211
+00:34:42.420 --> 00:34:43.020
+Michael Shannon: A.
+
+212
+00:34:45.960 --> 00:34:48.690
+Michael Shannon: Factor analysis of information risk.
+
+213
+00:34:49.980 --> 00:35:03.000
+Michael Shannon: mentality, fair, which is becoming very, very popular open, fair as a quantitative risk analysis methodology, this is actually kind of borrowed from that.
+
+214
+00:35:03.630 --> 00:35:14.340
+Michael Shannon: Because you've got primary loss let's say to a data breach let's just stick with the whole data privacy thing, so if there's a data breach that.
+
+215
+00:35:16.230 --> 00:35:25.230
+Michael Shannon: First responder and, by the way, this could be something that you discover that the data had been breached or stolen or Expo traded.
+
+216
+00:35:26.610 --> 00:35:29.280
+Michael Shannon: Immediately based on.
+
+217
+00:35:30.300 --> 00:35:35.010
+Michael Shannon: Excellent visibility tools or This is something that you discovered through an audit.
+
+218
+00:35:36.420 --> 00:35:48.720
+Michael Shannon: But regardless there's going to be the alerting of certain first responders and other incident response, people are teams so that's going to be a loss of productivity.
+
+219
+00:35:49.560 --> 00:36:02.310
+Michael Shannon: And the people that have to respond productivity, the response time that the money to respond to, for example, paying the ransom.
+
+220
+00:36:03.330 --> 00:36:14.610
+Michael Shannon: Because of the ransomware attack and you don't have a proper backup restore snapshots and you're unable to just you know re image, the machines and backup from data.
+
+221
+00:36:15.840 --> 00:36:20.340
+Michael Shannon: Because remember your backup if you don't go through restoration processes.
+
+222
+00:36:21.600 --> 00:36:32.880
+Michael Shannon: If you don't recover you don't do database recoveries or data restoration, technically speaking, you don't have any backups you can say yeah i've got backup media.
+
+223
+00:36:33.810 --> 00:36:43.680
+Michael Shannon: i've got backup media and i've got i've got a grandfather approach and i've got it stored blah blah blah, and you know this location and it's fireproof you have backup media.
+
+224
+00:36:44.310 --> 00:36:55.200
+Michael Shannon: But unless you've gone through the process of testing and doing restores and recovery you don't really have a backup system, not from a disaster recovery standpoint.
+
+225
+00:36:56.910 --> 00:37:04.770
+Michael Shannon: So replacement, these are all primary you know you found out the compromised insider so they're fired.
+
+226
+00:37:05.880 --> 00:37:17.280
+Michael Shannon: Now you have to replace them and the cost of replacing an employee, the longer they've been there is more than just i'm plugging in a new human being who's getting that same salary.
+
+227
+00:37:17.970 --> 00:37:27.630
+Michael Shannon: know the costs are way beyond just this is a new body getting the same salary replacement costs are much higher.
+
+228
+00:37:28.620 --> 00:37:38.190
+Michael Shannon: Because of just the time to train that person to get them up to speed to get them operating at 100% efficiency or whatever.
+
+229
+00:37:38.940 --> 00:38:01.920
+Michael Shannon: And then you have secondary losses fines judgments civil cases losing to your competitors your reputation of goodwill, you know borrowing costs the list goes on and what's interesting is primary and secondary has nothing to do with impact or magnitude primary just means initial.
+
+230
+00:38:03.210 --> 00:38:08.430
+Michael Shannon: These are the kind of first immediate loss secondary means they come afterwards.
+
+231
+00:38:09.570 --> 00:38:15.030
+Michael Shannon: As far as impact or magnitude secondary loss can often be much higher.
+
+232
+00:38:16.800 --> 00:38:21.900
+Michael Shannon: Your competitive advantage can be such that now your stock price just plummets.
+
+233
+00:38:25.050 --> 00:38:33.420
+Michael Shannon: So secondary losses because they can be cascading you know lawsuits and judgments can be much higher than just the primary laws.
+
+234
+00:38:38.430 --> 00:38:52.320
+Michael Shannon: The CIS SP exam mentions digital rights management as part of security, governance right you're dealing with copyrighted information, it could be your an organization that has content.
+
+235
+00:38:52.980 --> 00:39:02.880
+Michael Shannon: That you need to protect you need to protect the rights, the copyrights of your content that's your streaming through you know some.
+
+236
+00:39:04.110 --> 00:39:19.920
+Michael Shannon: akamai or cloud flare or aws cloud front right you're you've got content right, so you had to protect the rights of that content accessing the original right.
+
+237
+00:39:20.940 --> 00:39:31.020
+Michael Shannon: or you may have to make sure that your organization that your employees are not downloading pirated.
+
+238
+00:39:32.430 --> 00:39:46.200
+Michael Shannon: Content running unlicensed software and a Type two hypervisor right they've downloaded Oracle virtual box and they're running unlicensed software.
+
+239
+00:39:47.430 --> 00:40:03.780
+Michael Shannon: or you've got privileged insiders who are in the dmz servers and they're downloading pirated DVDs and content so remember we think of digital rights management with a couple of different perspectives.
+
+240
+00:40:05.520 --> 00:40:19.770
+Michael Shannon: Right, are our employees, respecting the digital rights of vendors and providers and partners or and or are we is our value proposition content.
+
+241
+00:40:20.700 --> 00:40:37.020
+Michael Shannon: That has to be a publisher are we are we, the owner of the intellectual property, you know, are we Sony and somebody stole games game of thrones season, whatever and now they're trying to exploit that.
+
+242
+00:40:38.340 --> 00:40:52.920
+Michael Shannon: And this is going to apply we think of content, like video and audio but another really primary of digital rights management and, by the way the on the cloud exam they call it information rights management I rm.
+
+243
+00:40:54.240 --> 00:41:05.670
+Michael Shannon: I can't guarantee you that the CIS SP exam is going to be DRM or informational rights management, I would just consider them to be synonymous.
+
+244
+00:41:07.200 --> 00:41:13.770
+Michael Shannon: But for like PDF files you've experienced this right you've gone and you've gotten a PDF file.
+
+245
+00:41:14.880 --> 00:41:26.970
+Michael Shannon: From a some site and maybe you had to pay a lot of money for it, or you had to offer and give them information about yourself, so they can put you on some list to spam you.
+
+246
+00:41:27.930 --> 00:41:38.220
+Michael Shannon: But you did it because you want the PDF file, so they can enforce expiration they can put watermarks on it right, they can you know.
+
+247
+00:41:39.390 --> 00:41:44.100
+Michael Shannon: take away your ability to do a screen capture or print or things like that.
+
+248
+00:41:45.180 --> 00:41:52.020
+Michael Shannon: So it's not when I say content, you know adobe pdfs can you know fall into that category as well.
+
+249
+00:41:56.010 --> 00:42:11.910
+Michael Shannon: The gdpr and this exam are really big on data minimization okay so data has a life cycle right the first phase of the life cycle is often called the create.
+
+250
+00:42:12.360 --> 00:42:22.770
+Michael Shannon: Now that's a misnomer, but it basically just that's where, for whatever the purpose of the data that's where it begins, yes, it could be something that you create.
+
+251
+00:42:23.610 --> 00:42:34.830
+Michael Shannon: It can be generated by some machine learning tool or algorithm it could be some report that's written, but in that create phase, the data can also be acquired.
+
+252
+00:42:35.190 --> 00:42:47.040
+Michael Shannon: Right you go and you purchase a bunch of sales leads or you go and you get some type of document from gartner or IDC whatever right is that first phase.
+
+253
+00:42:47.790 --> 00:42:57.390
+Michael Shannon: Maybe you're generating data two different tools right same systems are taking it all in and they're creating reports here's the point.
+
+254
+00:42:58.530 --> 00:43:17.430
+Michael Shannon: GDP ours really big on this, you should only in that phase generate and create and produce data that's meaningful for something just creating mountains of raw data, because you can.
+
+255
+00:43:18.510 --> 00:43:19.800
+Michael Shannon: is a bad idea.
+
+256
+00:43:22.050 --> 00:43:30.030
+Michael Shannon: it's not a best practice, so we really want to create data with a purpose we generate data with a purpose.
+
+257
+00:43:31.200 --> 00:43:34.950
+Michael Shannon: In that in those first early phases of the data life cycle.
+
+258
+00:43:36.300 --> 00:43:38.730
+Michael Shannon: Okay, it should be meaningful.
+
+259
+00:43:39.750 --> 00:43:53.520
+Michael Shannon: And, especially when you think about okay my management V land or whatever tools i'm using if I just create tons of unfiltered logs and I alerts and alarms and.
+
+260
+00:43:54.630 --> 00:44:08.040
+Michael Shannon: Net flow records vide was producing tons and tons of information that it's just going to be raw data that i'm never gonna make into information that's just more things to be breached.
+
+261
+00:44:09.480 --> 00:44:16.770
+Michael Shannon: that's just more low hanging fruit, not just for privileged insiders but for people that can breach your firewall.
+
+262
+00:44:17.820 --> 00:44:34.200
+Michael Shannon: So you know they're really big on understanding why you need to produce or create data and be specific and only do it for those reasons, only acquire data that you need they're really big on that.
+
+263
+00:44:34.980 --> 00:44:42.480
+Michael Shannon: Now, and then now once you have that mentality, then it's going to involve another other tools.
+
+264
+00:44:43.140 --> 00:44:53.760
+Michael Shannon: right to protect that data obviously encrypting data at rest or roomy send data in transit, you know, using protection mechanisms.
+
+265
+00:44:54.450 --> 00:45:05.880
+Michael Shannon: To provide confidentiality integrity origin authentication availability all of those things you may even you know, instead of encrypting data, you may token eyes the data.
+
+266
+00:45:06.630 --> 00:45:16.830
+Michael Shannon: Removing data that direct has any directly identifying elements right generating tokens or pseudonyms that are irreversible or non reversible.
+
+267
+00:45:18.210 --> 00:45:26.820
+Michael Shannon: token icing national ID numbers so security numbers other identifying information.
+
+268
+00:45:28.590 --> 00:45:32.310
+Michael Shannon: token ization is often a system.
+
+269
+00:45:33.360 --> 00:45:40.260
+Michael Shannon: Like you have a middle tier token ization server engine and may be done in the cloud like with azure.
+
+270
+00:45:42.540 --> 00:45:54.150
+Michael Shannon: we're going to cover this again in database security that was just an example of saying Okay, once we have a philosophy that the gdpr wants is to have data minimization.
+
+271
+00:45:57.150 --> 00:46:05.610
+Michael Shannon: Where we really are only producing or creating the raw data that we need to become information and then knowledge.
+
+272
+00:46:08.100 --> 00:46:19.320
+Michael Shannon: Then we have other mechanisms that, by the way, token ization schemes should only be operating on meaningful data.
+
+273
+00:46:23.580 --> 00:46:39.210
+Michael Shannon: As the student asked like Sebastian asked being familiar with the granular aspects of different control frameworks, not so much understanding why we use them in the importance of them definitely.
+
+274
+00:46:40.230 --> 00:46:55.140
+Michael Shannon: But here, this describes some of the attributes and, from a practical standpoint like ISO IEC a lot of Oregon a lot of organizations in certain countries will avoid.
+
+275
+00:46:56.100 --> 00:47:17.760
+Michael Shannon: ISO IEC and they'll they'll rely upon something that is maybe specific to their country like if you're in the UK, for example, you may for go I, so I see with some other mandate that is specific to your country, because I, so I see is super broad.
+
+276
+00:47:18.840 --> 00:47:21.510
+Michael Shannon: Massive and it's expensive.
+
+277
+00:47:23.280 --> 00:47:42.900
+Michael Shannon: So it depends on which country you're in okay missed the importance of mist is the fact that is C squared will generate a lot of their their questions from this nist point of view, like I said they're very misty okay.
+
+278
+00:47:44.730 --> 00:48:02.430
+Michael Shannon: kolbert five is specific remember the is a CA I mentioned earlier, this is the organization that has the CIS M and C is a certification certified information security, a auditor or em manager.
+
+279
+00:48:03.270 --> 00:48:13.380
+Michael Shannon: So they also have the covert five framework but that's why I mentioned to you, you know go find a 2001 CSM book.
+
+280
+00:48:13.950 --> 00:48:33.660
+Michael Shannon: Maybe the highest rated book on whatever site you go to and add that to your reading list for the exam because is a CA is also very misty they come from the same kind of point of view, as the is C squared, but there are others that are you know.
+
+281
+00:48:34.830 --> 00:48:39.090
+Michael Shannon: More more European or other parts of the world right.
+
+282
+00:48:40.590 --> 00:48:41.070
+Michael Shannon: uh.
+
+283
+00:48:42.090 --> 00:48:48.270
+Michael Shannon: don't even ask me to pronounce that Dave could I think dave's a francophone.
+
+284
+00:48:50.310 --> 00:48:54.180
+Michael Shannon: I think everybody, where he lives speaks French to some degree.
+
+285
+00:48:56.040 --> 00:49:03.510
+Michael Shannon: But there's others like I said don't focus on the granular differences focus on the why security, governance.
+
+286
+00:49:05.130 --> 00:49:06.240
+Michael Shannon: This is interesting.
+
+287
+00:49:08.130 --> 00:49:17.640
+Michael Shannon: organizations are going to face cyber threats and three main areas now one thing on this exam you will need to be aware of the threat scape.
+
+288
+00:49:18.630 --> 00:49:35.220
+Michael Shannon: Okay, the threat scape but we don't spend like a long I don't spend like an hour on the different types of attacks and things that's like security plus stuff that's like SS CP.
+
+289
+00:49:36.390 --> 00:49:50.190
+Michael Shannon: Or the G SEC from the gic see Those are three of your kind of i've got a year of experience and security certifications security plus it's recommended.
+
+290
+00:49:52.440 --> 00:49:58.020
+Michael Shannon: But you don't have to have a year of experience to get calm to security, plus SS CP.
+
+291
+00:49:59.190 --> 00:50:12.840
+Michael Shannon: Is what some of you may get you may decide I don't really have the work experience so i'll go get the SS CP which needs one year and then, when I get my experience i'll get the CIS SP.
+
+292
+00:50:14.550 --> 00:50:18.450
+Michael Shannon: The gic has the G sack.
+
+293
+00:50:20.280 --> 00:50:29.640
+Michael Shannon: Certification which is one year of experience, you have to go through sands.org point i'm making is those certifications you'll spend.
+
+294
+00:50:30.720 --> 00:50:39.690
+Michael Shannon: A lot of your time on you know what's a worm versus a virus what's a poly morphic worm.
+
+295
+00:50:41.610 --> 00:50:46.770
+Michael Shannon: what's the what's the remote access Trojan we're not going to spend hours doing that.
+
+296
+00:50:48.480 --> 00:50:48.900
+Michael Shannon: Okay.
+
+297
+00:50:50.670 --> 00:51:06.240
+Michael Shannon: So categorically from a security manager standpoint, I want to know that you know are three areas are disruption right denial of service just distributed denial of service bottom nets ransomware.
+
+298
+00:51:07.440 --> 00:51:15.480
+Michael Shannon: compromising your iot your new thing with has an ipv6 or ipv4 address on it.
+
+299
+00:51:17.430 --> 00:51:22.290
+Michael Shannon: This new thing you got with there was you know this robotic system.
+
+300
+00:51:23.400 --> 00:51:36.600
+Michael Shannon: That they used, you know raspberry pi for the operating system or arduino or something like that, and you haven't fully secured it so they're going to disrupt it with a denial of service attack or distortion.
+
+301
+00:51:38.070 --> 00:51:51.630
+Michael Shannon: You know what's interesting is one of the emerging methods of distortion is to take advantage of your reliance as an organization on machine learning tools and algorithms.
+
+302
+00:51:52.230 --> 00:52:03.300
+Michael Shannon: Because what happens is this this usually happens whenever some new technology becomes the thing companies implement machine learning tools and algorithms.
+
+303
+00:52:03.960 --> 00:52:16.530
+Michael Shannon: on site on premise and in the cloud and they rely too heavily on the machine learning or the Ai is results not realizing that that.
+
+304
+00:52:17.190 --> 00:52:32.400
+Michael Shannon: input to the machine learning engine or algorithm can be poisoned and attacker can poison and we're if we're just blindly taking actions based on the results of the Ai and the machine learning.
+
+305
+00:52:33.840 --> 00:52:38.820
+Michael Shannon: Their their distorting our organization or functionality.
+
+306
+00:52:45.390 --> 00:52:46.560
+Michael Shannon: deterioration.
+
+307
+00:52:47.700 --> 00:53:02.580
+Michael Shannon: Breaking down your usage of smart contracts or just deterioration could also be considered the results of an advanced persistent threat can be state based can be a crime syndicate it's a long term.
+
+308
+00:53:03.720 --> 00:53:11.610
+Michael Shannon: You know they have the long view in mind to just slowly deteriorate and compromise your organization.
+
+309
+00:53:13.260 --> 00:53:17.760
+Michael Shannon: that's deterioration is more what you see with cyber warfare.
+
+310
+00:53:19.560 --> 00:53:32.010
+Michael Shannon: Yes, we see disruption, yes, we see distortion, but in a state based world wars see that we're in is just the long game of just deterioration of systems.
+
+311
+00:53:36.180 --> 00:53:40.410
+Michael Shannon: And so, some of the emerging types of cybercrime issues.
+
+312
+00:53:42.000 --> 00:53:54.690
+Michael Shannon: Ai enhanced I mentioned how you, you can poison, but also the malicious software is Ai driven it can adapt quicker than we can respond to it.
+
+313
+00:53:55.590 --> 00:54:16.350
+Michael Shannon: Ai fuzzing just shoving so much at us to overwhelm our system, Ai fuzzing to accelerate a zero day attack once an organization discovers this 080 day Code as soon as it's discovered the next variant is right behind it.
+
+314
+00:54:17.610 --> 00:54:23.400
+Michael Shannon: already mentioned Trojans and back doors that can poison machine learning tools.
+
+315
+00:54:24.660 --> 00:54:30.810
+Michael Shannon: hacking smart contracts Okay, more and more entities.
+
+316
+00:54:32.220 --> 00:54:40.920
+Michael Shannon: Moving forward new companies new organizations new partnerships are not going to be traditionally.
+
+317
+00:54:43.230 --> 00:55:00.120
+Michael Shannon: established with a bunch if you think about what it, I mean a corporation or an entity or an llc or a partnership, whatever the business is it's really historically it's really just a bunch of contracts and agreements right.
+
+318
+00:55:01.890 --> 00:55:14.940
+Michael Shannon: You make your company is is a contract and agreement between management and employees vendors customers partners it's a bunch of contracts and agreements.
+
+319
+00:55:17.280 --> 00:55:20.460
+Michael Shannon: And you know at the state we're in today.
+
+320
+00:55:21.750 --> 00:55:25.170
+Michael Shannon: Many of those are corrupted or there.
+
+321
+00:55:26.280 --> 00:55:39.960
+Michael Shannon: have been taken advantage of dummy corporations, many of them right false front organizations and corporations embezzlement The list goes on and on.
+
+322
+00:55:41.010 --> 00:55:49.980
+Michael Shannon: So smart contracts, a company built that way on a ledger that's distributed that has to have you know some level of.
+
+323
+00:55:51.660 --> 00:56:13.170
+Michael Shannon: Some methodology for even being able to write to the ledger some consensus agreement on a certain percentage of the parties that type of blockchain mentality will eventually remove a lot of the corruption that is involved in corporate entities, but even those can be hacked.
+
+324
+00:56:14.610 --> 00:56:21.120
+Michael Shannon: A company built an organization built on smart contracts everything's written to a blockchain.
+
+325
+00:56:23.310 --> 00:56:29.370
+Michael Shannon: And cloud computing vulnerabilities which we're going to talk about the CIS SP exam.
+
+326
+00:56:30.750 --> 00:56:44.250
+Michael Shannon: This one that you're studying for there's several areas of technology that have been added over the previous version and versions, one of them is cloud computing.
+
+327
+00:56:45.360 --> 00:57:05.760
+Michael Shannon: there's a little bit more application and software development, security and there's there's more on mobile mobile devices mobility iot specialty devices Okay, those are areas that you may have to fill in some some gaps on.
+
+328
+00:57:07.230 --> 00:57:12.240
+Michael Shannon: Now this is not they like, I said, they have a dedicated cloud security professional.
+
+329
+00:57:15.540 --> 00:57:16.020
+Michael Shannon: But.
+
+330
+00:57:17.460 --> 00:57:26.220
+Michael Shannon: You still will get some cloud questions on this exam, this is a, this is not something to memorize but It just shows you as a.
+
+331
+00:57:27.930 --> 00:57:33.120
+Michael Shannon: This was a really big deal to people, which is why we're going to cover cloud security okay.
+
+332
+00:57:36.780 --> 00:57:49.170
+Michael Shannon: And again, you know these are the biggest cloud security challenges, and this is, you know secure configuration of your workloads and data in the cloud, those are the biggies.
+
+333
+00:58:00.480 --> 00:58:01.620
+Michael Shannon: So i'm having a hard time.
+
+334
+00:58:03.000 --> 00:58:05.700
+Michael Shannon: Moving my files alright so.
+
+335
+00:58:06.930 --> 00:58:08.190
+Michael Shannon: licensing issues.
+
+336
+00:58:09.480 --> 00:58:17.250
+Michael Shannon: Okay, that makes sense, this kind of goes back to the DRM topic or information rights management.
+
+337
+00:58:18.150 --> 00:58:26.190
+Michael Shannon: there's different types of licenses today, though, we see more and more of the click through license which is you.
+
+338
+00:58:26.910 --> 00:58:35.670
+Michael Shannon: When you install the, off the shelf whatever you are agreeing to the license right it's The thing that most of us.
+
+339
+00:58:36.240 --> 00:58:50.190
+Michael Shannon: Who install software never read coming right, I mean do you do, you always read through every single line of the click through license agreement, maybe you do if you do good for you now.
+
+340
+00:58:51.540 --> 00:59:01.530
+Michael Shannon: It says, obviously I don't but but on a commercial basis on an enterprise basis, you should be aware of the licensing there's also.
+
+341
+00:59:02.610 --> 00:59:09.990
+Michael Shannon: licensing that's part of your service level agreements with service providers Those are two very common areas okay.
+
+342
+00:59:11.280 --> 00:59:14.130
+Michael Shannon: let's take a let's take our second break.
+
+343
+00:59:15.240 --> 00:59:23.250
+Michael Shannon: 15 minutes and then we'll come back and we'll have another hour and 15 minutes to finish up our final.
+
+344
+00:59:24.240 --> 00:59:44.160
+Michael Shannon: set of slides, which is really going to be continuing security, governance but we're going to now get a little bit more granular where our security, governance is going to start to look at policy right policy guidance best practices, those types of things right so i'm going to.
+
+345
+00:59:46.410 --> 00:59:49.020
+Michael Shannon: By the way, we will talk about token ization again.
+
+346
+00:59:51.090 --> 01:00:01.470
+Michael Shannon: That slide was in there, just as an example of what you can do with that minimize data we have a whole data security.
+
+347
+01:00:02.850 --> 01:00:08.430
+Michael Shannon: module do you want to call it that Okay, we have a whole data security thing to cover.
+
+348
+01:00:09.480 --> 01:00:18.210
+Michael Shannon: Like I said this first day really is very global very macro okay so i'm going to go and stop the recording.
+
+349
+01:00:19.320 --> 01:00:20.880
+Michael Shannon: And i'll see you back here in in.
+
